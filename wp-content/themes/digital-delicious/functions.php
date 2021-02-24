@@ -143,14 +143,8 @@ add_action( 'widgets_init', 'digital_delicious_widgets_init' );
  * Enqueue scripts and styles.
  */
 function digital_delicious_scripts() {
-	/*
-	To include Google fonts
-	*	wp_enqueue_style(
-   *		"google-fonts", $handle
-   *		"https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap", $src
-	*		false $ver
-   	);
-	*/
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap', false );
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Newsreader:wght@400;600&display=swap', false );
 	wp_enqueue_style( 'digital-delicious-style', get_stylesheet_uri(), array(), DIGITAL_DELICIOUS_VERSION );
 	wp_style_add_data( 'digital-delicious-style', 'rtl', 'replace' );
 

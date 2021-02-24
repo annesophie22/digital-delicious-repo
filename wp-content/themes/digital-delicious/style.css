@@ -404,6 +404,28 @@ h6 {
 	clear: both;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+.heading-primary,
+.heading-secondary {
+	line-height: 1.2;
+}
+
+.heading-primary {
+	font-size: 2.625rem;
+}
+
+.heading-secondary {
+	margin: 0;
+	font-size: 1.618rem;
+}
+
 p {
 	margin-bottom: 1.5em;
 	font-weight: 300;
@@ -937,5 +959,18 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+/* Utility classes
+--------------------------------------------- */
+.u-center-text {
+	text-align: center;
+}
+
+.u-margin-bottom-small {
+	margin-bottom: 1rem;
+}
+
+/* Pages
+--------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */

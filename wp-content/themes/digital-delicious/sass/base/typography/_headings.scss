@@ -8,3 +8,25 @@ h6 {
   font-weight: $font__weight-heading;
   clear: both;
 }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.heading-primary,
+.heading-secondary {
+  line-height: 1.2;
+}
+
+.heading-primary {
+  font-size: $font__size-heading-primary;
+}
+
+.heading-secondary {
+  margin: 0;
+  font-size: $font__size-heading-secondary;
+}

@@ -1,7 +1,7 @@
 # TO DO
 
-- insert colors
-- insert typography
+- DONE insert colors
+- DONE insert typography
 - insert images
 - insert SVGs
 

@@ -450,12 +450,7 @@ h6 {
 }
 
 .heading-primary {
-	font-size: 4.2rem;
-}
-
-.heading-secondary {
-	margin: 0;
-	font-size: 2.6rem;
+	font-size: 3.8rem;
 }
 
 .week-menu__day {
@@ -700,28 +695,35 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.week-menu {
-	max-width: 100%;
-}
-
-.week-menu__dish-grid {
-	max-width: 100%;
-	background-color: lightblue;
-	display: grid;
-	grid-template-rows: repeat(2, min-content);
-	grid-template-columns: repeat(3, minmax(min-content, 1fr));
-	grid-column-gap: 3.2rem;
+.week-menu__dish-grid:not(:last-child) {
+	margin-bottom: 6.4rem;
 }
 
 .week-menu__day {
-	grid-row: 1 / 2;
-	grid-column: 1 / -1;
+	text-align: center;
+}
+
+/* .week-menu {
+  max-width: 100%;
+
+  &__dish-grid {
+    max-width: 100%;
+    background-color: lightblue;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-column-gap: $spacing__m;
+  }
+
+  &__day {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
 }
 
 .card-dish {
-	grid-row: 2 / 3;
-}
-
+  grid-row: 2 / 3;
+} */
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -826,10 +828,11 @@ textarea {
 }
 
 .heading-block__title {
-	margin-bottom: calc(1.6rem / 2);
+	margin-bottom: 1.6rem;
 }
 
 .heading-block__subtitle {
+	font-size: 2rem;
 	margin-bottom: 3.2rem;
 }
 
@@ -843,11 +846,15 @@ textarea {
 
 .card-dish {
 	line-height: 1;
+	padding-bottom: 2.4rem;
+}
+
+.card-dish:not(:last-child) {
+	margin-bottom: 3.2rem;
 }
 
 .card-dish__img {
 	width: 100%;
-	max-width: 263px;
 	margin-bottom: 2.4rem;
 	border-radius: 5px;
 	box-shadow: 0 1rem 2.5rem 0.5rem rgba(0, 0, 0, 0.25);
@@ -865,6 +872,10 @@ textarea {
 
 .card-dish__price, .card-dish__desc {
 	font-size: 1.8rem;
+}
+
+.card-dish__desc {
+	margin-bottom: 0;
 }
 
 /* Posts and pages
@@ -1116,14 +1127,10 @@ textarea {
 	margin-bottom: 9.6rem;
 }
 
-.u-container-80 {
-	width: 80%;
-}
-
 /* Pages
 --------------------------------------------- */
 .section-alacarte {
-	background-color: #cde6cd;
+	width: 90%;
 	margin: 0 auto;
 }
 

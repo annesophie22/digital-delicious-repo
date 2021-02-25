@@ -1,9 +1,13 @@
 .card-dish {
   line-height: 1;
+  padding-bottom: $spacing__s;
+
+  &:not(:last-child) {
+    margin-bottom: $spacing__m;
+  }
 
   &__img {
     width: 100%;
-    max-width: 263px;
     margin-bottom: $spacing__s;
     border-radius: 5px;
     @include boxShadow1;
@@ -22,5 +26,9 @@
   &__price,
   &__desc {
     font-size: 1.8rem;
+  }
+
+  &__desc {
+    margin-bottom: 0;
   }
 }

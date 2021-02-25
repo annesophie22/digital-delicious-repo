@@ -1,4 +1,14 @@
 .week-menu {
+  &__dish-grid {
+    &:not(:last-child) {
+      margin-bottom: $spacing__xl;
+    }
+  }
+  &__day {
+    text-align: center;
+  }
+}
+/* .week-menu {
   max-width: 100%;
 
   &__dish-grid {
@@ -18,4 +28,4 @@
 
 .card-dish {
   grid-row: 2 / 3;
-}
+} */

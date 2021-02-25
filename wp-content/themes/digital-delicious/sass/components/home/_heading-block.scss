@@ -4,10 +4,11 @@
   line-height: 1;
 
   &__title {
-    margin-bottom: calc(#{$spacing__xs} / 2);
+    margin-bottom: $spacing__xs;
   }
 
   &__subtitle {
+    font-size: 2rem;
     margin-bottom: $spacing__m;
   }
 

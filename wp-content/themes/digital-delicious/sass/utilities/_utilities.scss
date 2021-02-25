@@ -2,6 +2,32 @@
   text-align: center;
 }
 
-.u-margin-bottom-small {
-  margin-bottom: 1rem;
+// Margin bottoms
+.u-margin-bottom-xs {
+  margin-bottom: $spacing__xs;
+}
+
+.u-margin-bottom-s {
+  margin-bottom: $spacing__s;
+}
+
+.u-margin-bottom-m {
+  margin-bottom: $spacing__m;
+}
+
+.u-margin-bottom-l {
+  margin-bottom: $spacing__l;
+}
+
+.u-margin-bottom-xl {
+  margin-bottom: $spacing__xl;
+}
+
+.u-margin-bottom-xxl {
+  margin-bottom: $spacing__xxl;
+}
+
+// Container
+.u-container-80 {
+  width: $size__site-container;
 }

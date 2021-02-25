@@ -1,0 +1,11 @@
+.heading-block {
+  position: relative;
+
+  &__separator {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    width: 12.5rem;
+    background-color: $color__orange;
+  }
+}

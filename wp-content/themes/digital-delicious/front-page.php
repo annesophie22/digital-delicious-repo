@@ -13,10 +13,11 @@ get_header();
          <h1 class="hero-banner__title">Vietnamese Homemade Food</h1>
          <p class="hero-banner__subtitle">Invite a tasty bit of Vietnam in your plate</p>
       </div>
-      <section class="section-alacarte">
-         <div class="u-center-text">
-            <h2 class="heading-primary u-margin-bottom-small">A la carte this week</h2>
-            <p class="heading-secondary">Check out what dishes are specially cooked for you this week</p>
+      <section class="section-alacarte u-container-80">
+         <div class="heading-block u-center-text">
+            <h2 class="heading-primary u-margin-bottom-xs">A la carte this week</h2>
+            <p class="heading-secondary u-margin-bottom-m">Check out what dishes are specially cooked for you this week</p>
+            <span class="heading-block__separator"></span>
          </div>
          <div class="week-menu">  
             <div class="week-menu__dish-grid">

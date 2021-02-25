@@ -466,7 +466,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.5rem;
 	font-weight: 300;
 }
 
@@ -568,6 +568,7 @@ object {
 img {
 	height: auto;
 	max-width: 100%;
+	display: block;
 }
 
 figure {
@@ -685,10 +686,6 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.week-menu p {
-	margin-bottom: 0;
-}
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -788,6 +785,7 @@ textarea {
 --------------------------------------------- */
 .heading-block {
 	position: relative;
+	margin-bottom: 3rem;
 }
 
 .heading-block__separator {
@@ -798,17 +796,29 @@ textarea {
 	background-color: #ee9300;
 }
 
-.card-dish-menu {
-	border: 1px solid black;
+.card-dish {
+	line-height: 1;
 }
 
-.card-dish-menu__name {
+.card-dish__img {
+	max-width: 263px;
+	margin-bottom: 1.5rem;
+	border-radius: 5px;
+	box-shadow: 0 0.625rem 1.5rem 0.3rem rgba(0, 0, 0, 0.25);
+}
+
+.card-dish__name {
 	font-size: 1.618rem;
-	margin-bottom: calc(1.5rem / 2);
+	margin-bottom: calc(1rem / 2);
 }
 
-.card-dish-menu__price {
+.card-dish__price {
 	font-weight: 400;
+	margin-bottom: 1rem;
+}
+
+.card-dish__price, .card-dish__desc {
+	font-size: 1.125rem;
 }
 
 /* Posts and pages

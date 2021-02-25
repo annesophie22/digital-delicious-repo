@@ -1,12 +1,25 @@
-.card-dish-menu {
-  border: 1px solid black;
+.card-dish {
+  line-height: 1;
+
+  &__img {
+    max-width: 263px;
+    margin-bottom: $spacing__s;
+    border-radius: 5px;
+    @include boxShadow1;
+  }
 
   &__name {
     font-size: $font__size-heading-medium;
-    margin-bottom: calc(#{$spacing__s} / 2);
+    margin-bottom: calc(#{$spacing__xs} / 2);
   }
 
   &__price {
     font-weight: 400;
+    margin-bottom: $spacing__xs;
+  }
+
+  &__price,
+  &__desc {
+    font-size: 1.125rem;
   }
 }

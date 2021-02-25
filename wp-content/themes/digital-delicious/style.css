@@ -451,7 +451,6 @@ h6 {
 
 .heading-primary {
 	font-size: 2.625rem;
-	text-transform: uppercase;
 }
 
 .heading-secondary {
@@ -686,6 +685,28 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.week-menu {
+	max-width: 100%;
+}
+
+.week-menu__dish-grid {
+	max-width: 100%;
+	background-color: lightblue;
+	display: grid;
+	grid-template-rows: repeat(2, min-content);
+	grid-template-columns: repeat(3, minmax(min-content, 1fr));
+	grid-column-gap: 2rem;
+}
+
+.week-menu__day {
+	grid-row: 1 / 2;
+	grid-column: 1 / -1;
+}
+
+.card-dish {
+	grid-row: 2 / 3;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -788,6 +809,14 @@ textarea {
 	margin-bottom: 3rem;
 }
 
+.heading-block__title {
+	margin-bottom: calc(1rem / 2);
+}
+
+.heading-block__subtitle {
+	margin-bottom: 1.5rem;
+}
+
 .heading-block__separator {
 	display: block;
 	margin: 0 auto;
@@ -801,6 +830,7 @@ textarea {
 }
 
 .card-dish__img {
+	width: 100%;
 	max-width: 263px;
 	margin-bottom: 1.5rem;
 	border-radius: 5px;

@@ -1,0 +1,21 @@
+.week-menu {
+  max-width: 100%;
+
+  &__dish-grid {
+    max-width: 100%;
+    background-color: lightblue;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-column-gap: $spacing__m;
+  }
+
+  &__day {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+}
+
+.card-dish {
+  grid-row: 2 / 3;
+}

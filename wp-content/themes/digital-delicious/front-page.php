@@ -16,8 +16,8 @@ get_header();
       <!-- SECTION A LA CARTE -->
       <section class="section-alacarte u-container-80">
          <div class="heading-block u-center-text">
-            <h2 class="heading-primary u-margin-bottom-xs">A la carte this week</h2>
-            <p class="heading-secondary u-margin-bottom-m">Check out what dishes are specially cooked for you this week</p>
+            <h2 class="heading-primary heading-block__title">A la carte this week</h2>
+            <p class="heading-secondary heading-block__subtitle">Check out what dishes are specially cooked for you this week</p>
             <span class="heading-block__separator"></span>
          </div>
          <!-- WEEK-MENU -->

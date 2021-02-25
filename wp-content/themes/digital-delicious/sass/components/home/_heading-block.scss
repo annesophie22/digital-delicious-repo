@@ -2,6 +2,14 @@
   position: relative;
   margin-bottom: $spacing__l;
 
+  &__title {
+    margin-bottom: calc(#{$spacing__xs} / 2);
+  }
+
+  &__subtitle {
+    margin-bottom: $spacing__s;
+  }
+
   &__separator {
     display: block;
     margin: 0 auto;

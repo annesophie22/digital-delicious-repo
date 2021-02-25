@@ -1,4 +1,6 @@
 .week-menu {
+  margin-bottom: $spacing__xxl;
+
   &__dish-grid {
     &:not(:last-child) {
       margin-bottom: $spacing__xl;

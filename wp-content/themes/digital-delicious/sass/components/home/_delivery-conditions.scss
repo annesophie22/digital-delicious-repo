@@ -1,0 +1,22 @@
+.delivery-conditions {
+  line-height: 1;
+
+  &__item {
+    &-title {
+      margin-bottom: $spacing__xs;
+    }
+
+    &-details {
+      list-style-type: none;
+      margin: 0;
+      font-weight: $font__weight-body;
+      li:not(:last-child) {
+        margin-bottom: $spacing__xs;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: $spacing__m;
+    }
+  }
+}

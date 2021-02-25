@@ -97,9 +97,9 @@ get_header();
             <div class="order-details">
                <h3 class="heading-secondary order-details__title">Order now</h3>
                <ul class="order-details__contact">
-                  <li>079 247 34 19</li>
-                  <li>lastella.thitran@gmail.com</li>
-                  <li><span>Facebook</span>Home made food (Pho bep Oi)</li>
+                  <li><a href="tel:+41762473419">076 247 34 19</a></li>
+                  <li><a href="mailto:lastella.thitrang@gmail.com">lastella.thitrang@gmail.com</a></li>
+                  <li><a href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">Home made food (Pho bep Oi)</a></li>
                </ul>
             </div>
          </div>

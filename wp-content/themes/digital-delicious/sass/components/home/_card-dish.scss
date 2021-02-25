@@ -8,8 +8,9 @@
 
   &__img {
     width: 100%;
+    max-width: 400px;
     margin-bottom: $spacing__s;
-    border-radius: 5px;
+    border-radius: $border-radius__default;
     @include boxShadow1;
   }
 
@@ -30,5 +31,6 @@
 
   &__desc {
     margin-bottom: 0;
+    line-height: $font__line-height-body;
   }
 }

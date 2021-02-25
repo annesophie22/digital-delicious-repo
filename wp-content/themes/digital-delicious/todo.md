@@ -4,7 +4,9 @@
 - DONE insert typography
 - insert images
 - insert SVGs
-- format correctly phone number and email address
+- DONE format correctly phone number
+- DONE format correctly email address
+- insert font awesome
 
 ## TEMPLATES
 

@@ -596,15 +596,16 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: inherit;
+	text-decoration: none;
 }
 
 a:visited {
-	color: #800080;
+	color: #126e4f;
 }
 
 a:hover, a:focus, a:active {
-	color: #191970;
+	color: #ee9300;
 }
 
 a:focus {
@@ -613,6 +614,15 @@ a:focus {
 
 a:hover, a:active {
 	outline: 0;
+}
+
+a[href^="tel:"], a[href^="mailto:"] {
+	font-weight: bold;
+}
+
+a[href^="tel:"]:before {
+	content: "\260e";
+	margin-right: 0.5em;
 }
 
 /* Forms
@@ -699,39 +709,6 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.week-menu {
-	margin-bottom: 9.6rem;
-}
-
-.week-menu__dish-grid:not(:last-child) {
-	margin-bottom: 6.4rem;
-}
-
-.week-menu__day {
-	text-align: center;
-}
-
-/* .week-menu {
-  max-width: 100%;
-
-  &__dish-grid {
-    max-width: 100%;
-    background-color: lightblue;
-    display: grid;
-    grid-template-rows: repeat(2, min-content);
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
-    grid-column-gap: $spacing__m;
-  }
-
-  &__day {
-    grid-row: 1 / 2;
-    grid-column: 1 / -1;
-  }
-}
-
-.card-dish {
-  grid-row: 2 / 3;
-} */
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -852,6 +829,39 @@ textarea {
 	background-color: #ee9300;
 }
 
+.week-menu {
+	margin-bottom: 6.4rem;
+}
+
+.week-menu__dish-grid:not(:last-child) {
+	margin-bottom: 6.4rem;
+}
+
+.week-menu__day {
+	text-align: center;
+}
+
+/* .week-menu {
+  max-width: 100%;
+
+  &__dish-grid {
+    max-width: 100%;
+    background-color: lightblue;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-column-gap: $spacing__m;
+  }
+
+  &__day {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+}
+
+.card-dish {
+  grid-row: 2 / 3;
+} */
 .card-dish {
 	line-height: 1;
 	padding-bottom: 2.4rem;
@@ -863,6 +873,7 @@ textarea {
 
 .card-dish__img {
 	width: 100%;
+	max-width: 400px;
 	margin-bottom: 2.4rem;
 	border-radius: 5px;
 	box-shadow: 0 1rem 2.5rem 0.5rem rgba(0, 0, 0, 0.25);
@@ -884,6 +895,7 @@ textarea {
 
 .card-dish__desc {
 	margin-bottom: 0;
+	line-height: 1.5;
 }
 
 .delivery-conditions {
@@ -895,7 +907,7 @@ textarea {
 }
 
 .delivery-conditions__item-details {
-	list-style-type: none;
+	list-style: none;
 	margin: 0;
 	font-weight: 300;
 }
@@ -905,7 +917,40 @@ textarea {
 }
 
 .delivery-conditions__item:not(:last-child) {
-	margin-bottom: 3.2rem;
+	margin-bottom: 4.8rem;
+}
+
+.delivery-conditions__notice {
+	color: #209a72;
+	font-family: "Newsreader", serif;
+	font-weight: 600;
+	font-size: 2.6rem;
+}
+
+.order-details {
+	border: 3px solid #209a72;
+	border-radius: 5px;
+	padding: 1.6rem 2.4rem;
+}
+
+.order-details__title {
+	color: #209a72;
+	font-family: "Newsreader", serif;
+	font-weight: 600;
+	font-size: 3.8rem;
+	margin-bottom: 1.6rem;
+}
+
+.order-details__contact {
+	list-style: none;
+	margin: 0;
+	color: #209a72;
+	font-size: 2.6rem;
+	font-weight: bold;
+}
+
+.order-details__contact li:not(:last-child) {
+	margin-bottom: 1.6rem;
 }
 
 /* Posts and pages

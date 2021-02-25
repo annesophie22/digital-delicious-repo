@@ -4,6 +4,7 @@ h3,
 h4,
 h5,
 h6 {
+  display: inline-block;
   font-family: $font__heading;
   font-weight: $font__weight-heading;
   line-height: $font__line-height-heading;
@@ -19,10 +20,17 @@ h6 {
 }
 
 .heading-primary {
-  font-size: $font__size-heading-primary;
+  font-size: $font__size-heading-big;
+  text-transform: uppercase;
 }
 
 .heading-secondary {
   margin: 0;
-  font-size: $font__size-heading-secondary;
+  font-size: $font__size-heading-medium;
+}
+
+.week-menu__day {
+  font-family: $font__heading;
+  font-weight: $font__weight-heading;
+  font-size: 2rem;
 }

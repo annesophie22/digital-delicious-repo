@@ -27,6 +27,16 @@ get_header();
                   <p class="card-dish-menu__price">CHF 15.00/portion</p>
                   <p class="card-dish-menu__desc">Noodle salad with stir fried beef</p>
                </div> <!-- card-dish-menu -->
+               <div class="card-dish-menu">
+                  <h3 class="card-dish-menu__name">Spring Roll Chicken</h3>
+                  <p class="card-dish-menu__price">CHF 2.50/big roll</p>
+                  <p class="card-dish-menu__desc">Crispy roll filled in with vegetables and chicken</p>
+               </div> <!-- card-dish-menu -->
+               <div class="card-dish-menu">
+                  <h3 class="card-dish-menu__name">Banh Mi</h3>
+                  <p class="card-dish-menu__price">CHF 10.00/portion</p>
+                  <p class="card-dish-menu__desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
+               </div> <!-- card-dish-menu -->
             </div><!-- week-menu__dish-grid -->
 
             <div class="week-menu__dish-grid">

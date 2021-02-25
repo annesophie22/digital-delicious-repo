@@ -1,0 +1,12 @@
+.card-dish-menu {
+  border: 1px solid black;
+
+  &__name {
+    font-size: $font__size-heading-medium;
+    margin-bottom: calc(#{$spacing__s} / 2);
+  }
+
+  &__price {
+    font-weight: 400;
+  }
+}

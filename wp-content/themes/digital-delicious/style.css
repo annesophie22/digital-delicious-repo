@@ -434,6 +434,7 @@ h3,
 h4,
 h5,
 h6 {
+	display: inline-block;
 	font-family: "Newsreader", serif;
 	font-weight: 400;
 	line-height: 1.1;
@@ -450,11 +451,18 @@ h6 {
 
 .heading-primary {
 	font-size: 2.625rem;
+	text-transform: uppercase;
 }
 
 .heading-secondary {
 	margin: 0;
 	font-size: 1.618rem;
+}
+
+.week-menu__day {
+	font-family: "Newsreader", serif;
+	font-weight: 400;
+	font-size: 2rem;
 }
 
 p {
@@ -677,6 +685,10 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.week-menu p {
+	margin-bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -784,6 +796,19 @@ textarea {
 	height: 3px;
 	width: 12.5rem;
 	background-color: #ee9300;
+}
+
+.card-dish-menu {
+	border: 1px solid black;
+}
+
+.card-dish-menu__name {
+	font-size: 1.618rem;
+	margin-bottom: calc(1.5rem / 2);
+}
+
+.card-dish-menu__price {
+	font-weight: 400;
 }
 
 /* Posts and pages

@@ -1,20 +1,21 @@
 .heading-block {
   position: relative;
   margin-bottom: $spacing__l;
+  line-height: 1;
 
   &__title {
     margin-bottom: calc(#{$spacing__xs} / 2);
   }
 
   &__subtitle {
-    margin-bottom: $spacing__s;
+    margin-bottom: $spacing__m;
   }
 
   &__separator {
     display: block;
     margin: 0 auto;
     height: 3px;
-    width: 12.5rem;
+    width: 20rem;
     background-color: $color__orange;
   }
 }

@@ -424,7 +424,7 @@ optgroup,
 textarea {
 	color: #424242;
 	font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 1rem;
+	font-size: 1.8rem;
 	line-height: 1.5;
 }
 
@@ -450,22 +450,22 @@ h6 {
 }
 
 .heading-primary {
-	font-size: 2.625rem;
+	font-size: 4.2rem;
 }
 
 .heading-secondary {
 	margin: 0;
-	font-size: 1.618rem;
+	font-size: 2.6rem;
 }
 
 .week-menu__day {
 	font-family: "Newsreader", serif;
 	font-weight: 400;
-	font-size: 2rem;
+	font-size: 3.2rem;
 }
 
 p {
-	margin-bottom: 1.5rem;
+	margin-bottom: 2.4rem;
 	font-weight: 300;
 }
 
@@ -521,6 +521,21 @@ big {
 --------------------------------------------- */
 body {
 	background: #fdfbf4;
+}
+
+html {
+	font-size: 62.5%;
+	/* @include respond(tab-land) { // width < 1200?
+		 font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+	}
+
+	@include respond(tab-port) { // width < 900?
+		 font-size: 50%; //1 rem = 8px, 8/16 = 50%
+	}
+	
+	@include respond(big-desktop) {
+		 font-size: 75%; //1rem = 12, 12/16
+	} */
 }
 
 hr {
@@ -695,7 +710,7 @@ textarea {
 	display: grid;
 	grid-template-rows: repeat(2, min-content);
 	grid-template-columns: repeat(3, minmax(min-content, 1fr));
-	grid-column-gap: 2rem;
+	grid-column-gap: 3.2rem;
 }
 
 .week-menu__day {
@@ -806,22 +821,23 @@ textarea {
 --------------------------------------------- */
 .heading-block {
 	position: relative;
-	margin-bottom: 3rem;
+	margin-bottom: 4.8rem;
+	line-height: 1;
 }
 
 .heading-block__title {
-	margin-bottom: calc(1rem / 2);
+	margin-bottom: calc(1.6rem / 2);
 }
 
 .heading-block__subtitle {
-	margin-bottom: 1.5rem;
+	margin-bottom: 3.2rem;
 }
 
 .heading-block__separator {
 	display: block;
 	margin: 0 auto;
 	height: 3px;
-	width: 12.5rem;
+	width: 20rem;
 	background-color: #ee9300;
 }
 
@@ -832,23 +848,23 @@ textarea {
 .card-dish__img {
 	width: 100%;
 	max-width: 263px;
-	margin-bottom: 1.5rem;
+	margin-bottom: 2.4rem;
 	border-radius: 5px;
-	box-shadow: 0 0.625rem 1.5rem 0.3rem rgba(0, 0, 0, 0.25);
+	box-shadow: 0 1rem 2.5rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 
 .card-dish__name {
-	font-size: 1.618rem;
-	margin-bottom: calc(1rem / 2);
+	font-size: 2.6rem;
+	margin-bottom: calc(1.6rem / 2);
 }
 
 .card-dish__price {
 	font-weight: 400;
-	margin-bottom: 1rem;
+	margin-bottom: 1.6rem;
 }
 
 .card-dish__price, .card-dish__desc {
-	font-size: 1.125rem;
+	font-size: 1.8rem;
 }
 
 /* Posts and pages
@@ -1077,27 +1093,27 @@ textarea {
 }
 
 .u-margin-bottom-xs {
-	margin-bottom: 1rem;
+	margin-bottom: 1.6rem;
 }
 
 .u-margin-bottom-s {
-	margin-bottom: 1.5rem;
+	margin-bottom: 2.4rem;
 }
 
 .u-margin-bottom-m {
-	margin-bottom: 2rem;
+	margin-bottom: 3.2rem;
 }
 
 .u-margin-bottom-l {
-	margin-bottom: 3rem;
+	margin-bottom: 4.8rem;
 }
 
 .u-margin-bottom-xl {
-	margin-bottom: 4rem;
+	margin-bottom: 6.4rem;
 }
 
 .u-margin-bottom-xxl {
-	margin-bottom: 6rem;
+	margin-bottom: 9.6rem;
 }
 
 .u-container-80 {

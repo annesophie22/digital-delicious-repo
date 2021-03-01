@@ -20,6 +20,7 @@ get_header();
             <p class="heading-block__subtitle">Check out what dishes are specially cooked for you this week</p>
             <span class="heading-block__separator"></span>
          </div>
+
          <!-- WEEK-MENU -->
          <div class="week-menu">
             <!-- WEEK MENU GRID --> 
@@ -105,6 +106,7 @@ get_header();
             </div>
          </div>
       </section> <!-- end section alacarte -->
+ 
       
       <!-- SECTION ALL DISHES -->
       <section class="section-alldishes">
@@ -167,13 +169,26 @@ get_header();
          </div> <!-- alldishes-grid -->
       </section>
 
+
       <!-- SECTION TESTIMONIALS -->
       <div class="section-testimonials">
          <div class="heading-block u-center-text">
             <h2 class="heading-primary heading-block__title">What our customers say about Pho Bep Oi</h2>
+            <p class="heading-block__subtitle">Have a look at some reviews left on our Facebook page</p>
             <span class="heading-block__separator"></span>
          </div>
-      </div>
+
+         <!-- TESTIMONIAL GRID -->
+         <div class="testimonial-grid">
+            <!-- INDIVIDUAL TEST. ITEM -->
+            <div class="testimonial-grid__item">
+               <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri("/images/quotation_mark.svg") ?>" alt="testimonial">
+               <p class="testimonial-grid__text">
+               Portions généreuses et Phò délicieux! Et prix plus que correct! N’hésitez pas à commander.
+               </p>
+            </div>
+         </div> <!-- end individual test. item -->
+      </div> <!-- end testimonial grid -->
 
 	</main><!-- #main -->
 

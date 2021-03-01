@@ -728,7 +728,7 @@ textarea {
 }
 
 .alldishes-grid {
-	padding: 4.8rem 0;
+	padding-top: 4.8rem;
 	width: 100%;
 	display: grid;
 	grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
@@ -1002,6 +1002,32 @@ textarea {
 	line-height: 1.1;
 }
 
+.testimonial-grid {
+	padding: 4.8rem 0;
+}
+
+.testimonial-grid__item {
+	position: relative;
+	padding: 2.4rem 3.2rem;
+	background-color: #209a72;
+	border-radius: 5px;
+	color: white;
+}
+
+.testimonial-grid__icon {
+	position: absolute;
+	width: 3.2rem;
+	height: 3.2rem;
+	top: 0;
+	left: 0;
+	transform: translateY(-1.6rem);
+}
+
+.testimonial-grid__text {
+	margin-bottom: 0;
+	font-weight: 400;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -1254,13 +1280,14 @@ textarea {
 /* Pages
 --------------------------------------------- */
 .section-alacarte,
-.section-alldishes {
+.section-alldishes,
+.section-testimonials {
 	width: 90%;
 	margin: 0 auto;
 }
 
 .section-alldishes {
-	padding: 4.8rem 0;
+	padding: 9.6rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

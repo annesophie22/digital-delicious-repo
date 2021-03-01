@@ -1,8 +1,9 @@
 .section-alacarte,
-.section-alldishes {
+.section-alldishes,
+.section-testimonials {
   @include containerDefault;
 }
 
 .section-alldishes {
-  padding: $spacing__l 0;
+  padding: $spacing__xxl 0;
 }

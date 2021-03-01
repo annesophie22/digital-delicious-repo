@@ -1,0 +1,25 @@
+.testimonial-grid {
+  padding: $spacing__l 0;
+
+  &__item {
+    position: relative;
+    padding: $spacing__s $spacing__m;
+    background-color: $color__dark__green;
+    border-radius: 5px;
+    color: white;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 3.2rem;
+    height: 3.2rem;
+    top: 0;
+    left: 0;
+    transform: translateY(-1.6rem);
+  }
+
+  &__text {
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+}

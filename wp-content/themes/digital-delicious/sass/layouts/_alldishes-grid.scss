@@ -1,5 +1,5 @@
 .alldishes-grid {
-  padding: $spacing__l 0;
+  padding-top: $spacing__l;
   width: 100%;
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(auto, min-content));

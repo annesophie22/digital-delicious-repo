@@ -50,7 +50,7 @@ get_header();
                   <p class="card-dish__desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
                </div> <!-- end card-dish -->
             </div><!-- end week-menu__dish-grid -->
-            <hr>
+            <hr class="week-menu__hr">
             <!-- WEEK MENU GRID -->
             <div class="week-menu__dish-grid">
                <p class="week-menu__day">Saturday</p>
@@ -97,9 +97,9 @@ get_header();
             <!-- order-details -->
             <div class="order-details">
                <h3 class="heading-secondary order-details__title">Order now</h3>
+               <hr class="order-details__hr">
                <ul class="order-details__contact">
                   <li><a href="tel:+41762473419">076 247 34 19</a></li>
-                  <li><a href="mailto:lastella.thitrang@gmail.com">lastella.thitrang@gmail.com</a></li>
                   <li><a href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">Home made food<br>(Pho bep Oi)</a></li>
                </ul>
             </div>

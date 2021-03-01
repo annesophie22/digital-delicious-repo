@@ -7,17 +7,8 @@
     grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
     grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
     grid-column-gap: $spacing__m;
-
-    /* &:not(:last-child)::after {
-      content: "";
-      display: block;
-      width: 30%;
-      height: 10px;
-      margin: $spacing__m auto;
-      background-color: $color__grayish__green;
-      opacity: 0.2;
-    } */
   }
+
   &__day {
     text-align: center;
     grid-row: 1 / 2;

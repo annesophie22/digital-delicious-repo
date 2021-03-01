@@ -33,27 +33,46 @@
 
 .order-details {
   max-width: 90%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin: 0 auto;
-  border: 3px solid $color__dark__green;
   border-radius: $border-radius__default;
-  padding: $spacing__xs $spacing__s;
+  padding: $spacing__m $spacing__s 4rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color__dark__green, 0.8),
+      rgba($color__grayish__green, 0.8)
+    ),
+    url(./images/illustration-bk.jpg);
+  background-size: cover;
+  background-position: center;
+  color: $color__background-body;
 
   &__title {
-    color: $color__dark__green;
     font-family: $font__heading;
     font-weight: 600;
-    font-size: 3.5rem;
-    margin-bottom: $spacing__xs;
+    font-size: 12vw;
+  }
+
+  &__hr {
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 0 auto;
   }
 
   &__contact {
-    text-align: left;
     @include removeListStyle;
-    font-size: 2rem;
-    font-weight: bold;
+    padding-top: $spacing__l;
+    font-size: 3.5rem;
 
     li:not(:last-child) {
-      margin-bottom: $spacing__xs;
+      margin-bottom: $spacing__s;
+    }
+
+    a:visited {
+      color: #02e297;
     }
   }
 }

@@ -20,9 +20,4 @@ a {
   &:active {
     outline: 0;
   }
-
-  &[href^="tel:"],
-  &[href^="mailto:"] {
-    font-weight: bold;
-  }
 }

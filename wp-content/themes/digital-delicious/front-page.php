@@ -167,6 +167,14 @@ get_header();
          </div> <!-- alldishes-grid -->
       </section>
 
+      <!-- SECTION TESTIMONIALS -->
+      <div class="section-testimonials">
+         <div class="heading-block u-center-text">
+            <h2 class="heading-primary heading-block__title">What our customers say about Pho Bep Oi</h2>
+            <span class="heading-block__separator"></span>
+         </div>
+      </div>
+
 	</main><!-- #main -->
 
 <?php

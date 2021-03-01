@@ -840,17 +840,18 @@ textarea {
 }
 
 .heading-block__title {
-	margin-bottom: 1.6rem;
+	margin-bottom: 0;
 }
 
 .heading-block__subtitle {
 	font-size: 2rem;
-	margin-bottom: 3.2rem;
+	margin-top: 1.6rem;
+	margin-bottom: 0;
 }
 
 .heading-block__separator {
 	display: block;
-	margin: 0 auto;
+	margin: 3.2rem auto 0;
 	height: 3px;
 	width: 20rem;
 	background-color: #ee9300;

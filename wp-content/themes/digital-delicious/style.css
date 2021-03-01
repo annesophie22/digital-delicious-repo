@@ -623,11 +623,6 @@ a[href^="tel:"], a[href^="mailto:"] {
 	font-weight: bold;
 }
 
-a[href^="tel:"]:before {
-	content: "\260e";
-	margin-right: 0.5em;
-}
-
 /* Forms
 --------------------------------------------- */
 button,
@@ -897,7 +892,7 @@ textarea {
 
 .delivery-conditions {
 	background-color: #fff;
-	padding: 3.2rem 0;
+	padding: 3.2rem 0 4.8rem;
 	line-height: 1;
 }
 
@@ -921,15 +916,18 @@ textarea {
 }
 
 .delivery-conditions__notice {
-	color: #209a72;
+	max-width: 90%;
+	margin: 1.6rem auto 4.8rem;
+	/* color: $color__dark__green; */
 	font-family: "Newsreader", serif;
 	font-weight: 600;
 	font-size: 2.6rem;
-	max-width: 90%;
-	margin: 1.6rem auto 4.8rem;
+	letter-spacing: 0.5px;
 }
 
 .order-details {
+	max-width: 90%;
+	margin: 0 auto;
 	border: 3px solid #209a72;
 	border-radius: 5px;
 	padding: 1.6rem 2.4rem;
@@ -944,6 +942,7 @@ textarea {
 }
 
 .order-details__contact {
+	text-align: left;
 	list-style: none;
 	margin: 0;
 	font-size: 2rem;

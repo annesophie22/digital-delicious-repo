@@ -25,9 +25,4 @@ a {
   &[href^="mailto:"] {
     font-weight: bold;
   }
-
-  &[href^="tel:"]:before {
-    content: "\260e";
-    margin-right: 0.5em;
-  }
 }

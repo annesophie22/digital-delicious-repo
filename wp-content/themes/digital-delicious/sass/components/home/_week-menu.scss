@@ -2,16 +2,21 @@
   margin-bottom: $spacing__xl;
 
   &__dish-grid {
-    width: 90%;
-    background-color: lightblue;
+    width: 100%;
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(150px, min-content));
+    grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
     grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
     grid-column-gap: $spacing__m;
 
-    &:not(:last-child) {
-      margin-bottom: $spacing__xl;
-    }
+    /* &:not(:last-child)::after {
+      content: "";
+      display: block;
+      width: 30%;
+      height: 10px;
+      margin: $spacing__m auto;
+      background-color: $color__grayish__green;
+      opacity: 0.2;
+    } */
   }
   &__day {
     text-align: center;

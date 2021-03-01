@@ -1,6 +1,8 @@
 hr {
-	background-color: $color__background-hr;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+  width: 40%;
+  height: 5px;
+  margin: $spacing__m auto;
+  background-color: $color__grayish__green;
+  border-radius: $border-radius__default;
+  opacity: 0.2;
 }

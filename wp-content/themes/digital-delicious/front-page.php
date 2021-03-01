@@ -50,7 +50,7 @@ get_header();
                   <p class="card-dish__desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
                </div> <!-- end card-dish -->
             </div><!-- end week-menu__dish-grid -->
-
+            <hr>
             <!-- WEEK MENU GRID -->
             <div class="week-menu__dish-grid">
                <p class="week-menu__day">Saturday</p>

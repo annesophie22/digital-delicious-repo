@@ -181,7 +181,7 @@ get_header();
          <!-- TESTIMONIAL GRID -->
          <div class="testimonial-grid">
             <!-- INDIVIDUAL TEST. ITEM -->
-            <div class="testimonial-grid__item">
+            <div class="testimonial-grid__item testimonial-grid__item--1">
                <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri("/images/quotation_mark.svg") ?>" alt="testimonial">
                <p class="testimonial-grid__text">
                Portions généreuses et Phò délicieux! Et prix plus que correct! N’hésitez pas à commander.

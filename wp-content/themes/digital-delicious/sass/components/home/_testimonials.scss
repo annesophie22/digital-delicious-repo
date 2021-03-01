@@ -3,10 +3,6 @@
 
   &__item {
     position: relative;
-    padding: $spacing__s $spacing__m;
-    background-color: $color__dark__green;
-    border-radius: 5px;
-    color: white;
 
     &:not(:last-child) {
       margin-bottom: $spacing__m;
@@ -24,6 +20,18 @@
 
   &__text {
     margin-bottom: 0;
+    padding: $spacing__m;
+    width: 100%;
+    border-radius: 5px;
     font-weight: 400;
+    color: white;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color__dark__green, 0.8),
+        rgba($color__grayish__green, 0.8)
+      ),
+      url(./images/testimonials-1.jpg);
+    background-size: cover;
+    background-position: center;
   }
 }

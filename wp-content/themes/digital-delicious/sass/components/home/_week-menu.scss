@@ -2,32 +2,20 @@
   margin-bottom: $spacing__xl;
 
   &__dish-grid {
+    width: 90%;
+    background-color: lightblue;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
+    grid-column-gap: $spacing__m;
+
     &:not(:last-child) {
       margin-bottom: $spacing__xl;
     }
   }
   &__day {
     text-align: center;
-  }
-}
-/* .week-menu {
-  max-width: 100%;
-
-  &__dish-grid {
-    max-width: 100%;
-    background-color: lightblue;
-    display: grid;
-    grid-template-rows: repeat(2, min-content);
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
-    grid-column-gap: $spacing__m;
-  }
-
-  &__day {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
   }
 }
-
-.card-dish {
-  grid-row: 2 / 3;
-} */

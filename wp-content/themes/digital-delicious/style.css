@@ -1029,12 +1029,30 @@ textarea {
 	margin-bottom: 0;
 	padding: 3.2rem;
 	width: 100%;
+	min-height: 300px;
 	border-radius: 5px;
 	font-weight: 400;
 	color: white;
-	background-image: linear-gradient(to right bottom, rgba(32, 154, 114, 0.8), rgba(93, 138, 103, 0.8)), url(./images/testimonials-1.jpg);
 	background-size: cover;
 	background-position: center;
+}
+
+.testimonial-grid__text--1 {
+	background-image: linear-gradient(to right bottom, rgba(92, 102, 157, 0.8), rgba(14, 23, 75, 0.9)), url(./images/testimonials-1.jpg);
+	/* background-image: linear-gradient(
+          to right bottom,
+          rgba(#689872, 0.7),
+          rgba($color__grayish__green, 0.7)
+        ),
+        url(./images/testimonials-1.jpg); */
+}
+
+.testimonial-grid__text--2 {
+	background-image: linear-gradient(to right bottom, rgba(92, 102, 157, 0.8), rgba(14, 23, 75, 0.8)), url(./images/testimonials-2.jpg);
+}
+
+.testimonial-grid__text--3 {
+	background-image: linear-gradient(to right bottom, rgba(92, 102, 157, 0.8), rgba(14, 23, 75, 0.8)), url(./images/testimonials-3.jpg);
 }
 
 .about__desc {

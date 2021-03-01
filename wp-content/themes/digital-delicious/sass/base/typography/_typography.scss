@@ -10,5 +10,27 @@ textarea {
   line-height: $font__line-height-body;
 }
 
+.highlighted {
+  background: -webkit-linear-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, rgba(255, 255, 255, 0)),
+    color-stop(50%, rgba($color__dark__green, 0.3))
+  );
+  background: -moz-linear-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, rgba(255, 255, 255, 0)),
+    color-stop(50%, rgba($color__dark__green, 0.3))
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 50%,
+    rgba($color__dark__green, 0.3) 50%
+  );
+}
+
 @import "headings";
 @import "copy";

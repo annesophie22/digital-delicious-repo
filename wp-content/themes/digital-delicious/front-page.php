@@ -24,7 +24,7 @@ get_header();
          <div class="week-menu">
             <!-- WEEK MENU GRID --> 
             <div class="week-menu__dish-grid">
-               <p class="week-menu__day">Tuesday</p>
+               <p class="week-menu__day"><mark class="highlighted">Tuesday</mark></p>
 
                <!-- CARD DISH -->
                <div class="card-dish">
@@ -53,7 +53,7 @@ get_header();
             <hr class="week-menu__hr">
             <!-- WEEK MENU GRID -->
             <div class="week-menu__dish-grid">
-               <p class="week-menu__day">Saturday</p>
+               <p class="week-menu__day"><mark class="highlighted">Saturday</mark></p>
 
                <!-- CARD DISH -->
                <div class="card-dish">

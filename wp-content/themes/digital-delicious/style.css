@@ -429,6 +429,12 @@ textarea {
 	line-height: 1.5;
 }
 
+.highlighted {
+	background: -webkit-linear-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(32, 154, 114, 0.3)));
+	background: -moz-linear-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(32, 154, 114, 0.3)));
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(32, 154, 114, 0.3) 50%);
+}
+
 h1,
 h2,
 h3,

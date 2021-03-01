@@ -1,0 +1,11 @@
+.about {
+  &__desc {
+    @include containerDefault;
+    margin-bottom: $spacing__m;
+  }
+
+  &__text {
+    margin-top: $spacing__s;
+    margin-bottom: 0;
+  }
+}

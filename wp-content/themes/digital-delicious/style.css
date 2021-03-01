@@ -1032,6 +1032,17 @@ textarea {
 	font-weight: 400;
 }
 
+.about__desc {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 3.2rem;
+}
+
+.about__text {
+	margin-top: 2.4rem;
+	margin-bottom: 0;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -1294,7 +1305,8 @@ textarea {
 	padding: 9.6rem 0;
 }
 
-.section-testimonials {
+.section-testimonials,
+.section-about {
 	padding-bottom: 9.6rem;
 }
 

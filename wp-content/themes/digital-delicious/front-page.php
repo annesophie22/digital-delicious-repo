@@ -167,7 +167,7 @@ get_header();
                </div>
             </div> <!-- end individual dish item -->
          </div> <!-- alldishes-grid -->
-      </section>
+      </section> <!-- end section all dishes -->
 
 
       <!-- SECTION TESTIMONIALS -->
@@ -202,6 +202,20 @@ get_header();
                </p>
             </div> <!-- end individual test. item -->
          </div> <!-- end testimonial grid -->
+      </section> <!-- end section testimonials -->
+
+
+      <!-- SECTION ABOUT -->
+      <section class="section-about u-center-text">
+         <div class="about__desc">
+            <h2 class="heading-primary about__title">Hello, my name is Trang,
+I am the Chef at Pho Bep Oi</h2>
+            <p class="about__text">Risus, nec id velit morbi amet. Id cursus volutpat sollicitudin cras elit. Dolor, ullamcorper nibh et a. Id nunc, dictum ornare sed et nullam arcu in malesuada. Placerat eget gravida mi scelerisque sed est rhoncus. Enim, arcu urna et bibendum sit. Aliquam morbi bibendum facilisis massa sollicitudin felis, ut ut. Luctus auctor orci nunc diam quam facilisi sit ut molestie.</p>
+         </div> <!-- end about desc -->
+         <div class="about__img">
+            <img src="<?php echo get_theme_file_uri("/images/about.jpg") ?>" alt="">
+         </div>
+         
       </section>
 
 	</main><!-- #main -->

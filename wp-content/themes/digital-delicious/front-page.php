@@ -81,7 +81,8 @@ get_header();
             <div class="delivery-conditions__item">
                <h3 class="heading-secondary delivery-conditions__item-title">Order Pick-Up</h3>
                <ul class="delivery-conditions__item-details">
-                  <li>Avenue de Feuillasse 5<span>1217 Meyrin</span></li>
+                  <li>Avenue de Feuillasse 5</li>
+                  <li>1217 Meyrin</li>
                </ul>
             </div>
             <!-- delivery-conditions__item -->

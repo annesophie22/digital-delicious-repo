@@ -19,15 +19,21 @@
   }
 
   &__text {
-    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: $spacing__m;
     width: 100%;
-    min-height: 300px;
+    min-height: 200px;
     border-radius: 5px;
-    font-weight: 400;
-    color: white;
     background-size: cover;
     background-position: center;
+
+    p {
+      font-weight: 400;
+      color: white;
+      margin-bottom: 0;
+    }
 
     &--1 {
       background-image: linear-gradient(

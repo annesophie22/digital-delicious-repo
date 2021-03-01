@@ -183,23 +183,23 @@ get_header();
             <!-- INDIVIDUAL TEST. ITEM -->
             <div class="testimonial-grid__item testimonial-grid__item--1">
                <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri("/images/quotation_mark.svg") ?>" alt="testimonial">
-               <p class="testimonial-grid__text testimonial-grid__text--1">
-               Portions généreuses et Phò délicieux! Et prix plus que correct! N’hésitez pas à commander.
-               </p>
+               <div class="testimonial-grid__text testimonial-grid__text--1">
+                  <p>Portions généreuses et Phò délicieux! Et prix plus que correct! N’hésitez pas à commander.</p>
+               </div>
             </div> <!-- end individual test. item -->
             <!-- INDIVIDUAL TEST. ITEM -->
             <div class="testimonial-grid__item">
                <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri("/images/quotation_mark.svg") ?>" alt="testimonial">
-               <p class="testimonial-grid__text testimonial-grid__text--2">
-               Excellent qualité et trop bon. Je recommande Home made food les yeux fermés
-               </p>
+               <div class="testimonial-grid__text testimonial-grid__text--2">
+                  <p>Excellent qualité et trop bon. Je recommande Home made food les yeux fermés</p>
+               </div>
             </div> <!-- end individual test. item -->
             <!-- INDIVIDUAL TEST. ITEM -->
             <div class="testimonial-grid__item">
                <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri("/images/quotation_mark.svg") ?>" alt="testimonial">
-               <p class="testimonial-grid__text testimonial-grid__text--3">
-               such delicious and fresh home cooked food, I really recommend!
-               </p>
+               <div class="testimonial-grid__text testimonial-grid__text--3">
+                  <p>such delicious and fresh home cooked food, I really recommend!</p>
+               </div>
             </div> <!-- end individual test. item -->
          </div> <!-- end testimonial grid -->
       </section> <!-- end section testimonials -->

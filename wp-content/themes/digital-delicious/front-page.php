@@ -62,7 +62,7 @@ get_header();
                   <p class="card-dish__price">CHF 15.00/portion</p>
                   <p class="card-dish__desc">Noodle salad with stir fried beef</p>
                </div> <!-- end card-dish -->
-            </div><!-- end week-menu__dish-grid -->
+            </div> <!-- end week-menu__dish-grid -->
          </div>
 
          <!-- DELIVERY CONDITIONS -->
@@ -123,8 +123,48 @@ get_header();
                   <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
                   <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
                </div>
-            </div>
-         </div>
+            </div> <!-- end individual dish item -->
+            <!-- INDIVIDUAL DISH ITEM -->
+            <div class="alldishes-grid__item u-center-text">
+               <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+               <div class="alldishes-grid__label">
+                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
+                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
+               </div>
+            </div> <!-- end individual dish item -->
+            <!-- INDIVIDUAL DISH ITEM -->
+            <div class="alldishes-grid__item u-center-text">
+               <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+               <div class="alldishes-grid__label">
+                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
+                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
+               </div>
+            </div> <!-- end individual dish item -->
+            <!-- INDIVIDUAL DISH ITEM -->
+            <div class="alldishes-grid__item u-center-text">
+               <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+               <div class="alldishes-grid__label">
+                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
+                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
+               </div>
+            </div> <!-- end individual dish item -->
+            <!-- INDIVIDUAL DISH ITEM -->
+            <div class="alldishes-grid__item u-center-text">
+               <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+               <div class="alldishes-grid__label">
+                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
+                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
+               </div>
+            </div> <!-- end individual dish item -->
+            <!-- INDIVIDUAL DISH ITEM -->
+            <div class="alldishes-grid__item u-center-text">
+               <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+               <div class="alldishes-grid__label">
+                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
+                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
+               </div>
+            </div> <!-- end individual dish item -->
+         </div> <!-- alldishes-grid -->
       </section>
 
 	</main><!-- #main -->

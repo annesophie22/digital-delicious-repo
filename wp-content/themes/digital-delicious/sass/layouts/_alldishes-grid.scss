@@ -5,4 +5,5 @@
   grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
   grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
   grid-column-gap: $spacing__m;
+  grid-row-gap: $spacing__l;
 }

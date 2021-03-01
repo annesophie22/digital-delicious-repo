@@ -208,15 +208,27 @@ get_header();
       <!-- SECTION ABOUT -->
       <section class="section-about u-center-text">
          <div class="about__desc">
-            <h2 class="heading-primary about__title">Hello, my name is Trang,
-I am the Chef at Pho Bep Oi</h2>
+            <h2 class="heading-primary about__title">Hello, my name is Trang, I am the Chef at Pho Bep Oi</h2>
             <p class="about__text">Risus, nec id velit morbi amet. Id cursus volutpat sollicitudin cras elit. Dolor, ullamcorper nibh et a. Id nunc, dictum ornare sed et nullam arcu in malesuada. Placerat eget gravida mi scelerisque sed est rhoncus. Enim, arcu urna et bibendum sit. Aliquam morbi bibendum facilisis massa sollicitudin felis, ut ut. Luctus auctor orci nunc diam quam facilisi sit ut molestie.</p>
          </div> <!-- end about desc -->
          <div class="about__img">
             <img src="<?php echo get_theme_file_uri("/images/about.jpg") ?>" alt="">
          </div>
-         
-      </section>
+      </section> <!-- end section about -->
+
+
+      <!-- SECTION ORDER -->
+      <section class="section-order u-center-text">
+         <div class="order__desc">
+            <h2 class="heading-primary order__title">Order now</h2>
+            <p class="heading-block__subtitle order__subtitle">Tuesdays, Thursdays and Saturdays <span>12h-13h // 18h-19h30</span></p>
+            <p class="order__contact"><a href="tel:+41762473419">076 247 34 19</a></p>
+            <p class="order__contact"><a href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">Home made food (Pho bep Oi)</a></p>
+         </div> <!-- end order desc -->
+         <div class="order__img">
+            <img src="<?php echo get_theme_file_uri("/images/hanged_lights.jpg") ?>" alt="">
+         </div>
+      </section> <!-- end section order -->
 
 	</main><!-- #main -->
 

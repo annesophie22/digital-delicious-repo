@@ -1,0 +1,21 @@
+.order {
+  &__desc {
+    @include containerDefault;
+    margin-bottom: $spacing__xxl;
+  }
+
+  &__subtitle {
+    margin-top: 0.5rem;
+    margin-bottom: $spacing__m;
+  }
+
+  &__subtitle span {
+    display: inline-block;
+  }
+
+  &__contact {
+    margin: 0;
+    font-family: $font__heading;
+    font-size: $font__size-heading-medium;
+  }
+}

@@ -1043,6 +1043,27 @@ textarea {
 	margin-bottom: 0;
 }
 
+.order__desc {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 9.6rem;
+}
+
+.order__subtitle {
+	margin-top: 0.5rem;
+	margin-bottom: 3.2rem;
+}
+
+.order__subtitle span {
+	display: inline-block;
+}
+
+.order__contact {
+	margin: 0;
+	font-family: "Newsreader", serif;
+	font-size: 2.6rem;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {

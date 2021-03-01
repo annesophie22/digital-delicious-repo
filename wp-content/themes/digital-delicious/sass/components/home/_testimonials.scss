@@ -1,5 +1,5 @@
 .testimonial-grid {
-  padding: $spacing__l 0;
+  padding-top: $spacing__l;
 
   &__item {
     position: relative;
@@ -7,6 +7,10 @@
     background-color: $color__dark__green;
     border-radius: 5px;
     color: white;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing__m;
+    }
   }
 
   &__icon {

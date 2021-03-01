@@ -1003,7 +1003,7 @@ textarea {
 }
 
 .testimonial-grid {
-	padding: 4.8rem 0;
+	padding-top: 4.8rem;
 }
 
 .testimonial-grid__item {
@@ -1012,6 +1012,10 @@ textarea {
 	background-color: #209a72;
 	border-radius: 5px;
 	color: white;
+}
+
+.testimonial-grid__item:not(:last-child) {
+	margin-bottom: 3.2rem;
 }
 
 .testimonial-grid__icon {
@@ -1288,6 +1292,10 @@ textarea {
 
 .section-alldishes {
 	padding: 9.6rem 0;
+}
+
+.section-testimonials {
+	padding-bottom: 9.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,8 @@
-.section-alacarte {
+.section-alacarte,
+.section-alldishes {
   @include containerDefault;
+}
+
+.section-alldishes {
+  padding: $spacing__l 0;
 }

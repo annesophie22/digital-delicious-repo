@@ -1,0 +1,31 @@
+.alldishes-grid {
+  &__item {
+    position: relative;
+    z-index: 1;
+  }
+  &__img {
+    max-width: 100%;
+    border: 1px solid $color__grayish__green;
+    border-radius: 50px 5px;
+    @include boxShadow1;
+  }
+
+  &__label {
+    position: absolute;
+    width: 90%;
+    z-index: 999;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    padding: $spacing__xs $spacing__s;
+    border: 1px solid #fff;
+    border-radius: 50px 5px;
+    background-color: $color__dark__green;
+    color: #fff;
+
+    &-desc {
+      margin-bottom: 0;
+      line-height: 1.1;
+    }
+  }
+}

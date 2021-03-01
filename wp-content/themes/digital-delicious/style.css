@@ -709,6 +709,33 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.week-menu {
+	padding: 4.8rem 0;
+}
+
+.week-menu__dish-grid {
+	width: 100%;
+	display: grid;
+	grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
+	grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
+	grid-column-gap: 3.2rem;
+}
+
+.week-menu__day {
+	text-align: center;
+	grid-row: 1 / 2;
+	grid-column: 1 / -1;
+}
+
+.alldishes-grid {
+	padding: 4.8rem 0;
+	width: 100%;
+	display: grid;
+	grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
+	grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
+	grid-column-gap: 3.2rem;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -829,24 +856,6 @@ textarea {
 	border-radius: 5px;
 }
 
-.week-menu {
-	padding: 4.8rem 0;
-}
-
-.week-menu__dish-grid {
-	width: 100%;
-	display: grid;
-	grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
-	grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
-	grid-column-gap: 3.2rem;
-}
-
-.week-menu__day {
-	text-align: center;
-	grid-row: 1 / 2;
-	grid-column: 1 / -1;
-}
-
 .card-dish {
 	line-height: 1;
 	padding-bottom: 2.4rem;
@@ -958,6 +967,37 @@ textarea {
 
 .order-details__contact a:visited {
 	color: #02e297;
+}
+
+.alldishes-grid__item {
+	position: relative;
+	z-index: 1;
+}
+
+.alldishes-grid__img {
+	max-width: 100%;
+	border: 1px solid #5d8a67;
+	border-radius: 50px 5px;
+	box-shadow: 0 1rem 2.5rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.alldishes-grid__label {
+	position: absolute;
+	width: 90%;
+	z-index: 999;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	padding: 1.6rem 2.4rem;
+	border: 1px solid #fff;
+	border-radius: 50px 5px;
+	background-color: #209a72;
+	color: #fff;
+}
+
+.alldishes-grid__label-desc {
+	margin-bottom: 0;
+	line-height: 1.1;
 }
 
 /* Posts and pages
@@ -1211,9 +1251,14 @@ textarea {
 
 /* Pages
 --------------------------------------------- */
-.section-alacarte {
+.section-alacarte,
+.section-alldishes {
 	width: 90%;
 	margin: 0 auto;
+}
+
+.section-alldishes {
+	padding: 4.8rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

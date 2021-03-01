@@ -106,7 +106,26 @@ get_header();
          </div>
       </section> <!-- end section alacarte -->
       
-      
+      <!-- SECTION ALL DISHES -->
+      <section class="section-alldishes">
+         <div class="heading-block u-center-text">
+            <h2 class="heading-primary heading-block__title">Discover a wide range of Vietnamese savoury dishes</h2>
+            <p class="heading-block__subtitle">Depending on fresh vegetables and meat arrivals, the Chef decides what to put à la carte every week</p>
+            <span class="heading-block__separator"></span>
+         </div>
+
+         <!-- ALL DISHES GRID -->
+         <div class="alldishes-grid">
+            <!-- INDIVIDUAL DISH ITEM -->
+            <div class="alldishes-grid__item u-center-text">
+               <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+               <div class="alldishes-grid__label">
+                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
+                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
+               </div>
+            </div>
+         </div>
+      </section>
 
 	</main><!-- #main -->
 

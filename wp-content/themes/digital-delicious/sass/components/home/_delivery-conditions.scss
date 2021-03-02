@@ -49,7 +49,8 @@
     ),
     url(./images/illustration-bk.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
   color: $color__background-body;
 
   &__title {

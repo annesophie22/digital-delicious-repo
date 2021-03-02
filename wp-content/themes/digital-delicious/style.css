@@ -845,6 +845,7 @@ textarea {
 	background-image: url(./images/hero_img-tab@2x.jpg);
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 	text-align: center;
 	color: #ececec;
 	border-bottom: 10px solid #0e174b;
@@ -987,7 +988,8 @@ textarea {
 	padding: 3.2rem 2.4rem 4rem;
 	background-image: linear-gradient(to right bottom, rgba(32, 154, 114, 0.8), rgba(93, 138, 103, 0.8)), url(./images/illustration-bk.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: top;
+	background-repeat: no-repeat;
 	color: #fdfbf4;
 }
 
@@ -1021,6 +1023,25 @@ textarea {
 .alldishes-grid__item {
 	position: relative;
 	z-index: 1;
+}
+
+.alldishes-grid__img-container {
+	position: relative;
+}
+
+.alldishes-grid__img-container::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #020024;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 212, 255, 0) 70%);
+}
+
+.alldishes-grid__img-container::after {
+	border-radius: 50px 5px;
 }
 
 .alldishes-grid__img {

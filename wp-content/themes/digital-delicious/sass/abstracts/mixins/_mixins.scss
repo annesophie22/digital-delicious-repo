@@ -48,3 +48,21 @@
     box-shadow: inset 0px 0px 5rem 1rem #000;
   }
 }
+
+// DD Bottom gradient
+@mixin bottomGradient {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 10%,
+      rgba(0, 212, 255, 0) 70%
+    );
+  }
+}

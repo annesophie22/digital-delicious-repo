@@ -3,6 +3,16 @@
     position: relative;
     z-index: 1;
   }
+
+  &__img-container {
+    position: relative;
+    @include bottomGradient;
+
+    &::after {
+      border-radius: 50px 5px;
+    }
+  }
+
   &__img {
     max-width: 100%;
     border: 1px solid $color__grayish__green;

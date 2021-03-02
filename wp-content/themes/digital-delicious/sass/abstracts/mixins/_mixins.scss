@@ -35,3 +35,16 @@
   list-style: none;
   margin: 0;
 }
+
+// DD Vignetting images
+@mixin vignettingImg {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: inset 0px 0px 5rem 1rem #000;
+  }
+}

@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.u-img-vignetting {
+  @include vignettingImg;
+}
+
 // Margin bottoms
 .u-margin-bottom-xs {
   margin-bottom: $spacing__xs;

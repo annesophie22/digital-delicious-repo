@@ -29,7 +29,9 @@ get_header();
 
                <!-- CARD DISH -->
                <div class="card-dish">
-                  <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+                  <div class="u-img-vignetting card-dish__img-container">
+                     <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+                  </div>
                   <h3 class="heading-secondary card-dish__name">Bo Bun</h3>
                   <p class="card-dish__price">CHF 15.00/portion</p>
                   <p class="card-dish__desc">Noodle salad with stir fried beef</p>
@@ -37,7 +39,9 @@ get_header();
 
                <!-- CARD DISH -->
                <div class="card-dish">
-                  <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+                  <div class="u-img-vignetting card-dish__img-container">
+                     <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+                  </div>
                   <h3 class="heading-secondary card-dish__name">Spring Roll Chicken</h3>
                   <p class="card-dish__price">CHF 2.50/big roll</p>
                   <p class="card-dish__desc">Crispy roll filled in with vegetables and chicken</p>
@@ -45,7 +49,9 @@ get_header();
 
                <!-- CARD DISH -->
                <div class="card-dish">
-                  <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+                  <div class="u-img-vignetting card-dish__img-container">
+                     <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+                  </div>
                   <h3 class="heading-secondary card-dish__name">Banh Mi</h3>
                   <p class="card-dish__price">CHF 10.00/portion</p>
                   <p class="card-dish__desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
@@ -58,7 +64,9 @@ get_header();
 
                <!-- CARD DISH -->
                <div class="card-dish">
-                  <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+                  <div class="u-img-vignetting card-dish__img-container">
+                     <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
+                  </div>
                   <h3 class="heading-secondary card-dish__name">Bo Bun</h3>
                   <p class="card-dish__price">CHF 15.00/portion</p>
                   <p class="card-dish__desc">Noodle salad with stir fried beef</p>

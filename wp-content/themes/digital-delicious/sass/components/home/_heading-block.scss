@@ -7,16 +7,17 @@
   }
 
   &__subtitle {
-    font-size: 2rem;
     margin-top: $spacing__xs;
     margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
   &__separator {
     display: block;
-    margin: $spacing__m auto 0;
     height: 3px;
     width: 20rem;
+    margin: $spacing__m auto 0;
     background-color: $color__orange;
     border-radius: $border-radius__default;
   }

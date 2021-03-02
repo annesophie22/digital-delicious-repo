@@ -1,0 +1,29 @@
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin-bottom: $spacing__xl;
+  background-image: url(./images/hero_img-tab@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #ececec;
+  border-bottom: 10px solid $color__dark__blue;
+
+  &__title {
+    max-width: 80%;
+    margin-bottom: $spacing__s;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  &__subtitle {
+    max-width: 80%;
+    margin-bottom: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+}

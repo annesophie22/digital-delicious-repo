@@ -29,7 +29,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="dd-header-banner">
 			<div class="dd-header-banner__container">
-				<a class="dd-header-banner__contact" href="tel:+41762473419">076 247 34 19</a>
+				<a class="dd-header-banner__contact" href="tel:#">076 247 34 19</a>
 				<a class="dd-header-banner__social" href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">F</a>
 			</div>
 		</div>

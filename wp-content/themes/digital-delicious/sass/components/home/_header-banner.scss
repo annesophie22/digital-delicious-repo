@@ -13,7 +13,7 @@
   }
 
   &__contact {
-    font-size: $font__size-heading-medium;
+    font-size: 2.2rem;
   }
 
   &__contact,
@@ -29,6 +29,7 @@
     &:focus,
     &:hover,
     &:active {
+      color: #fff9c0;
       transform: translateY(-2px) scale(105%);
     }
 

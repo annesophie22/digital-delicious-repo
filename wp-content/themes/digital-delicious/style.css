@@ -850,7 +850,7 @@ textarea {
 }
 
 .dd-header-banner__contact {
-	font-size: 2.6rem;
+	font-size: 2.2rem;
 }
 
 .dd-header-banner__contact, .dd-header-banner__social {
@@ -864,6 +864,7 @@ textarea {
 }
 
 .dd-header-banner__contact:focus, .dd-header-banner__contact:hover, .dd-header-banner__contact:active, .dd-header-banner__social:focus, .dd-header-banner__social:hover, .dd-header-banner__social:active {
+	color: #fff9c0;
 	transform: translateY(-2px) scale(105%);
 }
 

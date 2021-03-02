@@ -1,3 +1,9 @@
+/**
+ * #.# Header banner
+ *
+ * Contains only phone number and social media icons
+ */
+
 .dd-header-banner {
   width: 100%;
   min-height: 5.6rem;
@@ -36,5 +42,23 @@
     &:visited {
       color: black;
     }
+  }
+}
+
+/**
+ * #.# Header navigation
+ *
+ * Contains the logo and the navigation
+ */
+
+.dd-header-nav {
+  @include containerDefault;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__nav {
+    width: 3rem;
+    height: 3rem;
   }
 }

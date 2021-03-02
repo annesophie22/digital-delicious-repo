@@ -33,35 +33,39 @@
 				<a class="dd-header-banner__social" href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">F</a>
 			</div>
 		</div>
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$digital_delicious_description = get_bloginfo( 'description', 'display' );
-			if ( $digital_delicious_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $digital_delicious_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'digital-delicious' ); ?>">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'digital-delicious' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'primary',
-					'menu_id'        => 'primary-menu',
-					'menu_class'     => 'nav-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+		<div class="dd-header-nav">
+			<div class="site-branding dd-header-nav__logo">
+				<?php
+				the_custom_logo();
+				if ( is_front_page() && is_home() ) :
+					?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php
+				else :
+					?>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<?php
+				endif;
+				$digital_delicious_description = get_bloginfo( 'description', 'display' );
+				if ( $digital_delicious_description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo $digital_delicious_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<?php endif; ?>
+			</div><!-- .site-branding -->
+
+			<nav id="site-navigation" class="main-navigation dd-header-nav__nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'digital-delicious' ); ?>">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'digital-delicious' ); ?></button>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'primary',
+						'menu_id'        => 'primary-menu',
+						'menu_class'     => 'nav-menu',
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
+		</div><!-- end dd-header-nav -->
+		
 	</header><!-- #masthead -->

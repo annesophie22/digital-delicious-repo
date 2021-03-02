@@ -833,6 +833,11 @@ textarea {
 
 /* Home
 --------------------------------------------- */
+/**
+ * #.# Header banner
+ *
+ * Contains only phone number and social media icons
+ */
 .dd-header-banner {
 	width: 100%;
 	min-height: 5.6rem;
@@ -870,6 +875,24 @@ textarea {
 
 .dd-header-banner__contact:visited, .dd-header-banner__social:visited {
 	color: black;
+}
+
+/**
+ * #.# Header navigation
+ *
+ * Contains the logo and the navigation
+ */
+.dd-header-nav {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dd-header-nav__nav {
+	width: 3rem;
+	height: 3rem;
 }
 
 .hero-banner {

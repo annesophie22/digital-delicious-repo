@@ -29,7 +29,7 @@ get_header();
 
                <!-- CARD DISH -->
                <div class="card-dish">
-                  <div class="u-img-vignetting card-dish__img-container">
+                  <div class="card-dish__img-container">
                      <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
                   </div>
                   <h3 class="heading-secondary card-dish__name">Bo Bun</h3>
@@ -39,7 +39,7 @@ get_header();
 
                <!-- CARD DISH -->
                <div class="card-dish">
-                  <div class="u-img-vignetting card-dish__img-container">
+                  <div class="card-dish__img-container">
                      <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
                   </div>
                   <h3 class="heading-secondary card-dish__name">Spring Roll Chicken</h3>
@@ -49,7 +49,7 @@ get_header();
 
                <!-- CARD DISH -->
                <div class="card-dish">
-                  <div class="u-img-vignetting card-dish__img-container">
+                  <div class="card-dish__img-container">
                      <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
                   </div>
                   <h3 class="heading-secondary card-dish__name">Banh Mi</h3>
@@ -64,7 +64,7 @@ get_header();
 
                <!-- CARD DISH -->
                <div class="card-dish">
-                  <div class="u-img-vignetting card-dish__img-container">
+                  <div class="card-dish__img-container">
                      <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
                   </div>
                   <h3 class="heading-secondary card-dish__name">Bo Bun</h3>

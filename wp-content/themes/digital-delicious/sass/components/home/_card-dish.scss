@@ -10,9 +10,25 @@
     position: relative;
     overflow: hidden;
     border-radius: $border-radius__default;
-    transition: all 0.2s;
+
     &:hover {
-      transform: scale(1.05);
+      .card-dish__img {
+        transform: scale(1.05);
+      }
+      &::after {
+        opacity: 0.5;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      box-shadow: inset 0px 0px 5rem 1rem #000;
+      transition: opacity 0.2s ease-in-out;
     }
   }
 
@@ -20,6 +36,7 @@
     width: 100%;
     max-width: 400px;
     @include boxShadow1;
+    transition: transform 0.2s ease-in-out;
   }
 
   &__name {
@@ -43,7 +60,3 @@
     line-height: $font__line-height-body;
   }
 }
-
-/* .img-container {
-  
-} */

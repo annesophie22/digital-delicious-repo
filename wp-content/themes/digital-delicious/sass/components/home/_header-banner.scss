@@ -1,0 +1,39 @@
+.dd-header-banner {
+  width: 100%;
+  min-height: 5.6rem;
+  display: flex;
+  align-items: center;
+  background-color: $color__dark__green;
+
+  &__container {
+    @include containerDefault;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contact {
+    font-size: $font__size-heading-medium;
+  }
+
+  &__contact,
+  &__social {
+    display: inline-block;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    &,
+    &:link {
+      color: #fff;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      transform: translateY(-2px) scale(105%);
+    }
+
+    &:visited {
+      color: black;
+    }
+  }
+}

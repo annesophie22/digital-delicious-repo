@@ -833,6 +833,44 @@ textarea {
 
 /* Home
 --------------------------------------------- */
+.dd-header-banner {
+	width: 100%;
+	min-height: 5.6rem;
+	display: flex;
+	align-items: center;
+	background-color: #209a72;
+}
+
+.dd-header-banner__container {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dd-header-banner__contact {
+	font-size: 2.6rem;
+}
+
+.dd-header-banner__contact, .dd-header-banner__social {
+	display: inline-block;
+	font-weight: 600;
+	transition: all 0.2s ease-in-out;
+}
+
+.dd-header-banner__contact, .dd-header-banner__contact:link, .dd-header-banner__social, .dd-header-banner__social:link {
+	color: #fff;
+}
+
+.dd-header-banner__contact:focus, .dd-header-banner__contact:hover, .dd-header-banner__contact:active, .dd-header-banner__social:focus, .dd-header-banner__social:hover, .dd-header-banner__social:active {
+	transform: translateY(-2px) scale(105%);
+}
+
+.dd-header-banner__contact:visited, .dd-header-banner__social:visited {
+	color: black;
+}
+
 .hero-banner {
 	display: flex;
 	flex-direction: column;

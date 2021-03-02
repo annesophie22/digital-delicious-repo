@@ -54,18 +54,24 @@
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation dd-header-nav__nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'digital-delicious' ); ?>">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'digital-delicious' ); ?></button>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'primary',
-						'menu_id'        => 'primary-menu',
-						'menu_class'     => 'nav-menu',
-					)
-				);
-				?>
-			</nav><!-- #site-navigation -->
+			<?php if ( has_nav_menu( 'primary' ) ) : ?>
+				<nav id="site-navigation" class="main-navigation dd-header-nav__nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'digital-delicious' ); ?>">
+
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+						<?php esc_html_e( 'Menu', 'digital-delicious' ); ?>
+					</button>
+
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'primary',
+							'menu_id'        => 'primary-menu',
+							'menu_class'     => 'nav-menu',
+						)
+					);
+					?>
+				</nav><!-- #site-navigation -->
+			<?php endif; ?>	
 		</div><!-- end dd-header-nav -->
 		
 	</header><!-- #masthead -->

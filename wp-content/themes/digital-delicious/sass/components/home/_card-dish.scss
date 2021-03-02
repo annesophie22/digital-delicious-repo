@@ -10,8 +10,11 @@
     position: relative;
     overflow: hidden;
     border-radius: $border-radius__default;
+    transition: all 0.2s ease-in-out;
+    @include boxShadow1;
 
     &:hover {
+      box-shadow: none;
       .card-dish__img {
         transform: scale(1.05);
       }
@@ -35,7 +38,7 @@
   &__img {
     width: 100%;
     max-width: 400px;
-    @include boxShadow1;
+
     transition: transform 0.2s ease-in-out;
   }
 

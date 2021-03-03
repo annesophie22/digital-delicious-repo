@@ -56,8 +56,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: $spacing__xs 0;
 
-  &__nav {
-    background-color: lightcoral;
+  &__logo {
+    .site-title {
+      margin-bottom: 0;
+    }
   }
 }

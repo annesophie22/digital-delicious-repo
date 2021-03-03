@@ -908,10 +908,11 @@ textarea {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 1.6rem 0;
 }
 
-.dd-header-nav__nav {
-	background-color: lightcoral;
+.dd-header-nav__logo .site-title {
+	margin-bottom: 0;
 }
 
 .hero-banner {

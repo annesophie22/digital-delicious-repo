@@ -930,6 +930,7 @@ textarea {
 
 .dd-header-banner__contact {
 	display: flex;
+	line-height: 1;
 }
 
 .dd-header-banner__contact-icon {
@@ -938,8 +939,8 @@ textarea {
 }
 
 .dd-header-banner__contact-icon svg {
-	height: 2.5rem;
-	width: 2.5rem;
+	height: 2rem;
+	width: 2rem;
 }
 
 .dd-header-banner__contact-icon svg path {
@@ -1204,6 +1205,20 @@ textarea {
 
 .order-details__contact a:visited {
 	color: #02e297;
+}
+
+.order-details__contact-icon, .order-details__contact-social {
+	display: block;
+	margin: 0;
+}
+
+.order-details__contact-icon svg, .order-details__contact-social svg {
+	height: 3rem;
+	width: 3rem;
+}
+
+.order-details__contact-icon svg path, .order-details__contact-social svg path {
+	fill: #fdfbf4;
 }
 
 .alldishes-grid__item {

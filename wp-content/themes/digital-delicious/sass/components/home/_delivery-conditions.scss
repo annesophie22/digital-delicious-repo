@@ -77,5 +77,18 @@
     a:visited {
       color: #02e297;
     }
+
+    &-icon,
+    &-social {
+      display: block;
+      margin: 0;
+      svg {
+        height: 3rem;
+        width: 3rem;
+        path {
+          fill: $color__background-body;
+        }
+      }
+    }
   }
 }

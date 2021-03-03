@@ -1403,6 +1403,26 @@ textarea {
 	width: 3.5rem;
 }
 
+.site-footer {
+	background-color: #424242;
+	color: #fdfbf4;
+}
+
+.dd-footer-container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 3.2rem;
+}
+
+.dd-footer-navigation ul {
+	list-style: none;
+	margin: 0;
+}
+
+.dd-footer-navigation ul li a, .dd-footer-navigation ul li a:link, .dd-footer-navigation ul li a:focus, .dd-footer-navigation ul li a:hover, .dd-footer-navigation ul li a:visited, .dd-footer-navigation ul li a:active {
+	color: #fdfbf4;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {

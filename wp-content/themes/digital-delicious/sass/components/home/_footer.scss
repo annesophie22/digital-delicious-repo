@@ -1,0 +1,31 @@
+.site-footer {
+  background-color: $color__text-main;
+  color: $color__background-body;
+}
+
+.site-info {
+  background-color: ;
+}
+
+.dd-footer-container {
+  @include containerDefault;
+  padding-top: $spacing__m;
+}
+
+.dd-footer-navigation {
+  ul {
+    @include removeListStyle;
+    li {
+      a {
+        &,
+        &:link,
+        &:focus,
+        &:hover,
+        &:visited,
+        &:active {
+          color: $color__background-body;
+        }
+      }
+    }
+  }
+}

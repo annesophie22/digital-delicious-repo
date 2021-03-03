@@ -1,3 +1,7 @@
+.site-header {
+  position: relative;
+}
+
 /**
  * #.# Header banner
  *
@@ -29,7 +33,7 @@
     transition: all 0.2s ease-in-out;
     &,
     &:link {
-      color: #fff;
+      color: $color__background-body;
     }
 
     &:focus,

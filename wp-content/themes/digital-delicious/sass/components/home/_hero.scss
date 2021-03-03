@@ -17,7 +17,7 @@
     max-width: 80%;
     margin-bottom: $spacing__s;
     font-size: 5rem;
-    font-weight: 600;
+    font-weight: $font__weight-semibold;
     letter-spacing: 1px;
   }
 
@@ -25,6 +25,6 @@
     max-width: 80%;
     margin-bottom: 0;
     font-size: 2.2rem;
-    font-weight: 400;
+    font-weight: $font__weight-regular;
   }
 }

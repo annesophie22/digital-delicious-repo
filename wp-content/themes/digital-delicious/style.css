@@ -743,7 +743,7 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
 	display: block;
-	width: 100%;
+	width: auto;
 }
 
 .main-navigation ul {
@@ -784,11 +784,22 @@ textarea {
 
 .main-navigation li {
 	position: relative;
+	margin-left: 3.2rem;
+}
+
+.main-navigation li a {
+	text-transform: uppercase;
+	color: #424242;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+}
+
+.primary-menu-container {
+	background-color: lightcyan;
+	padding: 1.125rem 0;
 }
 
 /* Small menu. */

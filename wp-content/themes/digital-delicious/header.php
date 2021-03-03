@@ -34,7 +34,11 @@
 			</div>
 		</div>
 
+
+	<!-- LOGO + NAV -->
 		<div class="dd-header-nav">
+
+		<!-- LOGO -->
 			<div class="site-branding dd-header-nav__logo">
 				<?php
 				the_custom_logo();
@@ -54,25 +58,28 @@
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 
+		<!-- NAV -->
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>
-				<nav id="site-navigation" class="main-navigation dd-header-nav__nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'digital-delicious' ); ?>">
-					<div class="dd-menu-button-containe">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-							<?php esc_html_e( 'Menu', 'digital-delicious' ); ?>
-						</button>
-					</div>
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'primary',
-							'menu_id'        => 'primary-menu',
-							'menu_class'     => 'nav-menu',
-							'container_class' => 'primary-menu-container',
-						)
-					);
-					?>
-				</nav><!-- #site-navigation -->
-			<?php endif; ?>	
+
+			<nav id="site-navigation" class="main-navigation dd-header-nav__nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'digital-delicious' ); ?>">
+
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+						<?php esc_html_e( 'Menu', 'digital-delicious' ); ?>
+				</button>
+
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'primary',
+						'menu_id'        => 'primary-menu',
+						'menu_class'     => 'nav-menu',
+						'container_class' => 'primary-menu-container',
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
+			<?php endif; ?>
+
 		</div><!-- end dd-header-nav -->
 		
 	</header><!-- #masthead -->

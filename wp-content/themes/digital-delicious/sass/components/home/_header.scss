@@ -25,7 +25,7 @@
   &__contact,
   &__social {
     display: inline-block;
-    font-weight: 600;
+    font-weight: $font__weight-semibold;
     transition: all 0.2s ease-in-out;
     &,
     &:link {

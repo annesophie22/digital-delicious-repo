@@ -933,21 +933,21 @@ textarea {
 	line-height: 1;
 }
 
-.dd-header-banner__contact-icon {
+.dd-header-banner__contact-phone {
 	display: block;
 	margin-right: calc(0.8rem);
 }
 
-.dd-header-banner__contact-icon svg {
+.dd-header-banner__contact-phone svg {
 	height: 2rem;
 	width: 2rem;
 }
 
-.dd-header-banner__contact-icon svg path {
+.dd-header-banner__contact-phone svg path {
 	fill: #fdfbf4;
 }
 
-.dd-header-banner__contact-icon:hover svg path {
+.dd-header-banner__contact-phone:hover svg path {
 	fill: #ddecdb;
 }
 
@@ -1207,17 +1207,17 @@ textarea {
 	color: #02e297;
 }
 
-.order-details__contact-icon, .order-details__contact-social {
+.order-details__contact-phone, .order-details__contact-social {
 	display: block;
 	margin: 0;
 }
 
-.order-details__contact-icon svg, .order-details__contact-social svg {
+.order-details__contact-phone svg, .order-details__contact-social svg {
 	height: 3rem;
 	width: 3rem;
 }
 
-.order-details__contact-icon svg path, .order-details__contact-social svg path {
+.order-details__contact-phone svg path, .order-details__contact-social svg path {
 	fill: #fdfbf4;
 }
 
@@ -1358,7 +1358,36 @@ textarea {
 .order__contact {
 	margin: 0;
 	font-family: "Newsreader", serif;
-	font-size: 2.6rem;
+	font-size: 3rem;
+	line-height: 1;
+}
+
+.order__contact:not(:last-child) {
+	margin-bottom: 3.2rem;
+}
+
+.order__contact > a {
+	display: inline-block;
+	margin-top: calc(1.6rem / 2);
+}
+
+.order__contact-phone, .order__contact-social {
+	display: block;
+	margin: 0;
+}
+
+.order__contact-phone svg path, .order__contact-social svg path {
+	fill: #424242;
+}
+
+.order__contact-phone svg {
+	height: 3rem;
+	width: 3rem;
+}
+
+.order__contact-social svg {
+	height: 3.5rem;
+	width: 3.5rem;
 }
 
 /* Posts and pages

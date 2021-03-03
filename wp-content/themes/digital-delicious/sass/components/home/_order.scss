@@ -16,6 +16,41 @@
   &__contact {
     margin: 0;
     font-family: $font__heading;
-    font-size: $font__size-heading-medium;
+    font-size: 3rem;
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing__m;
+    }
+
+    > a {
+      display: inline-block;
+      margin-top: calc(#{$spacing__xs} / 2);
+    }
+
+    &-phone,
+    &-social {
+      display: block;
+      margin: 0;
+      svg {
+        path {
+          fill: $color__text-main;
+        }
+      }
+    }
+
+    &-phone {
+      svg {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+
+    &-social {
+      svg {
+        height: 3.5rem;
+        width: 3.5rem;
+      }
+    }
   }
 }

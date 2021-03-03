@@ -822,12 +822,25 @@ textarea {
 }
 
 .menu-toggle {
-	padding: 0.6rem 1rem;
+	padding: 0.8rem 1rem;
 	border: none;
 	background: #209a72;
 	color: #fdfbf4;
 	text-transform: uppercase;
 	font-weight: 600;
+}
+
+.dd-icon-hamburger {
+	display: block;
+}
+
+.dd-icon-hamburger svg {
+	height: auto;
+	width: 3.2rem;
+}
+
+.dd-icon-hamburger svg path {
+	fill: #fdfbf4;
 }
 
 .main-navigation.toggled .primary-menu-container {
@@ -998,7 +1011,7 @@ textarea {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.6rem 0;
+	padding: 1.2rem 0;
 }
 
 .dd-header-nav__logo .site-title {

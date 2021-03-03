@@ -89,12 +89,23 @@
 }
 
 .menu-toggle {
-  padding: 0.6rem 1rem;
+  padding: 0.8rem 1rem;
   border: none;
   background: $color__dark__green;
   color: $color__background-body;
   text-transform: uppercase;
   font-weight: $font__weight-semibold;
+}
+
+.dd-icon-hamburger {
+  display: block;
+  svg {
+    height: auto;
+    width: 3.2rem;
+    path {
+      fill: $color__background-body;
+    }
+  }
 }
 
 .main-navigation.toggled .primary-menu-container {

@@ -73,9 +73,15 @@
 
 			<nav id="site-navigation" class="main-navigation dd-header-nav__nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'digital-delicious' ); ?>">
 
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 						<?php esc_html_e( 'Menu', 'digital-delicious' ); ?>
+				</button> -->
+
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="dd-icon-hamburger"><?php echo file_get_contents(get_theme_file_uri("/images/icon_hamburger.svg")) ; ?></span>
 				</button>
+
+
 
 				<?php
 				wp_nav_menu(

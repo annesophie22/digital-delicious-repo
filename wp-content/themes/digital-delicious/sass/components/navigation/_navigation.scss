@@ -51,12 +51,17 @@
   li {
     position: relative;
     margin-left: $spacing__m;
+
     a {
+      position: relative;
       text-transform: uppercase;
       color: $color__text-main;
+      font-weight: $font__weight-semibold;
     }
+
     &:hover > a,
     &.focus > a {
+      color: $color__dark__green;
     }
   }
 
@@ -69,12 +74,8 @@
   .current-menu-item > a,
   .current_page_ancestor > a,
   .current-menu-ancestor > a {
+    color: $color__dark__green;
   }
-}
-
-.primary-menu-container {
-  background-color: lightcyan;
-  padding: 1.125rem 0;
 }
 
 /* Small menu. */

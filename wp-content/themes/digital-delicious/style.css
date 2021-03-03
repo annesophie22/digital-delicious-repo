@@ -788,8 +788,15 @@ textarea {
 }
 
 .main-navigation li a {
+	position: relative;
 	text-transform: uppercase;
 	color: #424242;
+	font-weight: 600;
+}
+
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
+	color: #209a72;
 }
 
 .main-navigation a {
@@ -797,9 +804,11 @@ textarea {
 	text-decoration: none;
 }
 
-.primary-menu-container {
-	background-color: lightcyan;
-	padding: 1.125rem 0;
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a {
+	color: #209a72;
 }
 
 /* Small menu. */

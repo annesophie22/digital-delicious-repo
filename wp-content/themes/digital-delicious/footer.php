@@ -25,6 +25,9 @@
 				?>
 			</nav><!-- .dd-footer-navigation -->
 		<?php endif; ?>
+		<div class="dd-footer-attribution">
+			<p>Icons by <a href="https://fontawesome.com/license">Font Awesome</a>. Only colors may have been changed by us.</p>
+		</div>
 		<div class="site-info">
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */

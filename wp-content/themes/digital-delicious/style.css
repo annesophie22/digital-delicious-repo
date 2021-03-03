@@ -927,26 +927,44 @@ textarea {
 }
 
 .dd-header-banner__contact {
-	font-size: 2.2rem;
+	display: flex;
+	line-height: 1;
 }
 
-.dd-header-banner__contact, .dd-header-banner__social {
+.dd-header-banner__contact-icon {
+	display: block;
+	margin-right: calc(0.8rem);
+}
+
+.dd-header-banner__contact-icon svg {
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+.dd-header-banner__contact-icon svg path {
+	fill: #fdfbf4;
+}
+
+.dd-header-banner__contact-icon:hover svg path {
+	fill: #ddecdb;
+}
+
+.dd-header-banner__contact-link {
 	display: inline-block;
+	font-size: 2.2rem;
 	font-weight: 600;
-	transition: all 0.2s ease-in-out;
 }
 
-.dd-header-banner__contact, .dd-header-banner__contact:link, .dd-header-banner__social, .dd-header-banner__social:link {
+.dd-header-banner__contact-link, .dd-header-banner__contact-link:link {
 	color: #fdfbf4;
 }
 
-.dd-header-banner__contact:focus, .dd-header-banner__contact:hover, .dd-header-banner__contact:active, .dd-header-banner__social:focus, .dd-header-banner__social:hover, .dd-header-banner__social:active {
-	color: #fff9c0;
-	transform: translateY(-2px) scale(105%);
+.dd-header-banner__contact-link:visited {
+	color: black;
 }
 
-.dd-header-banner__contact:visited, .dd-header-banner__social:visited {
-	color: black;
+.dd-header-banner__contact-link:focus, .dd-header-banner__contact-link:hover, .dd-header-banner__contact-link:active {
+	color: #ddecdb;
 }
 
 /**

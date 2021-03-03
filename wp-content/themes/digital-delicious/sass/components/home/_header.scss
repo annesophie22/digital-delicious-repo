@@ -23,28 +23,48 @@
   }
 
   &__contact {
-    font-size: 2.2rem;
-  }
+    display: flex;
+    line-height: 1;
 
-  &__contact,
-  &__social {
-    display: inline-block;
-    font-weight: $font__weight-semibold;
-    transition: all 0.2s ease-in-out;
-    &,
-    &:link {
-      color: $color__background-body;
+    &-icon {
+      display: block;
+      margin-right: calc(#{$spacing__xs / 2});
+      svg {
+        height: 2.5rem;
+        width: 2.5rem;
+        path {
+          fill: $color__background-body;
+        }
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: #ddecdb;
+          }
+        }
+      }
     }
 
-    &:focus,
-    &:hover,
-    &:active {
-      color: #fff9c0;
-      transform: translateY(-2px) scale(105%);
-    }
+    &-link {
+      display: inline-block;
+      font-size: 2.2rem;
+      font-weight: $font__weight-semibold;
 
-    &:visited {
-      color: black;
+      &,
+      &:link {
+        color: $color__background-body;
+      }
+
+      &:visited {
+        color: black;
+      }
+
+      &:focus,
+      &:hover,
+      &:active {
+        color: #ddecdb;
+      }
     }
   }
 }

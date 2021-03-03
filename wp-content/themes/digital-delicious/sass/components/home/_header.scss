@@ -22,9 +22,9 @@
     align-items: center;
   }
 
+  /* left side of the header banner */
   &__contact {
     display: flex;
-    line-height: 1;
 
     &-icon {
       display: block;
@@ -64,6 +64,28 @@
       &:hover,
       &:active {
         color: #ddecdb;
+      }
+    }
+  }
+
+  /* right side of the header banner */
+  &__social {
+    display: inline-block;
+    line-height: 1;
+
+    svg {
+      height: 2.5rem;
+      width: 2.5rem;
+      path {
+        fill: $color__background-body;
+      }
+    }
+
+    :hover {
+      svg {
+        path {
+          fill: #ddecdb;
+        }
       }
     }
   }

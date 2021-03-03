@@ -916,6 +916,8 @@ textarea {
 	display: flex;
 	align-items: center;
 	background-color: #209a72;
+	/* left side of the header banner */
+	/* right side of the header banner */
 }
 
 .dd-header-banner__container {
@@ -928,7 +930,6 @@ textarea {
 
 .dd-header-banner__contact {
 	display: flex;
-	line-height: 1;
 }
 
 .dd-header-banner__contact-icon {
@@ -965,6 +966,24 @@ textarea {
 
 .dd-header-banner__contact-link:focus, .dd-header-banner__contact-link:hover, .dd-header-banner__contact-link:active {
 	color: #ddecdb;
+}
+
+.dd-header-banner__social {
+	display: inline-block;
+	line-height: 1;
+}
+
+.dd-header-banner__social svg {
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+.dd-header-banner__social svg path {
+	fill: #fdfbf4;
+}
+
+.dd-header-banner__social :hover svg path {
+	fill: #ddecdb;
 }
 
 /**

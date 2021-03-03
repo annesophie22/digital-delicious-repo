@@ -35,7 +35,7 @@
 					<a class="dd-header-banner__contact-link" href="tel:#">076 247 34 19</a>
 				</div>
 				
-				<a class="dd-header-banner__social" href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">F</a>
+				<a class="dd-header-banner__social" href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook"><?php echo file_get_contents(get_theme_file_uri("/images/icon_fb.svg")) ; ?></a>
 			</div>
 		</div>
 

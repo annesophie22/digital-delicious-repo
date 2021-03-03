@@ -14,7 +14,7 @@ get_header();
          <p class="hero-banner__subtitle">Invite a tasty bit of Vietnam in your plate</p>
       </div>
       <!-- SECTION A LA CARTE -->
-      <section class="section-alacarte">
+      <section id="a-la-carte" class="section-alacarte">
          <div class="heading-block u-center-text">
             <h2 class="heading-primary heading-block__title">A la carte this week</h2>
             <p class="heading-block__subtitle">Check out what dishes are specially cooked for you this week</p>
@@ -117,7 +117,7 @@ get_header();
  
       
       <!-- SECTION ALL DISHES -->
-      <section class="section-alldishes">
+      <section id="all-our-dishes" class="section-alldishes">
          <div class="heading-block u-center-text">
             <h2 class="heading-primary heading-block__title">Discover a wide range of Vietnamese savoury dishes</h2>
             <p class="heading-block__subtitle">Depending on fresh vegetables and meat arrivals, the Chef decides what to put à la carte every week</p>
@@ -226,7 +226,7 @@ get_header();
 
 
       <!-- SECTION ABOUT -->
-      <section class="section-about u-center-text">
+      <section id="about" class="section-about u-center-text">
          <div class="about__desc">
             <h2 class="heading-primary about__title">Hello, my name is Trang, I am the Chef at Pho Bep Oi</h2>
             <p class="about__text">Risus, nec id velit morbi amet. Id cursus volutpat sollicitudin cras elit. Dolor, ullamcorper nibh et a. Id nunc, dictum ornare sed et nullam arcu in malesuada. Placerat eget gravida mi scelerisque sed est rhoncus. Enim, arcu urna et bibendum sit. Aliquam morbi bibendum facilisis massa sollicitudin felis, ut ut. Luctus auctor orci nunc diam quam facilisi sit ut molestie.</p>
@@ -238,7 +238,7 @@ get_header();
 
 
       <!-- SECTION ORDER -->
-      <section class="section-order u-center-text">
+      <section id="contact" class="section-order u-center-text">
          <div class="order__desc">
             <h2 class="heading-primary order__title">Order now</h2>
             <p class="heading-block__subtitle order__subtitle">Tuesdays, Thursdays and Saturdays <span>12h-13h // 18h-19h30</span></p>

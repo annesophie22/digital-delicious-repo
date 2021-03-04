@@ -1032,6 +1032,12 @@ textarea {
 	padding: 1.2rem 0;
 }
 
+@media only screen and (min-width: 33.3em) {
+	.dd-header-nav {
+		padding: 2rem 0;
+	}
+}
+
 .dd-header-nav__logo .site-title {
 	margin-bottom: 0;
 }
@@ -1436,6 +1442,14 @@ textarea {
 	padding: 3.2rem 0;
 }
 
+@media only screen and (min-width: 33.3em) {
+	.dd-footer__container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
+
 .dd-footer__navigation ul {
 	list-style: none;
 	margin: 0;
@@ -1453,10 +1467,40 @@ textarea {
 	color: #ddecdb;
 }
 
+@media only screen and (min-width: 33.3em) {
+	.dd-footer__navigation {
+		width: 40%;
+	}
+}
+
+@media only screen and (min-width: 66.6em) {
+	.dd-footer__navigation {
+		width: calc(100% / 4);
+	}
+}
+
+@media only screen and (min-width: 33.3em) {
+	.dd-footer__contact {
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 66.6em) {
+	.dd-footer__contact {
+		width: calc(100% / 4);
+	}
+}
+
 .dd-footer__list {
 	list-style: none;
 	margin: 0;
 	margin-top: 2.4rem;
+}
+
+@media only screen and (min-width: 33.3em) {
+	.dd-footer__list:first-child {
+		margin-top: 0;
+	}
 }
 
 .dd-footer__list-item svg {

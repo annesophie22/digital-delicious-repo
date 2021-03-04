@@ -105,6 +105,10 @@
   align-items: center;
   padding: 1.2rem 0;
 
+  @include respond(tab-port) {
+    padding: 2rem 0;
+  }
+
   &__logo {
     .site-title {
       margin-bottom: 0;

@@ -1,6 +1,12 @@
 .testimonial-grid {
   padding-top: $spacing__l;
 
+  @include respond(desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: $spacing__s;
+  }
+
   &__item {
     position: relative;
     width: 100%;

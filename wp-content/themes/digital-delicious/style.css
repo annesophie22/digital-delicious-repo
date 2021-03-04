@@ -53,12 +53,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 [0 - 600px] is where our normal styles apply
 600 - 900px:    Tablet portrait
 900 - 1200px:   Tablet landscape
-1200px +:       Desktop
+1200 - 1600px:  Desktop
+1600px +:       Big desktop
 
 $breakpoint arguement choices:
 - tab-port
 - tab-land
 - desktop
+- big-desk
 
 ORDER: Base + typography > general layout + grid > page layout > components
 
@@ -760,6 +762,13 @@ textarea {
 	}
 }
 
+@media only screen and (min-width: 88.8em) {
+	.alldishes-grid {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -1345,6 +1354,14 @@ textarea {
 
 .testimonial-grid {
 	padding-top: 4.8rem;
+}
+
+@media only screen and (min-width: 66.6em) {
+	.testimonial-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 2.4rem;
+	}
 }
 
 .testimonial-grid__item {

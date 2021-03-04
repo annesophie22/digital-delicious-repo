@@ -59,12 +59,14 @@
 [0 - 600px] is where our normal styles apply
 600 - 900px:    Tablet portrait
 900 - 1200px:   Tablet landscape
-1200px +:       Desktop
+1200 - 1600px:  Desktop
+1600px +:       Big desktop
 
 $breakpoint arguement choices:
 - tab-port
 - tab-land
 - desktop
+- big-desk
 
 ORDER: Base + typography > general layout + grid > page layout > components
 
@@ -85,5 +87,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @media only screen and (min-width: 66.6em) {
       @content;
     } //1200px
+  }
+  @if $breakpoint == big-desk {
+    @media only screen and (min-width: 88.8em) {
+      @content;
+    } //1600px
   }
 }

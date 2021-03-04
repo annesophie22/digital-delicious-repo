@@ -6,4 +6,10 @@
   grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
   grid-column-gap: $spacing__m;
   grid-row-gap: $spacing__l;
+
+  @include respond(desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: $spacing__xl;
+    grid-row-gap: $spacing__xl;
+  }
 }

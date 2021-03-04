@@ -8,4 +8,11 @@
     margin-top: $spacing__s;
     margin-bottom: 0;
   }
+
+  &__img {
+    @include respond(tab-land) {
+      max-width: 770px;
+      margin: 0 auto;
+    }
+  }
 }

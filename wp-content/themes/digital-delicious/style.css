@@ -1381,6 +1381,13 @@ textarea {
 	margin-bottom: 0;
 }
 
+@media only screen and (min-width: 50em) {
+	.about__img {
+		max-width: 770px;
+		margin: 0 auto;
+	}
+}
+
 .order__desc {
 	width: 90%;
 	margin: 0 auto;

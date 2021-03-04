@@ -3,6 +3,9 @@
 
   &__item {
     position: relative;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
 
     &:not(:last-child) {
       margin-bottom: $spacing__m;
@@ -43,12 +46,6 @@
           rgba(#0e174b, 0.9)
         ),
         url(./images/testimonials-1.jpg);
-      /* background-image: linear-gradient(
-          to right bottom,
-          rgba(#689872, 0.7),
-          rgba($color__grayish__green, 0.7)
-        ),
-        url(./images/testimonials-1.jpg); */
     }
 
     &--2 {

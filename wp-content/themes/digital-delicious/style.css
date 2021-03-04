@@ -49,6 +49,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 /* $color__background-hr: #ccc; */
+/*
+[0 - 600px] is where our normal styles apply
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200px +:       Desktop
+
+$breakpoint arguement choices:
+- tab-port
+- tab-land
+- desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 18px
+*/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -1300,6 +1315,9 @@ textarea {
 
 .testimonial-grid__item {
 	position: relative;
+	width: 100%;
+	max-width: 540px;
+	margin: 0 auto;
 }
 
 .testimonial-grid__item:not(:last-child) {
@@ -1336,12 +1354,6 @@ textarea {
 
 .testimonial-grid__text--1 {
 	background-image: linear-gradient(to right bottom, rgba(92, 102, 157, 0.8), rgba(14, 23, 75, 0.9)), url(./images/testimonials-1.jpg);
-	/* background-image: linear-gradient(
-          to right bottom,
-          rgba(#689872, 0.7),
-          rgba($color__grayish__green, 0.7)
-        ),
-        url(./images/testimonials-1.jpg); */
 }
 
 .testimonial-grid__text--2 {

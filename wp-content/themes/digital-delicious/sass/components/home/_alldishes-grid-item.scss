@@ -2,6 +2,12 @@
   &__item {
     position: relative;
     z-index: 1;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      transform: scale(1.02) translateY(-3px);
+      overflow: hidden;
+    }
   }
 
   &__img-container {

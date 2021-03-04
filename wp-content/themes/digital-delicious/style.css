@@ -722,7 +722,13 @@ textarea {
 # Layouts
 --------------------------------------------------------------*/
 .week-menu {
-	padding: 4.8rem 0;
+	margin: 4.8rem 0;
+}
+
+@media only screen and (min-width: 1200px) {
+	.week-menu {
+		margin: 6.4rem 0;
+	}
 }
 
 .week-menu__dish-grid {
@@ -1213,15 +1219,24 @@ textarea {
 	width: 100%;
 	max-width: 550px;
 	margin: 0 auto;
-	background-color: rgba(32, 154, 114, 0.08);
-	padding-top: 3.2rem;
 	line-height: 1;
 	border-radius: 5px;
 	border-top: 10px solid rgba(32, 154, 114, 0.3);
 }
 
+@media only screen and (min-width: 1200px) {
+	.delivery-conditions {
+		margin-top: 6.4rem;
+	}
+}
+
 .delivery-conditions__item {
-	margin-bottom: 4.8rem;
+	padding-bottom: 4.8rem;
+	background-color: rgba(32, 154, 114, 0.08);
+}
+
+.delivery-conditions__item:first-child {
+	padding-top: 3.2rem;
 }
 
 .delivery-conditions__item-title {
@@ -1240,13 +1255,14 @@ textarea {
 }
 
 .delivery-conditions__notice {
-	max-width: 80%;
-	margin: 1.6rem auto 4.8rem;
+	margin-bottom: 0;
+	padding: 1.6rem 1.6rem 4.8rem;
 	font-family: "Newsreader", serif;
 	font-weight: 600;
 	font-size: 2.6rem;
 	letter-spacing: 0.5px;
 	line-height: 1.3;
+	background-color: rgba(32, 154, 114, 0.08);
 }
 
 .order-details {
@@ -1997,6 +2013,27 @@ textarea {
 	.section-alldishes,
 	.section-testimonials {
 		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.section-alacarte {
+		display: grid;
+		grid-template-rows: repeat(2, min-content);
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 6.4rem;
+	}
+	.section-alacarte > .heading-block {
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+	}
+	.section-alacarte > .week-menu {
+		grid-column: 1 / 3;
+		grid-row: 2 / 3;
+	}
+	.section-alacarte > .delivery-conditions {
+		grid-column: 3 / 4;
+		grid-row: 2 / 3;
 	}
 }
 

@@ -2,14 +2,21 @@
   width: 100%;
   max-width: 550px;
   margin: 0 auto;
-  background-color: rgba($color__dark__green, 0.08);
-  padding-top: $spacing__m;
   line-height: 1;
   border-radius: 5px;
   border-top: 10px solid rgba($color__dark__green, 0.3);
 
+  @include respond(desktop) {
+    margin-top: $spacing__xl;
+  }
+
   &__item {
-    margin-bottom: $spacing__l;
+    padding-bottom: $spacing__l;
+    background-color: rgba($color__dark__green, 0.08);
+
+    &:first-child {
+      padding-top: $spacing__m;
+    }
 
     &-title {
       margin-bottom: $spacing__xs;
@@ -26,13 +33,14 @@
   }
 
   &__notice {
-    max-width: 80%;
-    margin: $spacing__xs auto $spacing__l;
+    margin-bottom: 0;
+    padding: $spacing__xs $spacing__xs $spacing__l;
     font-family: $font__heading;
     font-weight: $font__weight-semibold;
     font-size: $font__size-heading-medium;
     letter-spacing: 0.5px;
     line-height: 1.3;
+    background-color: rgba($color__dark__green, 0.08);
   }
 }
 

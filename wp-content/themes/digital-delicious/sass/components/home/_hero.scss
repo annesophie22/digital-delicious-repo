@@ -13,6 +13,11 @@
   color: #ececec;
   border-bottom: 10px solid $color__dark__blue;
 
+  @include respond(desktop) {
+    height: 85vh;
+    background-image: url(./images/hero_img-desktop@2x.jpg);
+  }
+
   &__title {
     max-width: 80%;
     margin-bottom: $spacing__s;

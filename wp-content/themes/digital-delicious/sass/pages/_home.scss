@@ -20,3 +20,18 @@
 .section-about {
   padding-bottom: $spacing__xxl;
 }
+
+.section-about {
+  @include respond(tab-land) {
+    padding-bottom: 0;
+  }
+}
+
+.section-about,
+.section-order {
+  @include respond(tab-land) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

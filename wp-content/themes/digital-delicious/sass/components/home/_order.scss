@@ -2,11 +2,34 @@
   &__desc {
     @include containerDefault;
     margin-bottom: $spacing__xxl;
+
+    @include respond(tab-land) {
+      width: 50%;
+      margin-bottom: 0;
+      padding: 0 $spacing__s;
+    }
+  }
+
+  &__img {
+    @include respond(tab-land) {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    @include respond(desktop) {
+      font-size: 45px; // if calc() not supported
+      font-size: calc(#{$font__size-heading-big} * 1.2);
+    }
   }
 
   &__subtitle {
     margin-top: 0.5rem;
     margin-bottom: $spacing__m;
+
+    @include respond(desktop) {
+      margin-bottom: $spacing__xl;
+    }
   }
 
   &__subtitle span {

@@ -28,6 +28,9 @@
 @mixin containerDefault {
   width: 90%;
   margin: 0 auto;
+  @include respond(big-desk) {
+    width: 80%;
+  }
 }
 
 // DD Remove list style
@@ -74,22 +77,22 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 @mixin respond($breakpoint) {
   @if $breakpoint == tab-port {
-    @media only screen and (min-width: 33.3em) {
+    @media only screen and (min-width: 600px) {
       @content;
     } //600px
   }
   @if $breakpoint == tab-land {
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 900px) {
       @content;
     } //900px
   }
   @if $breakpoint == desktop {
-    @media only screen and (min-width: 66.6em) {
+    @media only screen and (min-width: 1200px) {
       @content;
     } //1200px
   }
   @if $breakpoint == big-desk {
-    @media only screen and (min-width: 88.8em) {
+    @media only screen and (min-width: 1600px) {
       @content;
     } //1600px
   }

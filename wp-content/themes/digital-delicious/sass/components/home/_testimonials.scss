@@ -7,6 +7,11 @@
     grid-column-gap: $spacing__s;
   }
 
+  @include respond(big-desk) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   &__item {
     position: relative;
     width: 100%;

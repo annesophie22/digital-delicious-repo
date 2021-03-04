@@ -41,7 +41,7 @@
       &:hover {
         svg {
           path {
-            fill: #ddecdb;
+            fill: $color__link-visited-light;
           }
         }
       }
@@ -64,7 +64,7 @@
       &:focus,
       &:hover,
       &:active {
-        color: #ddecdb;
+        color: $color__link-visited-light;
       }
     }
   }
@@ -85,7 +85,7 @@
     :hover {
       svg {
         path {
-          fill: #ddecdb;
+          fill: $color__link-visited-light;
         }
       }
     }

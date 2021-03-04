@@ -3,29 +3,87 @@
   color: $color__background-body;
 }
 
-.site-info {
-  background-color: ;
-}
+.dd-footer {
+  &__container {
+    @include containerDefault;
+    padding: $spacing__m 0;
+  }
 
-.dd-footer-container {
-  @include containerDefault;
-  padding-top: $spacing__m;
-}
-
-.dd-footer-navigation {
-  ul {
-    @include removeListStyle;
-    li {
+  &__navigation {
+    ul {
+      @include removeListStyle;
       a {
-        &,
-        &:link,
+        display: inline-block;
+        &:link {
+          color: $color__background-body;
+        }
         &:focus,
         &:hover,
         &:visited,
         &:active {
-          color: $color__background-body;
+          color: $color__link-visited-light;
         }
       }
     }
   }
+
+  &__list {
+    @include removeListStyle;
+    margin-top: $spacing__s;
+
+    &-item {
+      svg {
+        height: 2rem;
+        width: 2rem;
+        path {
+          fill: $color__background-body;
+        }
+      }
+      a {
+        display: inline-block;
+        margin-left: calc(#{$spacing__xs} / 2);
+        &,
+        &:link {
+          color: $color__background-body;
+        }
+        &:focus,
+        &:hover,
+        &:visited,
+        &:active {
+          color: $color__link-visited-light;
+        }
+      }
+    }
+  }
+
+  &__attribution {
+    padding-top: 0.5rem;
+    line-height: 1.1;
+  }
+}
+
+.dd-footer__attribution,
+.site-info {
+  background-color: $color__bottom-footer;
+  font-size: 1.6rem;
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    font-weight: $font__weight-regular;
+    &,
+    &:link {
+      color: $color__background-body;
+    }
+    &:focus,
+    &:hover,
+    &:visited,
+    &:active {
+      color: $color__link-visited-light;
+    }
+  }
+}
+
+.site-info {
+  padding: 0 0.5rem 0.5rem;
 }

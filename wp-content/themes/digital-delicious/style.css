@@ -1408,19 +1408,94 @@ textarea {
 	color: #fdfbf4;
 }
 
-.dd-footer-container {
+.dd-footer__container {
 	width: 90%;
 	margin: 0 auto;
-	padding-top: 3.2rem;
+	padding: 3.2rem 0;
 }
 
-.dd-footer-navigation ul {
+.dd-footer__navigation ul {
 	list-style: none;
 	margin: 0;
 }
 
-.dd-footer-navigation ul li a, .dd-footer-navigation ul li a:link, .dd-footer-navigation ul li a:focus, .dd-footer-navigation ul li a:hover, .dd-footer-navigation ul li a:visited, .dd-footer-navigation ul li a:active {
+.dd-footer__navigation ul a {
+	display: inline-block;
+}
+
+.dd-footer__navigation ul a:link {
 	color: #fdfbf4;
+}
+
+.dd-footer__navigation ul a:focus, .dd-footer__navigation ul a:hover, .dd-footer__navigation ul a:visited, .dd-footer__navigation ul a:active {
+	color: #ddecdb;
+}
+
+.dd-footer__list {
+	list-style: none;
+	margin: 0;
+	margin-top: 2.4rem;
+}
+
+.dd-footer__list-item svg {
+	height: 2rem;
+	width: 2rem;
+}
+
+.dd-footer__list-item svg path {
+	fill: #fdfbf4;
+}
+
+.dd-footer__list-item a {
+	display: inline-block;
+	margin-left: calc(1.6rem / 2);
+}
+
+.dd-footer__list-item a, .dd-footer__list-item a:link {
+	color: #fdfbf4;
+}
+
+.dd-footer__list-item a:focus, .dd-footer__list-item a:hover, .dd-footer__list-item a:visited, .dd-footer__list-item a:active {
+	color: #ddecdb;
+}
+
+.dd-footer__attribution {
+	padding-top: 0.5rem;
+	line-height: 1.1;
+}
+
+.dd-footer__attribution,
+.site-info {
+	background-color: #181818;
+	font-size: 1.6rem;
+}
+
+.dd-footer__attribution p,
+.site-info p {
+	margin-bottom: 0;
+}
+
+.dd-footer__attribution a,
+.site-info a {
+	font-weight: 400;
+}
+
+.dd-footer__attribution a, .dd-footer__attribution a:link,
+.site-info a,
+.site-info a:link {
+	color: #fdfbf4;
+}
+
+.dd-footer__attribution a:focus, .dd-footer__attribution a:hover, .dd-footer__attribution a:visited, .dd-footer__attribution a:active,
+.site-info a:focus,
+.site-info a:hover,
+.site-info a:visited,
+.site-info a:active {
+	color: #ddecdb;
+}
+
+.site-info {
+	padding: 0 0.5rem 0.5rem;
 }
 
 /* Posts and pages
@@ -1674,6 +1749,10 @@ textarea {
 
 /* Pages
 --------------------------------------------- */
+.home {
+	margin: 0;
+}
+
 .section-alacarte,
 .section-alldishes,
 .section-testimonials {

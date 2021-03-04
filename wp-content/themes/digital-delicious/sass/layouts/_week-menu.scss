@@ -1,10 +1,4 @@
 .week-menu {
-  margin: $spacing__l 0;
-
-  @include respond(desktop) {
-    margin: $spacing__xl 0;
-  }
-
   &__dish-grid {
     width: 100%;
     display: grid;

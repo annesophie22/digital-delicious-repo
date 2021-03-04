@@ -1,9 +1,11 @@
 .heading-block {
   position: relative;
+  margin-bottom: $spacing__l;
 
   @include respond(tab-land) {
     width: 80%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__title {

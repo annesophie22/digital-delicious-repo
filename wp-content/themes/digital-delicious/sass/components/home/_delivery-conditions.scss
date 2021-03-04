@@ -7,11 +7,14 @@
   border-top: 10px solid rgba($color__dark__green, 0.3);
 
   @include respond(desktop) {
+    width: 90%;
     margin-top: $spacing__xl;
+    margin-left: unset;
+    margin-right: unset;
   }
 
   &__item {
-    padding-bottom: $spacing__l;
+    padding: 0 $spacing__xs $spacing__l;
     background-color: rgba($color__dark__green, 0.08);
 
     &:first-child {

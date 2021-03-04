@@ -721,16 +721,6 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.week-menu {
-	margin: 4.8rem 0;
-}
-
-@media only screen and (min-width: 1200px) {
-	.week-menu {
-		margin: 6.4rem 0;
-	}
-}
-
 .week-menu__dish-grid {
 	width: 100%;
 	display: grid;
@@ -751,7 +741,6 @@ textarea {
 }
 
 .alldishes-grid {
-	padding-top: 4.8rem;
 	width: 100%;
 	display: grid;
 	grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
@@ -1117,12 +1106,14 @@ textarea {
 
 .heading-block {
 	position: relative;
+	margin-bottom: 4.8rem;
 }
 
 @media only screen and (min-width: 900px) {
 	.heading-block {
 		width: 80%;
-		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -1226,12 +1217,15 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
 	.delivery-conditions {
+		width: 90%;
 		margin-top: 6.4rem;
+		margin-left: unset;
+		margin-right: unset;
 	}
 }
 
 .delivery-conditions__item {
-	padding-bottom: 4.8rem;
+	padding: 0 1.6rem 4.8rem;
 	background-color: rgba(32, 154, 114, 0.08);
 }
 
@@ -1378,10 +1372,6 @@ textarea {
 .alldishes-grid__label-desc {
 	margin-bottom: 0;
 	line-height: 1.1;
-}
-
-.testimonial-grid {
-	padding-top: 4.8rem;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2019,21 +2009,29 @@ textarea {
 @media only screen and (min-width: 1200px) {
 	.section-alacarte {
 		display: grid;
-		grid-template-rows: repeat(2, min-content);
+		grid-template-rows: repeat(5, min-content);
 		grid-template-columns: repeat(3, 1fr);
-		grid-column-gap: 6.4rem;
 	}
 	.section-alacarte > .heading-block {
 		grid-column: 1 / -1;
 		grid-row: 1 / 2;
 	}
-	.section-alacarte > .week-menu {
+	.section-alacarte .week-menu__dish-grid--1 {
 		grid-column: 1 / 3;
 		grid-row: 2 / 3;
+	}
+	.section-alacarte .week-menu__dish-grid--2 {
+		grid-column: 1 / span 3;
+		grid-row: 4 / 5;
+	}
+	.section-alacarte .week-menu__hr {
+		grid-column: 1 / span 3;
+		grid-row: 3 / 4;
 	}
 	.section-alacarte > .delivery-conditions {
 		grid-column: 3 / 4;
 		grid-row: 2 / 3;
+		justify-self: end;
 	}
 }
 

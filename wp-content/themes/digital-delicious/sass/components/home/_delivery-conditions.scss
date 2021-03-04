@@ -1,4 +1,7 @@
 .delivery-conditions {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
   background-color: rgba($color__dark__green, 0.08);
   padding-top: $spacing__m;
   line-height: 1;
@@ -56,7 +59,9 @@
   &__title {
     font-family: $font__heading;
     font-weight: $font__weight-semibold;
-    font-size: 12vw;
+    //if clamp() not supported
+    font-size: 3.8rem;
+    font-size: clamp(3.8rem, 10vw, 4.5rem);
   }
 
   &__hr {
@@ -68,7 +73,9 @@
   &__contact {
     @include removeListStyle;
     padding-top: $spacing__l;
-    font-size: 3.5rem;
+    //if clamp() not supported
+    font-size: 3.2rem;
+    font-size: clamp(3.2rem, 8vw, 3.8rem);
 
     li:not(:last-child) {
       margin-bottom: $spacing__s;

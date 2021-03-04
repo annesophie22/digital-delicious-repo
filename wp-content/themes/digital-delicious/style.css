@@ -1146,6 +1146,9 @@ textarea {
 }
 
 .delivery-conditions {
+	width: 100%;
+	max-width: 550px;
+	margin: 0 auto;
 	background-color: rgba(32, 154, 114, 0.08);
 	padding-top: 3.2rem;
 	line-height: 1;
@@ -1201,7 +1204,8 @@ textarea {
 .order-details__title {
 	font-family: "Newsreader", serif;
 	font-weight: 600;
-	font-size: 12vw;
+	font-size: 3.8rem;
+	font-size: clamp(3.8rem, 10vw, 4.5rem);
 }
 
 .order-details__hr {
@@ -1214,7 +1218,8 @@ textarea {
 	list-style: none;
 	margin: 0;
 	padding-top: 4.8rem;
-	font-size: 3.5rem;
+	font-size: 3.2rem;
+	font-size: clamp(3.2rem, 8vw, 3.8rem);
 }
 
 .order-details__contact li:not(:last-child) {

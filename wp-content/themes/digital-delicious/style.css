@@ -744,6 +744,8 @@ textarea {
 .main-navigation {
 	display: block;
 	width: auto;
+	text-align: center;
+	line-height: 1.1;
 }
 
 .main-navigation ul {
@@ -784,7 +786,7 @@ textarea {
 
 .main-navigation li {
 	position: relative;
-	margin-left: 3.2rem;
+	margin-left: 2.1rem;
 }
 
 .main-navigation li a {
@@ -1085,6 +1087,8 @@ textarea {
 
 .card-dish__img-container {
 	position: relative;
+	width: 100%;
+	max-width: 400px;
 	overflow: hidden;
 	border-radius: 5px;
 	transition: all 0.2s ease-in-out;

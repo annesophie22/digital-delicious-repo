@@ -1,6 +1,8 @@
 .main-navigation {
   display: block;
   width: auto;
+  text-align: center;
+  line-height: 1.1;
 
   ul {
     display: none;
@@ -50,7 +52,7 @@
 
   li {
     position: relative;
-    margin-left: $spacing__m;
+    margin-left: 2.1rem;
 
     a {
       position: relative;

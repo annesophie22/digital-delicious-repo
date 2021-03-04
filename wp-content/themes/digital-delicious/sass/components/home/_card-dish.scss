@@ -8,6 +8,8 @@
 
   &__img-container {
     position: relative;
+    width: 100%;
+    max-width: 400px;
     overflow: hidden;
     border-radius: $border-radius__default;
     transition: all 0.2s ease-in-out;

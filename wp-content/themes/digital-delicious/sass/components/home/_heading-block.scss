@@ -1,6 +1,11 @@
 .heading-block {
   position: relative;
 
+  @include respond(tab-land) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   &__title {
     margin-bottom: 0;
     line-height: 1;

@@ -120,7 +120,7 @@ get_header();
       <section id="all-our-dishes" class="section-alldishes">
          <div class="heading-block u-center-text">
             <h2 class="heading-primary heading-block__title">Discover a wide range of Vietnamese savoury dishes</h2>
-            <p class="heading-block__subtitle">Depending on fresh vegetables and meat arrivals, the Chef decides what to put à la carte every week</p>
+            <p class="heading-block__subtitle">Depending on fresh vegetables and meat arrivals, the Chef decides what to put <span>à la carte</span> every week</p>
             <span class="heading-block__separator"></span>
          </div>
 

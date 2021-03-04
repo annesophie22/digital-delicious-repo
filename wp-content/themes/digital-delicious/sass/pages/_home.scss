@@ -10,6 +10,10 @@
 
 .section-alldishes {
   padding: $spacing__xxl 0;
+
+  span {
+    font-style: italic;
+  }
 }
 
 .section-testimonials,

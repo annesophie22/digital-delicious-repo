@@ -4,9 +4,21 @@
     margin-bottom: $spacing__m;
   }
 
+  &__title {
+    @include respond(tab-land) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
   &__text {
     margin-top: $spacing__s;
     margin-bottom: 0;
+    @include respond(tab-land) {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__img {

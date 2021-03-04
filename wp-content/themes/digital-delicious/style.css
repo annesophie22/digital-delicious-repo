@@ -1077,6 +1077,13 @@ textarea {
 	position: relative;
 }
 
+@media only screen and (min-width: 50em) {
+	.heading-block {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
 .heading-block__title {
 	margin-bottom: 0;
 	line-height: 1;
@@ -1376,9 +1383,24 @@ textarea {
 	margin-bottom: 3.2rem;
 }
 
+@media only screen and (min-width: 50em) {
+	.about__title {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
 .about__text {
 	margin-top: 2.4rem;
 	margin-bottom: 0;
+}
+
+@media only screen and (min-width: 50em) {
+	.about__text {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media only screen and (min-width: 50em) {
@@ -1835,6 +1857,10 @@ textarea {
 
 .section-alldishes {
 	padding: 9.6rem 0;
+}
+
+.section-alldishes span {
+	font-style: italic;
 }
 
 .section-testimonials,

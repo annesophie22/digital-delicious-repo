@@ -1,12 +1,12 @@
 <?php 
 function digital_delicious_post_types() {
-   /* Week menu dish */
+   /* Dish post type */
    $labels = array(
-      "name"   => _x( "Week Dishes", "digital-delicious" ),
-      "singular_name" => _x( "Week Dish", "digital-delicious" ),
-      "add_new_item" => __( "Add New Week Dish", "digital-delicious" ),
-      "edit_item" => __( "Edit Week Dish", "digital-delicious" ),
-      "all_items" => __( "All Week Dishes", "digital-delicious" ),
+      "name"   => _x( "Dishes", "digital-delicious" ),
+      "singular_name" => _x( "Dish", "digital-delicious" ),
+      "add_new_item" => __( "Add New Dish", "digital-delicious" ),
+      "edit_item" => __( "Edit Dish", "digital-delicious" ),
+      "all_items" => __( "All Dishes", "digital-delicious" ),
    );
    $args = array(
       "labels" => $labels,
@@ -15,10 +15,10 @@ function digital_delicious_post_types() {
       "show_in_menu" => true,
       "show_in_rest" => true,
       "menu_icon" => "dashicons-calendar",
-      "description" => "Week Dishes custom post type",
+      "description" => "Dishes custom post type",
    );
 
-   register_post_type("week-dish-menu", $args);
+   register_post_type("dish", $args);
 
     /* Event post type */
     register_post_type("event",

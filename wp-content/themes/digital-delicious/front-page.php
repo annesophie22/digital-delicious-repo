@@ -25,17 +25,15 @@ get_header();
          <div class="week-menu__dish-grid week-menu__dish-grid--1">
             <p class="week-menu__day"><mark class="highlighted">Tuesday</mark></p>
             <?php
-               $homepageWeekDish = new WP_Query(
+               $homepageDishes = new WP_Query(
                   array(
-                     "post_type" => "week-dish-menu",
+                     "post_type" => "dish",
                   )
                );
-
-               //the loop
-               if ( $homepageWeekDish->have_posts() ) {
-                  while ( $homepageWeekDish->have_posts() ) {
-                     $homepageWeekDish->the_post();
-                     get_template_part( "template-parts/content", "weekdish" );
+               if ( $homepageDishes->have_posts() ) {
+                  while ( $homepageDishes->have_posts() ) {
+                     $homepageDishes->the_post();
+                     get_template_part( "template-parts/content", "dish" );
                   }
                }
                wp_reset_postdata();

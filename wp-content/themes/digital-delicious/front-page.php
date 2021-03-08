@@ -30,7 +30,22 @@ get_header();
                <div class="card-dish__img-container">
                   <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
                </div>
-               <h3 class="heading-secondary card-dish__name">Bo Bun</h3>
+
+               <?php 
+               
+               while(have_posts()) {
+                  the_post(); 
+               
+               $weekMenuDish = get_field("week_menu_dish");
+               
+               ?>
+
+               <h3 class="heading-secondary card-dish__name"><?php echo $weekMenuDish; ?></h3>
+               
+               <?php 
+               }
+               ?>
+               
                <p class="card-dish__price">CHF 15.00/portion</p>
                <p class="card-dish__desc">Noodle salad with stir fried beef</p>
             </div> <!-- end card-dish -->

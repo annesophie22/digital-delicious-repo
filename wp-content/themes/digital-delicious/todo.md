@@ -2,11 +2,11 @@
 
 - DONE insert colors
 - DONE insert typography
-- insert images
-- insert SVGs
+- DONE insert images
+- DONE insert SVGs
 - DONE format correctly phone number
 - DONE format correctly email address
-- insert font awesome
+- NOT NEEDED insert font awesome
 
 ## TEMPLATES
 

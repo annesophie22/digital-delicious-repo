@@ -24,6 +24,7 @@ get_header();
          <!-- WEEK MENU GRID --> 
          <div class="week-menu__dish-grid week-menu__dish-grid--1">
             <p class="week-menu__day"><mark class="highlighted">Tuesday</mark></p>
+            <!-- this query will need to be changed to display only the dishes planned for a particular day -->
             <?php
                $homepageDishes = new WP_Query(
                   array(
@@ -33,7 +34,7 @@ get_header();
                if ( $homepageDishes->have_posts() ) {
                   while ( $homepageDishes->have_posts() ) {
                      $homepageDishes->the_post();
-                     get_template_part( "template-parts/content", "dish" );
+                     get_template_part( "template-parts/content", "weekmenu" );
                   }
                }
                wp_reset_postdata();
@@ -107,66 +108,20 @@ get_header();
 
          <!-- ALL DISHES GRID -->
          <div class="alldishes-grid">
-            <!-- INDIVIDUAL DISH ITEM -->
-            <div class="alldishes-grid__item u-center-text">
-               <div class="alldishes-grid__img-container">
-                  <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
-               </div>
-               <div class="alldishes-grid__label">
-                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
-                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
-               </div>
-            </div> <!-- end individual dish item -->
-            <!-- INDIVIDUAL DISH ITEM -->
-            <div class="alldishes-grid__item u-center-text">
-               <div class="alldishes-grid__img-container">
-                  <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
-               </div>
-               <div class="alldishes-grid__label">
-                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
-                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
-               </div>
-            </div> <!-- end individual dish item -->
-            <!-- INDIVIDUAL DISH ITEM -->
-            <div class="alldishes-grid__item u-center-text">
-               <div class="alldishes-grid__img-container">
-                  <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
-               </div>
-               <div class="alldishes-grid__label">
-                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
-                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
-               </div>
-            </div> <!-- end individual dish item -->
-            <!-- INDIVIDUAL DISH ITEM -->
-            <div class="alldishes-grid__item u-center-text">
-               <div class="alldishes-grid__img-container">
-                  <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
-               </div>
-               <div class="alldishes-grid__label">
-                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
-                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
-               </div>
-            </div> <!-- end individual dish item -->
-            <!-- INDIVIDUAL DISH ITEM -->
-            <div class="alldishes-grid__item u-center-text">
-               <div class="alldishes-grid__img-container">
-                  <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
-               </div>
-               <div class="alldishes-grid__label">
-                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
-                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
-               </div>
-            </div> <!-- end individual dish item -->
-            <!-- INDIVIDUAL DISH ITEM -->
-            <div class="alldishes-grid__item u-center-text">
-               <div class="alldishes-grid__img-container">
-                  <img class="alldishes-grid__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
-               </div>
-               <div class="alldishes-grid__label">
-                  <h3 class="heading-secondary alldishes-grid__label-title">Banh Mi</h3>
-                  <p class="alldishes-grid__label-desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
-               </div>
-            </div> <!-- end individual dish item -->
+         <?php
+               $homepageDishes = new WP_Query(
+                  array(
+                     "post_type" => "dish",
+                  )
+               );
+               if ( $homepageDishes->have_posts() ) {
+                  while ( $homepageDishes->have_posts() ) {
+                     $homepageDishes->the_post();
+                     get_template_part( "template-parts/content", "dish" );
+                  }
+               }
+               wp_reset_postdata();
+            ?>
          </div> <!-- alldishes-grid -->
       </section> <!-- end section all dishes -->
 

@@ -14,7 +14,7 @@ function digital_delicious_post_types() {
       "show_ui" => true,
       "show_in_menu" => true,
       "show_in_rest" => true,
-      "menu_icon" => "dashicons-calendar",
+      "menu_icon" => "dashicons-food",
       "description" => "Dishes custom post type",
    );
 

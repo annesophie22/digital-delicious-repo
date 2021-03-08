@@ -8,12 +8,13 @@
 
 ?>
 
-<!-- CARD DISH -->
-<div class="card-dish">
-   <div class="card-dish__img-container">
-      <img class="card-dish__img" src="<?php echo get_field("week_dish_img"); ?>" alt="">
+<!-- INDIVIDUAL DISH ITEM -->
+<div class="alldishes-grid__item u-center-text">
+   <div class="alldishes-grid__img-container">
+      <img class="alldishes-grid__img" src="<?php echo get_field("week_dish_img"); ?>" alt="">
    </div>
-   <h3 class="heading-secondary card-dish__name"><?php the_title(); ?></h3>
-   <p class="card-dish__price">CHF <?php echo get_field("week_dish_price"); ?></p>
-   <p class="card-dish__desc"><?php echo get_field("week_dish_desc"); ?></p>
-</div> <!-- end card-dish -->  
+   <div class="alldishes-grid__label">
+      <h3 class="heading-secondary alldishes-grid__label-title"><?php the_title(); ?></h3>
+      <p class="alldishes-grid__label-desc"><?php echo get_field("week_dish_desc"); ?></p>
+   </div>
+</div> <!-- end individual dish item -->

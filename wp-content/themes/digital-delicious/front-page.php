@@ -27,28 +27,23 @@ get_header();
 
             <!-- CARD DISH -->
             <div class="card-dish">
-               <div class="card-dish__img-container">
-                  <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
-               </div>
+            <?php
+               $homepageWeekDish = new WP_Query(
+                  array(
+                     "post_type" => "week-dish-menu",
+                  )
+               );
 
-               <?php 
-               
-               while(have_posts()) {
-                  the_post(); 
-               
-               $weekMenuDish = get_field("week_menu_dish");
-               
-               ?>
-
-               <h3 class="heading-secondary card-dish__name"><?php echo $weekMenuDish; ?></h3>
-               
-               <?php 
+               //the loop
+               if ( $homepageWeekDish->have_posts() ) {
+                  while ( $homepageWeekDish->have_posts() ) {
+                     $homepageWeekDish->the_post();
+                     get_template_part( "template-parts/content", "weekdish" );
+                  }
                }
-               ?>
-               
-               <p class="card-dish__price">CHF 15.00/portion</p>
-               <p class="card-dish__desc">Noodle salad with stir fried beef</p>
-            </div> <!-- end card-dish -->
+               wp_reset_postdata();
+            ?>
+            </div> <!-- end card-dish -->  
 
             <!-- CARD DISH -->
             <div class="card-dish">

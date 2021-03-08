@@ -24,9 +24,6 @@ get_header();
          <!-- WEEK MENU GRID --> 
          <div class="week-menu__dish-grid week-menu__dish-grid--1">
             <p class="week-menu__day"><mark class="highlighted">Tuesday</mark></p>
-
-            <!-- CARD DISH -->
-            <div class="card-dish">
             <?php
                $homepageWeekDish = new WP_Query(
                   array(
@@ -43,27 +40,6 @@ get_header();
                }
                wp_reset_postdata();
             ?>
-            </div> <!-- end card-dish -->  
-
-            <!-- CARD DISH -->
-            <div class="card-dish">
-               <div class="card-dish__img-container">
-                  <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
-               </div>
-               <h3 class="heading-secondary card-dish__name">Spring Roll Chicken</h3>
-               <p class="card-dish__price">CHF 2.50/big roll</p>
-               <p class="card-dish__desc">Crispy roll filled in with vegetables and chicken</p>
-            </div> <!-- end card-dish -->
-
-            <!-- CARD DISH -->
-            <div class="card-dish">
-               <div class="card-dish__img-container">
-                  <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
-               </div>
-               <h3 class="heading-secondary card-dish__name">Banh Mi</h3>
-               <p class="card-dish__price">CHF 10.00/portion</p>
-               <p class="card-dish__desc">Vietnamese sandwich  filled with beef or chicken and veggies</p>
-            </div> <!-- end card-dish -->
          </div><!-- end week-menu__dish-grid -->
          <hr class="week-menu__hr">
          <!-- WEEK MENU GRID -->

@@ -998,6 +998,12 @@ textarea {
 	align-items: center;
 }
 
+@media only screen and (min-width: 1200px) {
+	.dd-header-banner__container {
+		max-width: 1140px;
+	}
+}
+
 @media only screen and (min-width: 1600px) {
 	.dd-header-banner__container {
 		width: 80%;
@@ -1077,6 +1083,12 @@ textarea {
 	padding: 1.2rem 0;
 }
 
+@media only screen and (min-width: 1200px) {
+	.dd-header-nav {
+		max-width: 1140px;
+	}
+}
+
 @media only screen and (min-width: 1600px) {
 	.dd-header-nav {
 		width: 80%;
@@ -1147,7 +1159,7 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
 	.heading-block {
-		margin-bottom: 9.6rem;
+		margin-bottom: 7rem;
 	}
 }
 
@@ -1492,6 +1504,12 @@ textarea {
 	margin-bottom: 3.2rem;
 }
 
+@media only screen and (min-width: 1200px) {
+	.about__desc {
+		max-width: 1140px;
+	}
+}
+
 @media only screen and (min-width: 1600px) {
 	.about__desc {
 		width: 80%;
@@ -1564,6 +1582,12 @@ textarea {
 	width: 90%;
 	margin: 0 auto;
 	margin-bottom: 9.6rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	.order__desc {
+		max-width: 1140px;
+	}
 }
 
 @media only screen and (min-width: 1600px) {
@@ -1652,6 +1676,12 @@ textarea {
 	width: 90%;
 	margin: 0 auto;
 	padding: 3.2rem 0;
+}
+
+@media only screen and (min-width: 1200px) {
+	.dd-footer__container {
+		max-width: 1140px;
+	}
 }
 
 @media only screen and (min-width: 1600px) {
@@ -2031,6 +2061,10 @@ textarea {
 	margin-bottom: 9.6rem;
 }
 
+.u-wrapper--white {
+	background-color: #fff;
+}
+
 /* Pages
 --------------------------------------------- */
 .home {
@@ -2044,12 +2078,24 @@ textarea {
 	margin: 0 auto;
 }
 
+@media only screen and (min-width: 1200px) {
+	.section-alacarte,
+	.section-alldishes,
+	.section-testimonials {
+		max-width: 1140px;
+	}
+}
+
 @media only screen and (min-width: 1600px) {
 	.section-alacarte,
 	.section-alldishes,
 	.section-testimonials {
 		width: 80%;
 	}
+}
+
+.section-alacarte {
+	padding-bottom: 4.8rem;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2085,21 +2131,35 @@ textarea {
 }
 
 .section-alldishes {
-	padding: 9.6rem 0;
+	background-color: white;
 }
 
 .section-alldishes span {
 	font-style: italic;
 }
 
+.section-alldishes,
 .section-testimonials,
 .section-about {
-	padding-bottom: 9.6rem;
+	padding: 4.8rem 0;
+}
+
+@media only screen and (min-width: 1200px) {
+	.section-alldishes,
+	.section-testimonials,
+	.section-about {
+		padding: 6.4rem 0;
+	}
+}
+
+.section-order {
+	padding-top: 4.8rem;
 }
 
 @media only screen and (min-width: 900px) {
-	.section-about {
-		padding-bottom: 0;
+	.section-about,
+	.section-order {
+		padding: 0;
 	}
 }
 

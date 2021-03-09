@@ -9,6 +9,8 @@
 }
 
 .section-alacarte {
+  padding-bottom: $spacing__l;
+
   @include respond(desktop) {
     display: grid;
     grid-template-rows: repeat(5, min-content);
@@ -46,21 +48,31 @@
 }
 
 .section-alldishes {
-  padding: $spacing__xxl 0;
+  background-color: white;
 
   span {
     font-style: italic;
   }
 }
 
+.section-alldishes,
 .section-testimonials,
 .section-about {
-  padding-bottom: $spacing__xxl;
+  padding: $spacing__l 0;
+
+  @include respond(desktop) {
+    padding: $spacing__xl 0;
+  }
 }
 
-.section-about {
+.section-order {
+  padding-top: $spacing__l;
+}
+
+.section-about,
+.section-order {
   @include respond(tab-land) {
-    padding-bottom: 0;
+    padding: 0;
   }
 }
 

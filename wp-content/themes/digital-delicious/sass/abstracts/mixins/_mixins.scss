@@ -28,6 +28,9 @@
 @mixin containerDefault {
   width: 90%;
   margin: 0 auto;
+  @include respond(desktop) {
+    max-width: 1140px;
+  }
   @include respond(big-desk) {
     width: 80%;
   }

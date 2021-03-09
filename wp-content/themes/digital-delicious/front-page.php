@@ -99,31 +99,34 @@ get_header();
  
       
       <!-- SECTION ALL DISHES -->
-      <section id="all-our-dishes" class="section-alldishes">
-         <div class="heading-block u-center-text">
-            <h2 class="heading-primary heading-block__title">Discover a wide range of Vietnamese savoury dishes</h2>
-            <p class="heading-block__subtitle">Depending on fresh vegetables and meat arrivals, the Chef decides what to put <span>à la carte</span> every week</p>
-            <span class="heading-block__separator"></span>
-         </div>
+      <div class="u-wrapper--white">
+         <section id="all-our-dishes" class="section-alldishes">
+            <div class="heading-block u-center-text">
+               <h2 class="heading-primary heading-block__title">Discover a wide range of Vietnamese savoury dishes</h2>
+               <p class="heading-block__subtitle">Depending on fresh vegetables and meat arrivals, the Chef decides what to put <span>à la carte</span> every week</p>
+               <span class="heading-block__separator"></span>
+            </div>
 
-         <!-- ALL DISHES GRID -->
-         <div class="alldishes-grid">
-         <?php
-               $homepageDishes = new WP_Query(
-                  array(
-                     "post_type" => "dish",
-                  )
-               );
-               if ( $homepageDishes->have_posts() ) {
-                  while ( $homepageDishes->have_posts() ) {
-                     $homepageDishes->the_post();
-                     get_template_part( "template-parts/content", "dish" );
+            <!-- ALL DISHES GRID -->
+            <div class="alldishes-grid">
+            <?php
+                  $homepageDishes = new WP_Query(
+                     array(
+                        "post_type" => "dish",
+                     )
+                  );
+                  if ( $homepageDishes->have_posts() ) {
+                     while ( $homepageDishes->have_posts() ) {
+                        $homepageDishes->the_post();
+                        get_template_part( "template-parts/content", "dish" );
+                     }
                   }
-               }
-               wp_reset_postdata();
-            ?>
-         </div> <!-- alldishes-grid -->
-      </section> <!-- end section all dishes -->
+                  wp_reset_postdata();
+               ?>
+            </div> <!-- alldishes-grid -->
+         </section> <!-- end section all dishes -->
+      </div>
+      
 
 
       <!-- SECTION TESTIMONIALS -->
@@ -162,17 +165,18 @@ get_header();
 
 
       <!-- SECTION ABOUT -->
-      <section id="about" class="section-about u-center-text">
-         <div class="about__desc">
-            <h2 class="heading-primary about__title">Hello, my name is Trang, I am the Chef at Pho Bep Oi</h2>
-            <p class="about__text">Risus, nec id velit morbi amet. Id cursus volutpat sollicitudin cras elit. Dolor, ullamcorper nibh et a. Id nunc, dictum ornare sed et nullam arcu in malesuada. Placerat eget gravida mi scelerisque sed est rhoncus. Enim, arcu urna et bibendum sit. Aliquam morbi bibendum facilisis massa sollicitudin felis, ut ut. Luctus auctor orci nunc diam quam facilisi sit ut molestie.</p>
-         </div> <!-- end about desc -->
-         <div class="about__img">
-            <img src="<?php echo get_theme_file_uri("/images/about.jpg") ?>" alt="">
-         </div>
-      </section> <!-- end section about -->
-
-
+      <div class="u-wrapper--white">
+         <section id="about" class="section-about u-center-text">
+            <div class="about__desc">
+               <h2 class="heading-primary about__title">Hello, my name is Trang, I am the Chef at Pho Bep Oi</h2>
+               <p class="about__text">Risus, nec id velit morbi amet. Id cursus volutpat sollicitudin cras elit. Dolor, ullamcorper nibh et a. Id nunc, dictum ornare sed et nullam arcu in malesuada. Placerat eget gravida mi scelerisque sed est rhoncus. Enim, arcu urna et bibendum sit. Aliquam morbi bibendum facilisis massa sollicitudin felis, ut ut. Luctus auctor orci nunc diam quam facilisi sit ut molestie.</p>
+            </div> <!-- end about desc -->
+            <div class="about__img">
+               <img src="<?php echo get_theme_file_uri("/images/about.jpg") ?>" alt="">
+            </div>
+         </section> <!-- end section about -->
+      </div>
+      
       <!-- SECTION ORDER -->
       <section id="contact" class="section-order u-center-text">
          <div class="order__desc">

@@ -26,3 +26,9 @@
 .u-margin-bottom-xxl {
   margin-bottom: $spacing__xxl;
 }
+
+.u-wrapper {
+  &--white {
+    background-color: #fff;
+  }
+}

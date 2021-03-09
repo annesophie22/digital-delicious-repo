@@ -11,9 +11,9 @@
 <!-- CARD DISH -->
 <div class="card-dish">
    <div class="card-dish__img-container">
-      <img class="card-dish__img" src="<?php echo get_field("week_dish_img"); ?>" alt="">
+      <img class="card-dish__img" src="<?php echo get_field("dish_img"); ?>" alt="">
    </div>
    <h3 class="heading-secondary card-dish__name"><?php the_title(); ?></h3>
-   <p class="card-dish__price">CHF <?php echo get_field("week_dish_price"); ?></p>
-   <p class="card-dish__desc"><?php echo get_field("week_dish_desc"); ?></p>
+   <p class="card-dish__price">CHF <?php echo get_field("dish_price"); ?></p>
+   <p class="card-dish__desc"><?php echo get_field("dish_desc"); ?></p>
 </div> <!-- end card-dish -->  

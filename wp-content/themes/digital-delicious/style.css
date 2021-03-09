@@ -732,7 +732,8 @@ textarea {
 @media only screen and (min-width: 1200px) {
 	.week-menu__dish-grid {
 		grid-template-rows: min-content min-content;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 350px);
+		grid-column-gap: 6.4rem;
 	}
 }
 

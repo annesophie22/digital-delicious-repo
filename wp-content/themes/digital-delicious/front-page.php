@@ -25,7 +25,7 @@ get_header();
             $homepageMenu = new WP_Query(
                array(
                   "post_type" => "service-days",
-                  "posts_per_page" => -1,
+                  "numberposts" => -1,
                )
             );
             if ( $homepageMenu->have_posts() ) {

@@ -16,6 +16,7 @@
   @include respond(desktop) {
     height: 85vh;
     background-image: url(./images/hero_img-desktop@2x.jpg);
+    margin-bottom: $spacing__xxl;
   }
 
   &__title {

@@ -1106,6 +1106,7 @@ textarea {
 	.hero-banner {
 		height: 85vh;
 		background-image: url(./images/hero_img-desktop@2x.jpg);
+		margin-bottom: 9.6rem;
 	}
 }
 

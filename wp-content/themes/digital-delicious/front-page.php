@@ -22,48 +22,26 @@ get_header();
          </div>
 
          <!-- WEEK MENU GRID --> 
-         <div class="week-menu__dish-grid week-menu__dish-grid--1">
+         <!-- <div class="week-menu__dish-grid week-menu__dish-grid--1"> -->
             <!--<p class="week-menu__day"><mark class="highlighted">Tuesday</mark></p>-->
             
-            <?php
-               
-               $homepageMenu = new WP_Query(
-                  array(
-                     "post_type" => "service-days",
-                  )
-               );
-               if ( $homepageMenu->have_posts() ) {
-                  while ( $homepageMenu->have_posts() ) {
-                     $homepageMenu->the_post();
-                     
-            ?>       <p class='week-menu__day'><mark class='highlighted'><?php the_title();?></mark></p>
-
-    
-                     <!-- CARD DISH -->
-                     <?php 
-                     // dishes selected for each Service Day
-                     $dishesPlanned = get_field( "dishes_today" );
-
-                     // for each dishes planned (if there is any selected), show their title
-                     if($dishesPlanned) {
-                        foreach($dishesPlanned as $dish) {
-                           ?>
-                           <div class="card-dish">
-                              <div class="card-dish__img-container">
-                                 <img class="card-dish__img" src="<?php echo get_the_post_thumbnail($dish);?>">
-                              </div>
-                              <h3 class="heading-secondary card-dish__name"><?php echo get_the_title($dish);?></h3>
-                              <p class="card-dish__price">Price</p>
-                              <p class="card-dish__desc">Desc</p>
-                           </div> <!-- end card-dish -->  
-                     <?php
-                        }   
-                     }
-                  }
-               }
-               wp_reset_postdata();
-                     ?>
-         </div><!-- end week-menu__dish-grid -->
+         <?php    
+            $homepageMenu = new WP_Query(
+               array(
+                  "post_type" => "service-days",
+                  "posts_per_page" => -1,
+               )
+            );
+            if ( $homepageMenu->have_posts() ) {
+               while ( $homepageMenu->have_posts() ) {
+                  $homepageMenu->the_post();
+                  get_template_part( "template-parts/content", "weekmenu" );
+               } /* end while */
+            } /* end if */
+            wp_reset_postdata();
+         ?>
+                             
+         <!-- </div> --><!-- end week-menu__dish-grid -->
 
 
          <hr class="week-menu__hr">

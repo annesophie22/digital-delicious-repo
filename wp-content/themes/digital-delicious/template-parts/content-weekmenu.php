@@ -8,12 +8,16 @@
 
 ?>
 
-<!-- CARD DISH
-<div class="card-dish">
-   <div class="card-dish__img-container">
-      <img class="card-dish__img" src="<?php echo get_field("dish_img"); ?>" alt="">
-   </div>
-   <h3 class="heading-secondary card-dish__name"><?php the_title(); ?></h3>
-   <p class="card-dish__price">CHF <?php echo get_field("dish_price"); ?></p>
-   <p class="card-dish__desc"><?php echo get_field("dish_desc"); ?></p>
-</div> end card-dish -->  
+<!-- WEEK MENU GRID -->
+<div class="week-menu__dish-grid week-menu__dish-grid--1">
+   <p class="week-menu__day"><mark class="highlighted"><?php the_title(); ?></mark></p>
+   <!-- CARD DISH -->
+   <div class="card-dish">
+      <div class="card-dish__img-container">
+         <img class="card-dish__img" src="<?php echo get_field("dish_img"); ?>" alt="">
+      </div>
+      <h3 class="heading-secondary card-dish__name">Nom du plat</h3>
+      <p class="card-dish__price">Prix</p>
+      <p class="card-dish__desc">Desc</p>
+   </div> <!-- end card-dish --> 
+</div> 

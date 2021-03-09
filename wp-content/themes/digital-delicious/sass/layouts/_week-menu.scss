@@ -9,7 +9,7 @@
     @include respond(desktop) {
       grid-template-rows: min-content min-content;
       grid-template-columns: repeat(2, 350px);
-      grid-column-gap: $spacing__xl;
+      grid-column-gap: $spacing__l;
     }
   }
 

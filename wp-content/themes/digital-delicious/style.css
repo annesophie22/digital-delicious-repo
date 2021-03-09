@@ -544,7 +544,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #f5f5f4;
+	background: #f7f3ed;
 }
 
 html {
@@ -740,7 +740,7 @@ textarea {
 	.week-menu__dish-grid {
 		grid-template-rows: min-content min-content;
 		grid-template-columns: repeat(2, 350px);
-		grid-column-gap: 6.4rem;
+		grid-column-gap: 4.8rem;
 	}
 }
 
@@ -882,7 +882,7 @@ textarea {
 	padding: 0.8rem 1rem;
 	border: none;
 	background: #209a72;
-	color: #f5f5f4;
+	color: #f7f3ed;
 	text-transform: uppercase;
 	font-weight: 600;
 }
@@ -897,7 +897,7 @@ textarea {
 }
 
 .dd-icon-hamburger svg path {
-	fill: #f5f5f4;
+	fill: #f7f3ed;
 }
 
 .main-navigation.toggled .primary-menu-container {
@@ -1026,7 +1026,7 @@ textarea {
 }
 
 .dd-header-banner__contact-phone svg path {
-	fill: #f5f5f4;
+	fill: #f7f3ed;
 }
 
 .dd-header-banner__contact-phone:hover svg path {
@@ -1040,7 +1040,7 @@ textarea {
 }
 
 .dd-header-banner__contact-link, .dd-header-banner__contact-link:link {
-	color: #f5f5f4;
+	color: #f7f3ed;
 }
 
 .dd-header-banner__contact-link:visited {
@@ -1062,7 +1062,7 @@ textarea {
 }
 
 .dd-header-banner__social svg path {
-	fill: #f5f5f4;
+	fill: #f7f3ed;
 }
 
 .dd-header-banner__social :hover svg path {
@@ -1330,7 +1330,7 @@ textarea {
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
-	color: #f5f5f4;
+	color: #f7f3ed;
 }
 
 .order-details__title {
@@ -1373,7 +1373,7 @@ textarea {
 }
 
 .order-details__contact-phone svg path, .order-details__contact-social svg path {
-	fill: #f5f5f4;
+	fill: #f7f3ed;
 }
 
 .alldishes-grid__item {
@@ -1669,7 +1669,7 @@ textarea {
 
 .site-footer {
 	background-color: #424242;
-	color: #f5f5f4;
+	color: #f7f3ed;
 }
 
 .dd-footer__container {
@@ -1708,7 +1708,7 @@ textarea {
 }
 
 .dd-footer__navigation ul a:link {
-	color: #f5f5f4;
+	color: #f7f3ed;
 }
 
 .dd-footer__navigation ul a:focus, .dd-footer__navigation ul a:hover, .dd-footer__navigation ul a:visited, .dd-footer__navigation ul a:active {
@@ -1757,7 +1757,7 @@ textarea {
 }
 
 .dd-footer__list-item svg path {
-	fill: #f5f5f4;
+	fill: #f7f3ed;
 }
 
 .dd-footer__list-item a {
@@ -1766,7 +1766,7 @@ textarea {
 }
 
 .dd-footer__list-item a, .dd-footer__list-item a:link {
-	color: #f5f5f4;
+	color: #f7f3ed;
 }
 
 .dd-footer__list-item a:focus, .dd-footer__list-item a:hover, .dd-footer__list-item a:visited, .dd-footer__list-item a:active {
@@ -1797,7 +1797,7 @@ textarea {
 .dd-footer__attribution a, .dd-footer__attribution a:link,
 .site-info a,
 .site-info a:link {
-	color: #f5f5f4;
+	color: #f7f3ed;
 }
 
 .dd-footer__attribution a:focus, .dd-footer__attribution a:hover, .dd-footer__attribution a:visited, .dd-footer__attribution a:active,
@@ -2149,6 +2149,12 @@ textarea {
 	.section-testimonials,
 	.section-about {
 		padding: 6.4rem 0;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.section-testimonials {
+		padding: 9.6rem 0;
 	}
 }
 

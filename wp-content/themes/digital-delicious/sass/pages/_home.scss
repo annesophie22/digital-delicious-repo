@@ -65,6 +65,12 @@
   }
 }
 
+.section-testimonials {
+  @include respond(desktop) {
+    padding: $spacing__xxl 0;
+  }
+}
+
 .section-order {
   padding-top: $spacing__l;
 }

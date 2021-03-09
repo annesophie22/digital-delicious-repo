@@ -750,13 +750,13 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
 	.week-menu__day {
-		margin-bottom: 4.8rem;
+		margin-bottom: 6.4rem;
 	}
 }
 
 @media only screen and (min-width: 1600px) {
 	.week-menu__day {
-		margin-bottom: 6.4rem;
+		margin-bottom: 9.6rem;
 	}
 }
 
@@ -2043,6 +2043,9 @@ textarea {
 	.section-alacarte .week-menu__dish-grid--2 {
 		grid-column: 1 / span 3;
 		grid-row: 4 / 5;
+	}
+	.section-alacarte .week-menu__dish-grid--2 > .week-menu__day {
+		grid-column: 1 / span 3;
 	}
 	.section-alacarte .week-menu__hr {
 		grid-column: 1 / span 3;

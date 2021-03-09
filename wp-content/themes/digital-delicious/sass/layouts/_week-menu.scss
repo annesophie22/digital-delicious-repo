@@ -24,11 +24,11 @@
     line-height: 1;
 
     @include respond(desktop) {
-      margin-bottom: $spacing__l;
+      margin-bottom: $spacing__xl;
     }
 
     @include respond(big-desk) {
-      margin-bottom: $spacing__xl;
+      margin-bottom: $spacing__xxl;
     }
   }
 }

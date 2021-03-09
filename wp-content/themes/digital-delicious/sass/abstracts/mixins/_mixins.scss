@@ -32,7 +32,7 @@
     max-width: 1140px;
   }
   @include respond(big-desk) {
-    width: 80%;
+    max-width: 80%;
   }
 }
 

@@ -11,7 +11,7 @@
 <!-- INDIVIDUAL DISH ITEM -->
 <div class="alldishes-grid__item u-center-text">
    <div class="alldishes-grid__img-container">
-      <img class="alldishes-grid__img" src="<?php echo get_field("dish_img"); ?>" alt="">
+      <img class="alldishes-grid__img" src="<?php the_post_thumbnail(); ?>" alt="">
    </div>
    <div class="alldishes-grid__label">
       <h3 class="heading-secondary alldishes-grid__label-title"><?php the_title(); ?></h3>

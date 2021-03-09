@@ -20,11 +20,7 @@ get_header();
             <p class="heading-block__subtitle">Check out what dishes are specially cooked for you this week</p>
             <span class="heading-block__separator"></span>
          </div>
-
-         <!-- WEEK MENU GRID --> 
-         <!-- <div class="week-menu__dish-grid week-menu__dish-grid--1"> -->
-            <!--<p class="week-menu__day"><mark class="highlighted">Tuesday</mark></p>-->
-            
+          
          <?php    
             $homepageMenu = new WP_Query(
                array(
@@ -40,11 +36,13 @@ get_header();
             } /* end if */
             wp_reset_postdata();
          ?>
-                             
-         <!-- </div> --><!-- end week-menu__dish-grid -->
-
 
          <hr class="week-menu__hr">
+
+         <?php
+            get_template_part( "template-parts/content", "test" );
+         ?>
+
          <!-- WEEK MENU GRID -->
          <div class="week-menu__dish-grid week-menu__dish-grid--2">
             <p class="week-menu__day"><mark class="highlighted">Saturday</mark></p>

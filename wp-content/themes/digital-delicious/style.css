@@ -1361,8 +1361,8 @@ textarea {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #020024;
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 212, 255, 0) 70%);
+	background: transparent;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 40%);
 }
 
 .alldishes-grid__img-container::after {

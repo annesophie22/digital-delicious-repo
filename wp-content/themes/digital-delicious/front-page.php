@@ -23,23 +23,49 @@ get_header();
 
          <!-- WEEK MENU GRID --> 
          <div class="week-menu__dish-grid week-menu__dish-grid--1">
-            <p class="week-menu__day"><mark class="highlighted">Tuesday</mark></p>
-            <!-- this query will need to be changed to display only the dishes planned for a particular day -->
+            <!--<p class="week-menu__day"><mark class="highlighted">Tuesday</mark></p>-->
+            
             <?php
-               $homepageDishes = new WP_Query(
+               
+               $homepageMenu = new WP_Query(
                   array(
-                     "post_type" => "dish",
+                     "post_type" => "service-days",
                   )
                );
-               if ( $homepageDishes->have_posts() ) {
-                  while ( $homepageDishes->have_posts() ) {
-                     $homepageDishes->the_post();
-                     get_template_part( "template-parts/content", "weekmenu" );
+               if ( $homepageMenu->have_posts() ) {
+                  while ( $homepageMenu->have_posts() ) {
+                     $homepageMenu->the_post();
+                     
+            ?>       <p class='week-menu__day'><mark class='highlighted'><?php the_title();?></mark></p>
+
+    
+                     <!-- CARD DISH -->
+                     <?php 
+                     // dishes selected for each Service Day
+                     $dishesPlanned = get_field( "dishes_today" );
+
+                     // for each dishes planned (if there is any selected), show their title
+                     if($dishesPlanned) {
+                        foreach($dishesPlanned as $dish) {
+                           ?>
+                           <div class="card-dish">
+                              <div class="card-dish__img-container">
+                                 <img class="card-dish__img" src="<?php echo get_the_post_thumbnail($dish);?>">
+                              </div>
+                              <h3 class="heading-secondary card-dish__name"><?php echo get_the_title($dish);?></h3>
+                              <p class="card-dish__price">Price</p>
+                              <p class="card-dish__desc">Desc</p>
+                           </div> <!-- end card-dish -->  
+                     <?php
+                        }   
+                     }
                   }
                }
                wp_reset_postdata();
-            ?>
+                     ?>
          </div><!-- end week-menu__dish-grid -->
+
+
          <hr class="week-menu__hr">
          <!-- WEEK MENU GRID -->
          <div class="week-menu__dish-grid week-menu__dish-grid--2">

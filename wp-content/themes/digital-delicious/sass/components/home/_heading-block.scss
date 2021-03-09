@@ -8,6 +8,10 @@
     margin-right: auto;
   }
 
+  @include respond(desktop) {
+    margin-bottom: $spacing__xl;
+  }
+
   &__title {
     margin-bottom: 0;
     line-height: 1;

@@ -48,6 +48,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+/* $color__background-body: #fdfbf4; */
 /* $color__background-hr: #ccc; */
 /*
 [0 - 600px] is where our normal styles apply
@@ -537,7 +538,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #fdfbf4;
+	background: #f5f5f4;
 }
 
 html {
@@ -875,7 +876,7 @@ textarea {
 	padding: 0.8rem 1rem;
 	border: none;
 	background: #209a72;
-	color: #fdfbf4;
+	color: #f5f5f4;
 	text-transform: uppercase;
 	font-weight: 600;
 }
@@ -890,7 +891,7 @@ textarea {
 }
 
 .dd-icon-hamburger svg path {
-	fill: #fdfbf4;
+	fill: #f5f5f4;
 }
 
 .main-navigation.toggled .primary-menu-container {
@@ -1013,7 +1014,7 @@ textarea {
 }
 
 .dd-header-banner__contact-phone svg path {
-	fill: #fdfbf4;
+	fill: #f5f5f4;
 }
 
 .dd-header-banner__contact-phone:hover svg path {
@@ -1027,7 +1028,7 @@ textarea {
 }
 
 .dd-header-banner__contact-link, .dd-header-banner__contact-link:link {
-	color: #fdfbf4;
+	color: #f5f5f4;
 }
 
 .dd-header-banner__contact-link:visited {
@@ -1049,7 +1050,7 @@ textarea {
 }
 
 .dd-header-banner__social svg path {
-	fill: #fdfbf4;
+	fill: #f5f5f4;
 }
 
 .dd-header-banner__social :hover svg path {
@@ -1135,6 +1136,12 @@ textarea {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.heading-block {
+		margin-bottom: 6.4rem;
 	}
 }
 
@@ -1293,7 +1300,7 @@ textarea {
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
-	color: #fdfbf4;
+	color: #f5f5f4;
 }
 
 .order-details__title {
@@ -1336,7 +1343,7 @@ textarea {
 }
 
 .order-details__contact-phone svg path, .order-details__contact-social svg path {
-	fill: #fdfbf4;
+	fill: #f5f5f4;
 }
 
 .alldishes-grid__item {
@@ -1620,7 +1627,7 @@ textarea {
 
 .site-footer {
 	background-color: #424242;
-	color: #fdfbf4;
+	color: #f5f5f4;
 }
 
 .dd-footer__container {
@@ -1653,7 +1660,7 @@ textarea {
 }
 
 .dd-footer__navigation ul a:link {
-	color: #fdfbf4;
+	color: #f5f5f4;
 }
 
 .dd-footer__navigation ul a:focus, .dd-footer__navigation ul a:hover, .dd-footer__navigation ul a:visited, .dd-footer__navigation ul a:active {
@@ -1702,7 +1709,7 @@ textarea {
 }
 
 .dd-footer__list-item svg path {
-	fill: #fdfbf4;
+	fill: #f5f5f4;
 }
 
 .dd-footer__list-item a {
@@ -1711,7 +1718,7 @@ textarea {
 }
 
 .dd-footer__list-item a, .dd-footer__list-item a:link {
-	color: #fdfbf4;
+	color: #f5f5f4;
 }
 
 .dd-footer__list-item a:focus, .dd-footer__list-item a:hover, .dd-footer__list-item a:visited, .dd-footer__list-item a:active {
@@ -1742,7 +1749,7 @@ textarea {
 .dd-footer__attribution a, .dd-footer__attribution a:link,
 .site-info a,
 .site-info a:link {
-	color: #fdfbf4;
+	color: #f5f5f4;
 }
 
 .dd-footer__attribution a:focus, .dd-footer__attribution a:hover, .dd-footer__attribution a:visited, .dd-footer__attribution a:active,

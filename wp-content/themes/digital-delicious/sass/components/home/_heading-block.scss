@@ -9,7 +9,7 @@
   }
 
   @include respond(desktop) {
-    margin-bottom: $spacing__xl;
+    margin-bottom: $spacing__xxl;
   }
 
   &__title {
@@ -22,6 +22,10 @@
     margin-bottom: 0;
     font-size: 2rem;
     line-height: 1.2;
+
+    @include respond(desktop) {
+      font-size: 2.4rem;
+    }
   }
 
   &__separator {
@@ -31,5 +35,14 @@
     margin: $spacing__m auto 0;
     background-color: $color__orange;
     border-radius: $border-radius__default;
+  }
+}
+
+// A la carte section needs a smaller margin-bottom because of more white-space in the layout of the section
+.section-alacarte {
+  .heading-block {
+    @include respond(desktop) {
+      margin-bottom: 5rem;
+    }
   }
 }

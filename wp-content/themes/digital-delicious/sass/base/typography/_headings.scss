@@ -21,6 +21,10 @@ h6 {
 
 .heading-primary {
   font-size: $font__size-heading-big;
+
+  @include respond(desktop) {
+    font-size: 4.5rem;
+  }
 }
 
 .heading-secondary {

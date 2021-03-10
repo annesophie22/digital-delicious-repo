@@ -92,8 +92,12 @@
       margin-bottom: $spacing__s;
     }
 
-    a:visited {
-      color: #02e297;
+    a {
+      transition: all 0.2s ease-in-out;
+      &:hover,
+      &:visited {
+        color: #02e297;
+      }
     }
 
     &-phone,

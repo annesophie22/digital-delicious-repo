@@ -1358,7 +1358,11 @@ textarea {
 	margin-bottom: 2.4rem;
 }
 
-.order-details__contact a:visited {
+.order-details__contact a {
+	transition: all 0.2s ease-in-out;
+}
+
+.order-details__contact a:hover, .order-details__contact a:visited {
 	color: #02e297;
 }
 
@@ -1646,6 +1650,7 @@ textarea {
 .order__contact > a {
 	display: inline-block;
 	margin-top: calc(1.6rem / 2);
+	transition: all 0.2s ease-in-out;
 }
 
 .order__contact-phone, .order__contact-social {

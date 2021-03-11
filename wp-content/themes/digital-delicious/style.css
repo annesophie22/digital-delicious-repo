@@ -1010,8 +1010,19 @@ textarea {
 }
 
 .dd-header-banner__contact {
+	border: 0.5px solid white;
+	border-radius: 1em;
+	padding: 0.5rem 2rem;
 	display: flex;
+	align-items: center;
 	line-height: 1;
+	cursor: pointer;
+	transition: all 0.375s ease-in;
+}
+
+.dd-header-banner__contact:hover {
+	background: black;
+	border: transparent;
 }
 
 .dd-header-banner__contact-phone {
@@ -1028,10 +1039,6 @@ textarea {
 	fill: #f7f3ed;
 }
 
-.dd-header-banner__contact-phone:hover svg path {
-	fill: #ddecdb;
-}
-
 .dd-header-banner__contact-link {
 	display: inline-block;
 	font-size: 2.2rem;
@@ -1046,7 +1053,7 @@ textarea {
 	color: black;
 }
 
-.dd-header-banner__contact-link:focus, .dd-header-banner__contact-link:hover, .dd-header-banner__contact-link:active {
+.dd-header-banner__contact-link:focus, .dd-header-banner__contact-link:active {
 	color: #ddecdb;
 }
 
@@ -1062,10 +1069,11 @@ textarea {
 
 .dd-header-banner__social svg path {
 	fill: #f7f3ed;
+	transition: all 0.2s ease-in;
 }
 
-.dd-header-banner__social :hover svg path {
-	fill: #ddecdb;
+.dd-header-banner__social:hover svg path {
+	fill: black;
 }
 
 /**

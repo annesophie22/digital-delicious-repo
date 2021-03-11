@@ -23,9 +23,21 @@
   }
 
   /* left side of the header banner */
+
   &__contact {
+    border: 0.5px solid white;
+    border-radius: 1em;
+    padding: 0.5rem 2rem;
     display: flex;
+    align-items: center;
     line-height: 1;
+    cursor: pointer;
+    transition: all 0.375s ease-in;
+
+    &:hover {
+      background: black;
+      border: transparent;
+    }
 
     &-phone {
       display: block;
@@ -35,14 +47,6 @@
         width: 2rem;
         path {
           fill: $color__background-body;
-        }
-      }
-
-      &:hover {
-        svg {
-          path {
-            fill: $color__link-visited-light;
-          }
         }
       }
     }
@@ -62,7 +66,6 @@
       }
 
       &:focus,
-      &:hover,
       &:active {
         color: $color__link-visited-light;
       }
@@ -79,13 +82,14 @@
       width: 2.5rem;
       path {
         fill: $color__background-body;
+        transition: all 0.2s ease-in;
       }
     }
 
-    :hover {
+    &:hover {
       svg {
         path {
-          fill: $color__link-visited-light;
+          fill: black;
         }
       }
     }

@@ -30,7 +30,7 @@
 		<?php endif; ?>
 		<div class="dd-footer__contact">
 			<ul class="dd-footer__list">
-				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")); ?><a href="tel:+#">076 247 34 19</a></li>
+				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")); ?><a href="tel:+#">079 123 45 67</a></li>
 				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri("/images/icon_fb.svg")); ?><a href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">Home made food (Pho bep Oi)</a></li>
 			</ul>
 			<ul class="dd-footer__list">

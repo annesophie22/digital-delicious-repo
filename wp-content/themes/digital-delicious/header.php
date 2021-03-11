@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -12,8 +13,9 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -22,81 +24,82 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'digital-delicious' ); ?></a>
+	<?php wp_body_open(); ?>
+	<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'digital-delicious'); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header" role="banner">
 
-	<!-- CONTACT + SOCIAL MEDIA -->
-		<div class="dd-header-banner">
-			<div class="dd-header-banner__container">
+			<!-- CONTACT + SOCIAL MEDIA -->
+			<div class="dd-header-banner">
+				<div class="dd-header-banner__container">
 
-				<!-- CONTACT -->
-				<div class="dd-header-banner__contact">
-					<span class="dd-header-banner__contact-phone"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")) ; ?></span>
-					<a class="dd-header-banner__contact-link" href="tel:#">076 247 34 19</a>
-				</div>
+					<!-- CONTACT -->
+					<div class="dd-header-banner__contact">
+						<span class="dd-header-banner__contact-phone"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")); ?></span>
+						<a class="dd-header-banner__contact-link" href="tel:#">079 123 45 67</a>
+					</div>
 
-				<!-- SOCIAL MEDIA -->
-				<a class="dd-header-banner__social" href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook"><?php echo file_get_contents(get_theme_file_uri("/images/icon_fb.svg")) ; ?></a>
+					<!-- SOCIAL MEDIA -->
+					<a class="dd-header-banner__social" href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook"><?php echo file_get_contents(get_theme_file_uri("/images/icon_fb.svg")); ?></a>
 
-			</div> <!-- end dd-header-banner__container -->
-		</div> <!-- end dd-header-banner -->
+				</div> <!-- end dd-header-banner__container -->
+			</div> <!-- end dd-header-banner -->
 
 
-	<!-- LOGO + NAV -->
-		<div class="dd-header-nav">
+			<!-- LOGO + NAV -->
+			<div class="dd-header-nav">
 
-		<!-- LOGO -->
-			<div class="site-branding dd-header-nav__logo">
-				<?php
-				the_custom_logo();
-				if ( is_front_page() && is_home() ) :
-					?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<!-- LOGO -->
+				<div class="site-branding dd-header-nav__logo">
 					<?php
-				else :
+					the_custom_logo();
+					if (is_front_page() && is_home()) :
 					?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 					<?php
-				endif;
-				$digital_delicious_description = get_bloginfo( 'description', 'display' );
-				if ( $digital_delicious_description || is_customize_preview() ) :
+					else :
 					?>
-					<p class="site-description"><?php echo $digital_delicious_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-				<?php endif; ?>
-			</div><!-- .site-branding -->
+						<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
+					<?php
+					endif;
+					$digital_delicious_description = get_bloginfo('description', 'display');
+					if ($digital_delicious_description || is_customize_preview()) :
+					?>
+						<p class="site-description"><?php echo $digital_delicious_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+																?></p>
+					<?php endif; ?>
+				</div><!-- .site-branding -->
 
-		<!-- NAV -->
-			<?php if ( has_nav_menu( 'primary' ) ) : ?>
+				<!-- NAV -->
+				<?php if (has_nav_menu('primary')) : ?>
 
-			<nav id="site-navigation" class="main-navigation dd-header-nav__nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'digital-delicious' ); ?>">
+					<nav id="site-navigation" class="main-navigation dd-header-nav__nav" role="navigation" aria-label="<?php esc_attr_e('Primary Menu', 'digital-delicious'); ?>">
 
-				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						<?php esc_html_e( 'Menu', 'digital-delicious' ); ?>
+						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+						<?php esc_html_e('Menu', 'digital-delicious'); ?>
 				</button> -->
 
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<span class="dd-icon-hamburger"><?php echo file_get_contents(get_theme_file_uri("/images/icon_hamburger.svg")) ; ?></span>
-				</button>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+							<span class="dd-icon-hamburger"><?php echo file_get_contents(get_theme_file_uri("/images/icon_hamburger.svg")); ?></span>
+						</button>
 
 
 
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'primary',
-						'menu_id'        => 'primary-menu',
-						'menu_class'     => 'nav-menu',
-						'container_class' => 'primary-menu-container',
-					)
-				);
-				?>
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'primary',
+								'menu_id'        => 'primary-menu',
+								'menu_class'     => 'nav-menu',
+								'container_class' => 'primary-menu-container',
+							)
+						);
+						?>
 
-			</nav><!-- #site-navigation -->
-			<?php endif; ?>
+					</nav><!-- #site-navigation -->
+				<?php endif; ?>
 
-		</div><!-- end dd-header-nav -->
-		
-	</header><!-- #masthead -->
+			</div><!-- end dd-header-nav -->
+
+		</header><!-- #masthead -->

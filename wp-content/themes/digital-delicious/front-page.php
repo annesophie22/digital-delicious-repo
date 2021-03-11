@@ -81,7 +81,7 @@ get_header();
             <h3 class="heading-secondary order-details__title">Order now</h3>
             <hr class="order-details__hr">
             <ul class="order-details__contact">
-               <li><span class="order-details__contact-phone"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")); ?></span><a href="tel:+#">076 247 34 19</a></li>
+               <li><span class="order-details__contact-phone"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")); ?></span><a href="tel:+#">079 123 45 67</a></li>
                <li><span class="order-details__contact-social"><?php echo file_get_contents(get_theme_file_uri("/images/icon_fb.svg")); ?></span><a href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">Home made food<br>(Pho bep Oi)</a></li>
             </ul>
          </div>
@@ -173,7 +173,7 @@ get_header();
       <div class="order__desc">
          <h2 class="heading-primary order__title">Order now</h2>
          <p class="heading-block__subtitle order__subtitle">Tuesdays, Thursdays and Saturdays <span>12h-13h // 18h-19h30</span></p>
-         <p class="order__contact"><span class="order__contact-phone"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")); ?></span><a href="tel:+41762473419">076 247 34 19</a></p>
+         <p class="order__contact"><span class="order__contact-phone"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")); ?></span><a href="tel:+41762473419">079 123 45 67</a></p>
          <p class="order__contact"><span class="order__contact-social"><?php echo file_get_contents(get_theme_file_uri("/images/icon_fb.svg")); ?></span><a href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">Home made food (Pho bep Oi)</a></p>
       </div> <!-- end order desc -->
       <div class="order__img">

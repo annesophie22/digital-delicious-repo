@@ -728,23 +728,7 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.week-menu__dish-grid {
-	width: 100%;
-	display: grid;
-	grid-template-rows: auto;
-	grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
-	grid-column-gap: 3.2rem;
-}
-
-@media only screen and (min-width: 1200px) {
-	.week-menu__dish-grid {
-		grid-template-rows: min-content min-content;
-		grid-template-columns: repeat(2, 350px);
-		grid-column-gap: 4.8rem;
-	}
-}
-
-.week-menu__day {
+.day-grid__title {
 	grid-row: 1 / 2;
 	grid-column: 1 / -1;
 	margin-bottom: 3.2rem;
@@ -756,14 +740,24 @@ textarea {
 }
 
 @media only screen and (min-width: 1200px) {
-	.week-menu__day {
+	.day-grid__title {
 		margin-bottom: 6.4rem;
 	}
 }
 
 @media only screen and (min-width: 1600px) {
-	.week-menu__day {
+	.day-grid__title {
 		margin-bottom: 9.6rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.day-grid {
+		display: grid;
+		max-width: 100%;
+		grid-template-rows: min-content min-content;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 4.8rem;
 	}
 }
 
@@ -2106,31 +2100,18 @@ textarea {
 @media only screen and (min-width: 1200px) {
 	.section-alacarte {
 		display: grid;
-		grid-template-rows: repeat(5, min-content);
+		grid-template-rows: min-content;
 		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: "heading-block heading-block heading-block" "week-menu week-menu del-conditions";
 	}
 	.section-alacarte > .heading-block {
-		grid-column: 1 / -1;
-		grid-row: 1 / 2;
+		grid-area: heading-block;
 	}
-	.section-alacarte .week-menu__dish-grid--1 {
-		grid-column: 1 / 3;
-		grid-row: 2 / 3;
-	}
-	.section-alacarte .week-menu__dish-grid--2 {
-		grid-column: 1 / span 3;
-		grid-row: 4 / 5;
-	}
-	.section-alacarte .week-menu__dish-grid--2 > .week-menu__day {
-		grid-column: 1 / span 3;
-	}
-	.section-alacarte .week-menu__hr {
-		grid-column: 1 / span 3;
-		grid-row: 3 / 4;
+	.section-alacarte .week-menu {
+		grid-area: week-menu;
 	}
 	.section-alacarte > .delivery-conditions {
-		grid-column: 3 / 4;
-		grid-row: 2 / 3;
+		grid-area: del-conditions;
 		justify-self: end;
 	}
 }

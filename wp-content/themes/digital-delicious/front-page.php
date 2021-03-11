@@ -23,7 +23,7 @@ get_header();
       </div>
 
       <!-- WEEK MENU GRID -->
-      <div>
+      <div class="week-menu">
          <!-- week-menu__dish-grid -->
          <?php
          $homepageMenu = new WP_Query(
@@ -45,23 +45,6 @@ get_header();
 
          wp_reset_postdata();
          ?>
-      </div> <!-- end week-menu__dish-grid -->
-
-      <hr class="week-menu__hr">
-
-      <!-- WEEK MENU GRID -->
-      <div class="week-menu__dish-grid week-menu__dish-grid--2">
-         <p class="week-menu__day"><mark class="highlighted">Saturday</mark></p>
-
-         <!-- CARD DISH -->
-         <div class="card-dish">
-            <div class="card-dish__img-container">
-               <img class="card-dish__img" src="<?php echo get_theme_file_uri("/images/bo_bun-sq.jpg") ?>" alt="">
-            </div>
-            <h3 class="heading-secondary card-dish__name">Bo Bun</h3>
-            <p class="card-dish__price">CHF 15.00/portion</p>
-            <p class="card-dish__desc">Noodle salad with stir fried beef</p>
-         </div> <!-- end card-dish -->
       </div> <!-- end week-menu__dish-grid -->
 
       <!-- DELIVERY CONDITIONS -->

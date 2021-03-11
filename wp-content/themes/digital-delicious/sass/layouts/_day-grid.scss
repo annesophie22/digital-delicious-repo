@@ -7,7 +7,7 @@
     font-weight: $font__weight-regular;
     font-size: 3.2rem;
     text-align: center;
-    line-height: 1;
+    line-height: 1.1;
 
     @include respond(desktop) {
       margin-bottom: $spacing__xl;
@@ -18,11 +18,15 @@
     }
   }
 
-  @include respond(desktop) {
+  @include respond(tab-port) {
     display: grid;
     max-width: 100%;
     grid-template-rows: min-content min-content;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: $spacing__s;
+  }
+
+  @include respond(tab-land) {
     grid-column-gap: $spacing__l;
   }
 }

@@ -572,6 +572,16 @@ hr {
 	opacity: 0.2;
 }
 
+hr:last-child {
+	display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+	hr {
+		margin: 4.8rem auto;
+	}
+}
+
 ul,
 ol {
 	margin: 0 0 1.5em 3em;
@@ -736,7 +746,7 @@ textarea {
 	font-weight: 400;
 	font-size: 3.2rem;
 	text-align: center;
-	line-height: 1;
+	line-height: 1.1;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -751,12 +761,18 @@ textarea {
 	}
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 600px) {
 	.day-grid {
 		display: grid;
 		max-width: 100%;
 		grid-template-rows: min-content min-content;
 		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 2.4rem;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.day-grid {
 		grid-column-gap: 4.8rem;
 	}
 }
@@ -1193,6 +1209,7 @@ textarea {
 .card-dish {
 	line-height: 1;
 	padding-bottom: 2.4rem;
+	justify-self: center;
 }
 
 .card-dish:not(:last-child) {
@@ -2125,9 +2142,18 @@ textarea {
 }
 
 .section-alldishes,
-.section-testimonials,
-.section-about {
+.section-testimonials {
 	padding: 4.8rem 0;
+}
+
+.section-about {
+	padding-top: 4.8rem;
+}
+
+@media only screen and (min-width: 600px) {
+	.section-about {
+		padding: 4.8rem 0;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2152,12 +2178,6 @@ textarea {
 	.section-about,
 	.section-order {
 		padding: 0;
-	}
-}
-
-@media only screen and (min-width: 900px) {
-	.section-about,
-	.section-order {
 		display: flex;
 		align-items: center;
 		justify-content: center;

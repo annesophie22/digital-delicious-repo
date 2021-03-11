@@ -43,10 +43,21 @@
 }
 
 .section-alldishes,
+.section-testimonials {
+  padding: $spacing__l 0;
+}
+
+.section-about {
+  padding-top: $spacing__l;
+
+  @include respond(tab-port) {
+    padding: $spacing__l 0;
+  }
+}
+
+.section-alldishes,
 .section-testimonials,
 .section-about {
-  padding: $spacing__l 0;
-
   @include respond(desktop) {
     padding: $spacing__xl 0;
   }
@@ -66,12 +77,6 @@
 .section-order {
   @include respond(tab-land) {
     padding: 0;
-  }
-}
-
-.section-about,
-.section-order {
-  @include respond(tab-land) {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,6 +1,8 @@
 .card-dish {
   line-height: 1;
   padding-bottom: $spacing__s;
+  // placement in _day-grid
+  justify-self: center;
 
   &:not(:last-child) {
     margin-bottom: $spacing__m;

@@ -6,4 +6,12 @@ hr {
   background-color: $color__grayish__green;
   border-radius: $border-radius__default;
   opacity: 0.2;
+
+  &:last-child {
+    display: none;
+  }
+
+  @include respond(desktop) {
+    margin: $spacing__l auto;
+  }
 }

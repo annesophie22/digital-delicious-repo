@@ -879,7 +879,7 @@ textarea {
 }
 
 .menu-toggle {
-	padding: 0.8rem 1rem;
+	padding: 0.7rem 0.7rem;
 	border: none;
 	background: #209a72;
 	color: #f7f3ed;
@@ -1064,8 +1064,8 @@ textarea {
 }
 
 .dd-header-banner__social svg {
-	height: 2.5rem;
-	width: 2.5rem;
+	height: 3.2rem;
+	width: 3.2rem;
 }
 
 .dd-header-banner__social svg path {
@@ -1277,9 +1277,16 @@ textarea {
 	width: 100%;
 	max-width: 550px;
 	margin: 0 auto;
+	margin-top: 2.4rem;
 	line-height: 1;
 	border-radius: 5px;
 	border-top: 10px solid rgba(32, 154, 114, 0.3);
+}
+
+@media only screen and (min-width: 900px) {
+	.delivery-conditions {
+		margin-top: 3.2rem;
+	}
 }
 
 @media only screen and (min-width: 1200px) {

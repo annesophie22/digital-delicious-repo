@@ -2,9 +2,14 @@
   width: 100%;
   max-width: 550px;
   margin: 0 auto;
+  margin-top: $spacing__s;
   line-height: 1;
   border-radius: 5px;
   border-top: 10px solid rgba($color__dark__green, 0.3);
+
+  @include respond(tab-land) {
+    margin-top: $spacing__m;
+  }
 
   @include respond(desktop) {
     width: 90%;

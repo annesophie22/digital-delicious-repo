@@ -824,7 +824,7 @@ textarea {
 }
 
 .main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li:focus > ul {
 	display: block;
 	left: auto;
 }
@@ -834,7 +834,7 @@ textarea {
 }
 
 .main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li:focus > ul {
 	left: auto;
 }
 
@@ -848,10 +848,11 @@ textarea {
 	text-transform: uppercase;
 	color: #424242;
 	font-weight: 600;
+	transition: all 0.2s ease-in;
 }
 
 .main-navigation li:hover > a,
-.main-navigation li.focus > a {
+.main-navigation li:focus > a {
 	color: #209a72;
 }
 

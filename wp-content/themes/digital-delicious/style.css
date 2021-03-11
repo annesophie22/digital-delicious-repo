@@ -1642,7 +1642,7 @@ textarea {
 }
 
 .order__subtitle span {
-	display: inline-block;
+	display: block;
 }
 
 .order__contact {

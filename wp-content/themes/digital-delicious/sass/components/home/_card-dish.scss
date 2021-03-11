@@ -49,12 +49,12 @@
   &__name {
     font-size: $font__size-heading-medium;
     margin-top: $spacing__s;
-    margin-bottom: calc(#{$spacing__xs} / 2);
+    margin-bottom: 0.2rem;
   }
 
   &__price {
     font-weight: $font__weight-regular;
-    margin-bottom: $spacing__xs;
+    margin-bottom: 1rem;
   }
 
   &__price,

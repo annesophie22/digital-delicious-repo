@@ -1258,12 +1258,12 @@ textarea {
 .card-dish__name {
 	font-size: 2.6rem;
 	margin-top: 2.4rem;
-	margin-bottom: calc(1.6rem / 2);
+	margin-bottom: 0.2rem;
 }
 
 .card-dish__price {
 	font-weight: 400;
-	margin-bottom: 1.6rem;
+	margin-bottom: 1rem;
 }
 
 .card-dish__price, .card-dish__desc {

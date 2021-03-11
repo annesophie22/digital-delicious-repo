@@ -9,15 +9,18 @@
     padding: $spacing__m 0;
 
     @include respond(tab-port) {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   &__navigation {
+    display: flex;
     ul {
       @include removeListStyle;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       a {
         display: inline-block;
         &:link {
@@ -30,21 +33,6 @@
           color: $color__link-visited-light;
         }
       }
-    }
-    @include respond(tab-port) {
-      width: 40%;
-    }
-    @include respond(desktop) {
-      width: calc(100% / 4);
-    }
-  }
-
-  &__contact {
-    @include respond(tab-port) {
-      width: 60%;
-    }
-    @include respond(desktop) {
-      width: calc(100% / 4);
     }
   }
 

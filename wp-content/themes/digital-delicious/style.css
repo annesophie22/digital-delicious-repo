@@ -1708,15 +1708,21 @@ textarea {
 
 @media only screen and (min-width: 600px) {
 	.dd-footer__container {
-		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 	}
+}
+
+.dd-footer__navigation {
+	display: flex;
 }
 
 .dd-footer__navigation ul {
 	list-style: none;
 	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .dd-footer__navigation ul a {
@@ -1729,30 +1735,6 @@ textarea {
 
 .dd-footer__navigation ul a:focus, .dd-footer__navigation ul a:hover, .dd-footer__navigation ul a:visited, .dd-footer__navigation ul a:active {
 	color: #ddecdb;
-}
-
-@media only screen and (min-width: 600px) {
-	.dd-footer__navigation {
-		width: 40%;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	.dd-footer__navigation {
-		width: calc(100% / 4);
-	}
-}
-
-@media only screen and (min-width: 600px) {
-	.dd-footer__contact {
-		width: 60%;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	.dd-footer__contact {
-		width: calc(100% / 4);
-	}
 }
 
 .dd-footer__list {

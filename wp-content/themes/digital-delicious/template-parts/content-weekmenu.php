@@ -10,7 +10,22 @@
 
 <div>
 
-   <p class="week-menu__day"><mark class="highlighted"><?php the_title(); ?></mark></p>
+   <?php
+   $relatedCalendar = new DateTime(get_field("calendar_day"));
+
+   $relatedTextDay = $relatedCalendar->format("l");
+   $relatedNumDay = $relatedCalendar->format("j");
+   $relatedMonth = $relatedCalendar->format("F");
+   $relatedYear = $relatedCalendar->format("Y");
+
+   ?>
+
+   <p class="week-menu__day"><mark class="highlighted">
+         <span><?php echo $relatedTextDay; ?></span>
+         <span><?php echo $relatedNumDay; ?></span>
+         <span><?php echo $relatedMonth; ?></span>
+         <span><?php echo $relatedYear; ?></span>
+      </mark></p>
 
    <?php
    $relatedDish = get_field("dishes_today");

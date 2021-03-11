@@ -29,6 +29,8 @@ get_header();
          $homepageMenu = new WP_Query(
             array(
                "post_type" => "service-days",
+               "orderby" => "meta_value_num", // = order by date defined in custom field
+               "meta_key" => "calendar_day",
                "order" => "ASC",
             )
          );

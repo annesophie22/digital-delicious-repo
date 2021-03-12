@@ -1105,12 +1105,34 @@ textarea {
 
 @media only screen and (min-width: 600px) {
 	.dd-header-nav {
-		padding: 2rem 0;
+		padding: 1rem 0;
 	}
 }
 
 .dd-header-nav__logo .site-title {
 	margin-bottom: 0;
+	min-width: 200px;
+}
+
+.dd-header-nav__logo .site-title > a {
+	display: flex;
+	align-items: flex-end;
+}
+
+.dd-site-title__logo {
+	display: block;
+	width: 100%;
+	max-width: 7rem;
+	height: auto;
+}
+
+.dd-site-title__name {
+	display: block;
+	font-family: "Newsreader", serif;
+	font-size: 2.7rem;
+	font-weight: 600;
+	color: #743200;
+	letter-spacing: -1.5px;
 }
 
 .hero-banner {

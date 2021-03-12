@@ -56,11 +56,21 @@
 					the_custom_logo();
 					if (is_front_page() && is_home()) :
 					?>
-						<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+						<h1 class="site-title">
+							<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+								<span class="dd-site-title__logo"><?php echo file_get_contents(get_theme_file_uri("/images/logo.svg")); ?></span>
+								<span class="dd-site-title__name"><?php bloginfo('name'); ?></span>
+							</a>
+						</h1>
 					<?php
 					else :
 					?>
-						<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
+						<p class="site-title">
+							<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+								<span class="dd-site-title__logo"><?php echo file_get_contents(get_theme_file_uri("/images/logo.svg")); ?></span>
+								<span class="dd-site-title__name"><?php bloginfo('name'); ?></span>
+							</a>
+						</p>
 					<?php
 					endif;
 					$digital_delicious_description = get_bloginfo('description', 'display');

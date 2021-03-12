@@ -110,12 +110,34 @@
   padding: 1.2rem 0;
 
   @include respond(tab-port) {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 
   &__logo {
     .site-title {
       margin-bottom: 0;
+      min-width: 200px;
+      > a {
+        display: flex;
+        align-items: flex-end;
+      }
     }
+  }
+}
+
+.dd-site-title {
+  &__logo {
+    display: block;
+    width: 100%;
+    max-width: 7rem;
+    height: auto;
+  }
+  &__name {
+    display: block;
+    font-family: $font__heading;
+    font-size: 2.7rem;
+    font-weight: $font__weight-semibold;
+    color: rgb(116, 50, 0);
+    letter-spacing: -1.5px;
   }
 }

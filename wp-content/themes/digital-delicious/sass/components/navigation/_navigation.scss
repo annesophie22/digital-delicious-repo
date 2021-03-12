@@ -46,6 +46,10 @@
     position: relative;
     margin-left: 2.1rem;
 
+    @include respond(desktop) {
+      margin-left: 6rem;
+    }
+
     a {
       position: relative;
       text-transform: uppercase;

@@ -1111,25 +1111,27 @@ textarea {
 
 .dd-header-nav__logo .site-title {
 	margin-bottom: 0;
-	min-width: 200px;
 }
 
 .dd-header-nav__logo .site-title > a {
 	display: flex;
-	align-items: flex-end;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	line-height: 1.3;
 }
 
 .dd-site-title__logo {
 	display: block;
 	width: 100%;
-	max-width: 7rem;
+	max-width: 6.5rem;
 	height: auto;
 }
 
 .dd-site-title__name {
 	display: block;
 	font-family: "Newsreader", serif;
-	font-size: 2.7rem;
+	font-size: 2.3rem;
 	font-weight: 600;
 	color: #743200;
 	letter-spacing: -1.5px;

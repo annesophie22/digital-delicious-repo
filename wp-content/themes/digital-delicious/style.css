@@ -1388,15 +1388,23 @@ textarea {
 
 .order-details__title {
 	font-family: "Newsreader", serif;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 3.8rem;
 	font-size: clamp(3.8rem, 10vw, 4.5rem);
 }
 
 .order-details__hr {
+	height: 1px;
+	width: 30%;
 	background-color: #fff;
 	opacity: 0.5;
 	margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+	.order-details__hr {
+		height: 3px;
+	}
 }
 
 .order-details__contact {
@@ -1412,11 +1420,16 @@ textarea {
 }
 
 .order-details__contact a {
+	font-weight: 300;
 	transition: all 0.2s ease-in-out;
 }
 
-.order-details__contact a:hover, .order-details__contact a:visited {
+.order-details__contact a:hover, .order-details__contact a:focus {
 	color: #02e297;
+}
+
+.order-details__contact a:visited {
+	color: #f7f3ed;
 }
 
 .order-details__contact-phone, .order-details__contact-social {

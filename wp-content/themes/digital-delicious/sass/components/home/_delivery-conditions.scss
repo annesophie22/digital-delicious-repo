@@ -74,16 +74,22 @@
 
   &__title {
     font-family: $font__heading;
-    font-weight: $font__weight-semibold;
+    font-weight: $font__weight-regular;
     //if clamp() not supported
     font-size: 3.8rem;
     font-size: clamp(3.8rem, 10vw, 4.5rem);
   }
 
   &__hr {
+    height: 1px;
+    width: 30%;
     background-color: #fff;
     opacity: 0.5;
     margin: 0 auto;
+
+    @include respond(tab-port) {
+      height: 3px;
+    }
   }
 
   &__contact {
@@ -98,10 +104,15 @@
     }
 
     a {
+      font-weight: $font__weight-light;
       transition: all 0.2s ease-in-out;
       &:hover,
-      &:visited {
+      &:focus {
         color: #02e297;
+      }
+
+      &:visited {
+        color: $color__background-body;
       }
     }
 

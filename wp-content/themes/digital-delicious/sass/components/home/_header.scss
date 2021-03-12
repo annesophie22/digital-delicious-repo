@@ -25,9 +25,9 @@
   /* left side of the header banner */
 
   &__contact {
-    border: 0.5px solid white;
+    border: 0.5px solid #4ed3a7;
     border-radius: 1em;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.7rem;
     display: flex;
     align-items: center;
     line-height: 1;
@@ -35,7 +35,7 @@
     transition: all 0.375s ease-in;
 
     &:hover {
-      background: black;
+      background: rgba(0, 0, 0, 0.7);
       border: transparent;
     }
 
@@ -43,8 +43,8 @@
       display: block;
       margin-right: calc(#{$spacing__xs / 2});
       svg {
-        height: 2rem;
-        width: 2rem;
+        height: 1.7rem;
+        width: 1.7rem;
         path {
           fill: $color__background-body;
         }
@@ -89,7 +89,7 @@
     &:hover {
       svg {
         path {
-          fill: black;
+          fill: rgba(0, 0, 0, 0.7);
         }
       }
     }

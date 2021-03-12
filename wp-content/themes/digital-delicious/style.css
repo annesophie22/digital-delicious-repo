@@ -1024,9 +1024,9 @@ textarea {
 }
 
 .dd-header-banner__contact {
-	border: 0.5px solid white;
+	border: 0.5px solid #4ed3a7;
 	border-radius: 1em;
-	padding: 0.5rem 2rem;
+	padding: 0.5rem 1.7rem;
 	display: flex;
 	align-items: center;
 	line-height: 1;
@@ -1035,7 +1035,7 @@ textarea {
 }
 
 .dd-header-banner__contact:hover {
-	background: black;
+	background: rgba(0, 0, 0, 0.7);
 	border: transparent;
 }
 
@@ -1045,8 +1045,8 @@ textarea {
 }
 
 .dd-header-banner__contact-phone svg {
-	height: 2rem;
-	width: 2rem;
+	height: 1.7rem;
+	width: 1.7rem;
 }
 
 .dd-header-banner__contact-phone svg path {
@@ -1087,7 +1087,7 @@ textarea {
 }
 
 .dd-header-banner__social:hover svg path {
-	fill: black;
+	fill: rgba(0, 0, 0, 0.7);
 }
 
 /**

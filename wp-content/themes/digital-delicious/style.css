@@ -1088,7 +1088,7 @@ textarea {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.2rem 0;
+	padding: 0.5rem 0 0.2rem;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1100,12 +1100,6 @@ textarea {
 @media only screen and (min-width: 1600px) {
 	.dd-header-nav {
 		max-width: 80%;
-	}
-}
-
-@media only screen and (min-width: 600px) {
-	.dd-header-nav {
-		padding: 1rem 0;
 	}
 }
 

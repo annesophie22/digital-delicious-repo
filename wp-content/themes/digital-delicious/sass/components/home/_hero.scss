@@ -22,15 +22,25 @@
   &__title {
     max-width: 80%;
     margin-bottom: $spacing__s;
-    font-size: 5rem;
-    font-weight: $font__weight-semibold;
+    font-size: 6rem;
+    font-weight: $font__weight-regular;
     letter-spacing: 1px;
+
+    @include respond(desktop) {
+      font-size: 7rem;
+    }
   }
 
   &__subtitle {
     max-width: 80%;
     margin-bottom: 0;
     font-size: 2.2rem;
-    font-weight: $font__weight-regular;
+    text-transform: uppercase;
+    font-weight: $font__weight-light;
+    letter-spacing: 2px;
+
+    @include respond(desktop) {
+      font-size: 3rem;
+    }
   }
 }

@@ -1024,7 +1024,7 @@ textarea {
 }
 
 .dd-header-banner__contact {
-	border: 0.5px solid #4ed3a7;
+	border: 0.5px solid #51ac8e;
 	border-radius: 1em;
 	padding: 0.5rem 1.7rem;
 	display: flex;
@@ -1036,7 +1036,7 @@ textarea {
 
 .dd-header-banner__contact:hover {
 	background: rgba(0, 0, 0, 0.7);
-	border: transparent;
+	border: 0.5px solid transparent;
 }
 
 .dd-header-banner__contact-phone {

@@ -59,9 +59,17 @@
 	const linksWithChildren = menu.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
 
 	// Toggle focus each time a menu link is focused or blurred.
+	// DD added a click event to remove the nav when we click on a link.
+	const primaryMenuContainer = document.querySelector( '.primary-menu-container' );
+
 	for ( const link of links ) {
 		link.addEventListener( 'focus', toggleFocus, true );
 		link.addEventListener( 'blur', toggleFocus, true );
+		link.addEventListener( 'click', () => {
+			siteNavigation.classList.remove( 'toggled' );
+			button.setAttribute( 'aria-expanded', 'false' );
+			primaryMenuContainer.classList.toggle( 'primary-menu-container--hidden' );
+		} );
 	}
 
 	// Toggle focus each time a menu link with children receive a touch event.

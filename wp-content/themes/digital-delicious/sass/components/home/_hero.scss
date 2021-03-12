@@ -25,6 +25,7 @@
     font-size: 6rem;
     font-weight: $font__weight-regular;
     letter-spacing: 1px;
+    line-height: 1.2;
 
     @include respond(desktop) {
       font-size: 7rem;

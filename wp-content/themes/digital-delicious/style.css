@@ -855,6 +855,13 @@ textarea {
 	color: #424242;
 	font-weight: 600;
 	transition: all 0.2s ease-in;
+	letter-spacing: 0.5px;
+}
+
+@media only screen and (min-width: 900px) {
+	.main-navigation li a {
+		font-size: 2rem;
+	}
 }
 
 .main-navigation li:hover > a,
@@ -1135,6 +1142,7 @@ textarea {
 	font-weight: 600;
 	color: #743200;
 	letter-spacing: -1.5px;
+	text-align: center;
 }
 
 .hero-banner {

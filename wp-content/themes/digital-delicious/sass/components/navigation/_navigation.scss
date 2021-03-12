@@ -56,6 +56,11 @@
       color: $color__text-main;
       font-weight: $font__weight-semibold;
       transition: all 0.2s ease-in;
+      letter-spacing: 0.5px;
+
+      @include respond(tab-land) {
+        font-size: 2rem;
+      }
     }
 
     &:hover > a,

@@ -1082,7 +1082,7 @@ textarea {
 }
 
 .dd-header-banner__social svg path {
-	fill: #f7f3ed;
+	fill: rgba(247, 243, 237, 0.9);
 	transition: all 0.2s ease-in;
 }
 

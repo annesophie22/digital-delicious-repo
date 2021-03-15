@@ -1148,6 +1148,7 @@ textarea {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	min-height: 500px;
 	height: 70vh;
 	width: 95%;
 	margin: 0 auto 6.4rem;
@@ -1444,38 +1445,65 @@ textarea {
 	list-style: none;
 	margin: 0;
 	padding-top: 4.8rem;
-	font-size: 3.2rem;
-	font-size: clamp(3.2rem, 8vw, 3.5rem);
+	font-size: 3.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	.order-details__contact {
+		font-size: 2.5rem;
+	}
 }
 
 .order-details__contact li:not(:last-child) {
 	margin-bottom: 2.4rem;
 }
 
-.order-details__contact a {
+.order-details__contact-link-tel, .order-details__contact-link-email, .order-details__contact-link-social {
 	font-weight: 300;
 	transition: all 0.2s ease-in-out;
 }
 
-.order-details__contact a:hover, .order-details__contact a:focus {
+.order-details__contact-link-tel:hover, .order-details__contact-link-tel:focus, .order-details__contact-link-email:hover, .order-details__contact-link-email:focus, .order-details__contact-link-social:hover, .order-details__contact-link-social:focus {
 	color: #02e297;
 }
 
-.order-details__contact a:visited {
+.order-details__contact-link-tel:visited, .order-details__contact-link-email:visited, .order-details__contact-link-social:visited {
 	color: #f7f3ed;
 }
 
-.order-details__contact-phone, .order-details__contact-social {
+.order-details__contact-link-email {
+	font-size: 6vw;
+}
+
+@media only screen and (min-width: 600px) {
+	.order-details__contact-link-email {
+		font-size: 3.5rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.order-details__contact-link-email {
+		font-size: 2.2rem;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.order-details__contact-link-email {
+		font-size: 2.5rem;
+	}
+}
+
+.order-details__contact-phone, .order-details__contact-email, .order-details__contact-social {
 	display: block;
 	margin: 0;
 }
 
-.order-details__contact-phone svg, .order-details__contact-social svg {
+.order-details__contact-phone svg, .order-details__contact-email svg, .order-details__contact-social svg {
 	height: 3rem;
 	width: 3rem;
 }
 
-.order-details__contact-phone svg path, .order-details__contact-social svg path {
+.order-details__contact-phone svg path, .order-details__contact-email svg path, .order-details__contact-social svg path {
 	fill: #f7f3ed;
 }
 

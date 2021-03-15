@@ -95,15 +95,20 @@
   &__contact {
     @include removeListStyle;
     padding-top: $spacing__l;
-    //if clamp() not supported
-    font-size: 3.2rem;
-    font-size: clamp(3.2rem, 8vw, 3.5rem);
+    font-size: 3.5rem;
+
+    @include respond(desktop) {
+      font-size: 2.5rem;
+    }
 
     li:not(:last-child) {
       margin-bottom: $spacing__s;
     }
 
-    a {
+    //Links
+    &-link-tel,
+    &-link-email,
+    &-link-social {
       font-weight: $font__weight-light;
       transition: all 0.2s ease-in-out;
       &:hover,
@@ -116,7 +121,22 @@
       }
     }
 
+    &-link-email {
+      font-size: 6vw;
+      @include respond(tab-port) {
+        font-size: 3.5rem;
+      }
+      @include respond(desktop) {
+        font-size: 2.2rem;
+      }
+      @include respond(big-desk) {
+        font-size: 2.5rem;
+      }
+    }
+
+    //SVGs
     &-phone,
+    &-email,
     &-social {
       display: block;
       margin: 0;

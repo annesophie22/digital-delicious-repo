@@ -81,8 +81,9 @@ get_header();
             <h3 class="heading-secondary order-details__title">Order now</h3>
             <hr class="order-details__hr">
             <ul class="order-details__contact">
-               <li><span class="order-details__contact-phone"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")); ?></span><a href="tel:+#">079 123 45 67</a></li>
-               <li><span class="order-details__contact-social"><?php echo file_get_contents(get_theme_file_uri("/images/icon_fb.svg")); ?></span><a href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">Home made food<br>(Pho bep Oi)</a></li>
+               <li><span class="order-details__contact-phone"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")); ?></span><a class="order-details__contact-link-tel" href="tel:+#">079 123 45 67</a></li>
+               <li><span class="order-details__contact-email"><?php echo file_get_contents(get_theme_file_uri("/images/icon_email.svg")); ?></span><a class="order-details__contact-link-email" href="mailto:#">lastella.thitrang@gmail.com</a></li>
+               <li><span class="order-details__contact-social"><?php echo file_get_contents(get_theme_file_uri("/images/icon_fb.svg")); ?></span><a class="order-details__contact-link-social" href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">Home made food<br>(Pho bep Oi)</a></li>
             </ul>
          </div>
       </div>

@@ -441,7 +441,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #424242;
+	color: #2e2d2d;
 	font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 1.8rem;
 	line-height: 1.5;
@@ -734,7 +734,7 @@ textarea {
 	font-size: 3.2rem;
 	text-align: center;
 	line-height: 1.1;
-	color: #424242;
+	color: #2e2d2d;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -846,7 +846,7 @@ textarea {
 .main-navigation li a {
 	position: relative;
 	text-transform: uppercase;
-	color: #424242;
+	color: #2e2d2d;
 	font-weight: 600;
 	transition: all 0.2s ease-in;
 	letter-spacing: 0.5px;
@@ -1792,7 +1792,7 @@ textarea {
 }
 
 .order__contact-phone svg path, .order__contact-email svg path, .order__contact-social svg path {
-	fill: #424242;
+	fill: #2e2d2d;
 }
 
 .order__contact-phone svg {
@@ -1806,7 +1806,7 @@ textarea {
 }
 
 .site-footer {
-	background-color: #424242;
+	background-color: #2e2d2d;
 	color: #f7f3ed;
 }
 
@@ -2189,6 +2189,29 @@ textarea {
 --------------------------------------------- */
 .home {
 	margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		border: none;
+		outline: none;
+		background-color: #209a72;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 5px;
+		font-size: 1.8rem;
+		transition: all 0.2s ease-in;
+	}
+	#myBtn:hover {
+		background-color: #126e4f;
+		/* Add a dark-grey background on hover */
+	}
 }
 
 .section-alacarte,

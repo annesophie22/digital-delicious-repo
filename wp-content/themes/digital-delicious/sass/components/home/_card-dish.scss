@@ -1,11 +1,23 @@
 .card-dish {
   line-height: 1;
   padding-bottom: $spacing__s;
-  // placement in _day-grid
-  justify-self: center;
 
   &:not(:last-child) {
     margin-bottom: $spacing__m;
+  }
+
+  @include respond(tab-port) {
+    max-width: calc(100% / 2 - 18px);
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+
+  @include respond(tab-land) {
+    max-width: calc(100% / 2 - 30px);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
   &__img-container {

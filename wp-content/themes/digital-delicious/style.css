@@ -728,8 +728,6 @@ textarea {
 # Layouts
 --------------------------------------------------------------*/
 .day-grid__title {
-	grid-row: 1 / 2;
-	grid-column: 1 / -1;
 	margin-bottom: 3.2rem;
 	font-family: "Newsreader", serif;
 	font-weight: 400;
@@ -748,11 +746,17 @@ textarea {
 
 @media only screen and (min-width: 600px) {
 	.day-grid {
-		display: grid;
 		max-width: 100%;
-		grid-template-rows: min-content min-content;
-		grid-template-columns: repeat(3, 1fr);
-		grid-column-gap: 2.4rem;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.day-grid__hr {
+		margin-bottom: 4.8rem;
 	}
 }
 
@@ -1256,11 +1260,28 @@ textarea {
 .card-dish {
 	line-height: 1;
 	padding-bottom: 2.4rem;
-	justify-self: center;
 }
 
 .card-dish:not(:last-child) {
 	margin-bottom: 3.2rem;
+}
+
+@media only screen and (min-width: 600px) {
+	.card-dish {
+		max-width: calc(100% / 2 - 18px);
+	}
+	.card-dish:not(:last-child) {
+		margin-right: 18px;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.card-dish {
+		max-width: calc(100% / 2 - 30px);
+	}
+	.card-dish:not(:last-child) {
+		margin-right: 30px;
+	}
 }
 
 .card-dish__img-container {

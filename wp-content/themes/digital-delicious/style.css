@@ -824,7 +824,7 @@ textarea {
 }
 
 .main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li:focus > ul {
+.main-navigation ul ul li.focus > ul {
 	display: block;
 	left: auto;
 }
@@ -834,7 +834,7 @@ textarea {
 }
 
 .main-navigation ul li:hover > ul,
-.main-navigation ul li:focus > ul {
+.main-navigation ul li.focus > ul {
 	left: auto;
 }
 
@@ -865,7 +865,7 @@ textarea {
 }
 
 .main-navigation li:hover > a,
-.main-navigation li:focus > a {
+.main-navigation li.focus > a {
 	color: #209a72;
 }
 
@@ -926,6 +926,10 @@ textarea {
 	border-radius: 0 0 5px 5px;
 	text-align: center;
 	z-index: 999;
+}
+
+.primary-menu-container--hidden {
+	display: none;
 }
 
 .main-navigation.toggled li {
@@ -1151,7 +1155,8 @@ textarea {
 	justify-content: center;
 	align-items: center;
 	height: 70vh;
-	margin-bottom: 6.4rem;
+	width: 95%;
+	margin: 0 auto 6.4rem;
 	background-image: url(./images/hero_img-tab@2x.jpg);
 	background-size: cover;
 	background-position: center;
@@ -1159,13 +1164,14 @@ textarea {
 	text-align: center;
 	color: #ececec;
 	border-bottom: 10px solid #0e174b;
+	border-radius: 5px;
 }
 
 @media only screen and (min-width: 1200px) {
 	.hero-banner {
 		height: 85vh;
 		background-image: url(./images/hero_img-desktop@2x.jpg);
-		margin-bottom: 9.6rem;
+		margin: 0 auto 9.6rem;
 	}
 }
 

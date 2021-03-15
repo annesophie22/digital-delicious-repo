@@ -4,7 +4,8 @@
   justify-content: center;
   align-items: center;
   height: 70vh;
-  margin-bottom: $spacing__xl;
+  width: 95%;
+  margin: 0 auto $spacing__xl;
   background-image: url(./images/hero_img-tab@2x.jpg);
   background-size: cover;
   background-position: center;
@@ -12,11 +13,12 @@
   text-align: center;
   color: #ececec;
   border-bottom: 10px solid $color__dark__blue;
+  border-radius: 5px;
 
   @include respond(desktop) {
     height: 85vh;
     background-image: url(./images/hero_img-desktop@2x.jpg);
-    margin-bottom: $spacing__xxl;
+    margin: 0 auto $spacing__xxl;
   }
 
   &__title {

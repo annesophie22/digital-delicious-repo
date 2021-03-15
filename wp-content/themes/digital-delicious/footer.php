@@ -30,9 +30,9 @@
 		<?php endif; ?>
 		<div class="dd-footer__contact">
 			<ul class="dd-footer__list">
-				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri('/images/icon_phone.svg')); ?><a href="tel:+#">079 123 45 67</a></li>
-				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri('/images/icon_email.svg')); ?><a href="mailto:+#">lastella.thitrang@gmail.com</a></li>
-				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri('/images/icon_fb.svg')); ?><a href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">Home made food (Pho bep Oi)</a></li>
+				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri('/images/icon_phone.svg')); ?><a href="<?php echo esc_url('tel:#'); ?>">079 123 45 67</a></li>
+				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri('/images/icon_email.svg')); ?><a href="<?php echo esc_url('mailto:#'); ?>">lastella.thitrang@gmail.com</a></li>
+				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri('/images/icon_fb.svg')); ?><a href="<?php echo esc_url('https://www.facebook.com/Home-made-food-383350752019254'); ?>" class="facebook">Home made food (Pho bep Oi)</a></li>
 			</ul>
 			<ul class="dd-footer__list">
 				<li class="dd-footer__list-item">12h-13h // 18h-19h30</li>
@@ -41,7 +41,7 @@
 		</div>
 	</div> <!-- end dd-footer__container -->
 	<div class="dd-footer__attribution u-center-text">
-		<p>Icons by <a href="https://fontawesome.com/license">Font Awesome</a>. Only colors may have been changed by us.</p>
+		<p>Icons by <a href="<?php echo esc_url('https://fontawesome.com/license'); ?>">Font Awesome</a>. Only colors may have been changed by us.</p>
 	</div>
 	<div class="site-info u-center-text">
 		<p>

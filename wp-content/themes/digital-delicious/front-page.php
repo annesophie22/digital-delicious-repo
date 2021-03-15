@@ -28,10 +28,10 @@ get_header();
          <?php
          $homepageMenu = new WP_Query(
             array(
-               "post_type" => "service-days",
-               "orderby" => "meta_value_num", // = order by date defined in custom field
-               "meta_key" => "calendar_day",
-               "order" => "ASC",
+               'post_type' => 'service-days',
+               'orderby' => 'meta_value_num', // = order by date defined in custom field
+               'meta_key' => 'calendar_day',
+               'order' => 'ASC',
             )
          );
 
@@ -39,10 +39,10 @@ get_header();
             while ($homepageMenu->have_posts()) {
                $homepageMenu->the_post();
 
-               get_template_part("template-parts/content", "weekmenu");
+               get_template_part('template-parts/content', 'weekmenu');
             } /* end while */
          } else {
-            echo "<p>The kitchen is closed for now !</p>";
+            echo '<p>The kitchen is closed for now !</p>';
          }/* end if */
 
          wp_reset_postdata();
@@ -83,9 +83,9 @@ get_header();
             <h3 class="heading-secondary order-details__title">Order now</h3>
             <hr class="order-details__hr">
             <ul class="order-details__contact">
-               <li><span class="order-details__contact-phone"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")); ?></span><a class="order-details__contact-link-tel" href="tel:+#">079 123 45 67</a></li>
-               <li><span class="order-details__contact-email"><?php echo file_get_contents(get_theme_file_uri("/images/icon_email.svg")); ?></span><a class="order-details__contact-link-email" href="mailto:#">lastella.thitrang@gmail.com</a></li>
-               <li><span class="order-details__contact-social"><?php echo file_get_contents(get_theme_file_uri("/images/icon_fb.svg")); ?></span><a class="order-details__contact-link-social" href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">Home made food<br>(Pho bep Oi)</a></li>
+               <li><span class="order-details__contact-phone"><?php echo file_get_contents(get_theme_file_uri('/images/icon_phone.svg')); ?></span><a class="order-details__contact-link-tel" href="tel:+#">079 123 45 67</a></li>
+               <li><span class="order-details__contact-email"><?php echo file_get_contents(get_theme_file_uri('/images/icon_email.svg')); ?></span><a class="order-details__contact-link-email" href="mailto:#">lastella.thitrang@gmail.com</a></li>
+               <li><span class="order-details__contact-social"><?php echo file_get_contents(get_theme_file_uri('/images/icon_fb.svg')); ?></span><a class="order-details__contact-link-social" href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook">Home made food<br>(Pho bep Oi)</a></li>
             </ul>
          </div>
       </div>
@@ -106,14 +106,16 @@ get_header();
             <?php
             $homepageDishes = new WP_Query(
                array(
-                  "post_type" => "dish",
+                  'post_type' => 'dish',
                )
             );
             if ($homepageDishes->have_posts()) {
                while ($homepageDishes->have_posts()) {
                   $homepageDishes->the_post();
-                  get_template_part("template-parts/content", "dish");
+                  get_template_part('template-parts/content', 'dish');
                }
+            } else {
+               echo '<p>Something might got wrong, there is no dish to display. Drop us a message to know what we have on the menu this week</p>';
             }
             wp_reset_postdata();
             ?>
@@ -135,21 +137,21 @@ get_header();
       <div class="testimonial-grid">
          <!-- INDIVIDUAL TEST. ITEM -->
          <div class="testimonial-grid__item testimonial-grid__item--1">
-            <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri("/images/quotation_mark.svg") ?>" alt="testimonial">
+            <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri('/images/quotation_mark.svg') ?>" alt="testimonial">
             <div class="testimonial-grid__text testimonial-grid__text--1">
                <p>Portions généreuses et Phò délicieux! Et prix plus que correct! N’hésitez pas à commander.</p>
             </div>
          </div> <!-- end individual test. item -->
          <!-- INDIVIDUAL TEST. ITEM -->
          <div class="testimonial-grid__item">
-            <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri("/images/quotation_mark.svg") ?>" alt="testimonial">
+            <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri('/images/quotation_mark.svg') ?>" alt="testimonial">
             <div class="testimonial-grid__text testimonial-grid__text--2">
                <p>Excellent qualité et trop bon. Je recommande Home made food les yeux fermés</p>
             </div>
          </div> <!-- end individual test. item -->
          <!-- INDIVIDUAL TEST. ITEM -->
          <div class="testimonial-grid__item">
-            <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri("/images/quotation_mark.svg") ?>" alt="testimonial">
+            <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri('/images/quotation_mark.svg') ?>" alt="testimonial">
             <div class="testimonial-grid__text testimonial-grid__text--3">
                <p>such delicious and fresh home cooked food, I really recommend!</p>
             </div>
@@ -166,7 +168,7 @@ get_header();
             <p class="about__text">Risus, nec id velit morbi amet. Id cursus volutpat sollicitudin cras elit. Dolor, ullamcorper nibh et a. Id nunc, dictum ornare sed et nullam arcu in malesuada. Placerat eget gravida mi scelerisque sed est rhoncus. Enim, arcu urna et bibendum sit. Aliquam morbi bibendum facilisis massa sollicitudin felis, ut ut. Luctus auctor orci nunc diam quam facilisi sit ut molestie.</p>
          </div> <!-- end about desc -->
          <div class="about__img">
-            <img src="<?php echo get_theme_file_uri("/images/about.jpg") ?>" alt="">
+            <img src="<?php echo get_theme_file_uri('/images/about.jpg') ?>" alt="">
          </div>
       </section> <!-- end section about -->
    </div>
@@ -176,14 +178,14 @@ get_header();
       <div class="order__desc">
          <h2 class="heading-primary order__title">Order now</h2>
          <p class="heading-block__subtitle order__subtitle">Tuesdays, Thursdays and Saturdays <span>12h-13h // 18h-19h30</span></p>
-         <p class="order__contact"><span class="order__contact-phone"><?php echo file_get_contents(get_theme_file_uri("/images/icon_phone.svg")); ?></span><a class="order__contact-phone-link" href="tel:+41762473419">079 123 45 67</a></p>
+         <p class="order__contact"><span class="order__contact-phone"><?php echo file_get_contents(get_theme_file_uri('/images/icon_phone.svg')); ?></span><a class="order__contact-phone-link" href="tel:+41762473419">079 123 45 67</a></p>
 
-         <p class="order__contact"><span class="order__contact-email"><?php echo file_get_contents(get_theme_file_uri("/images/icon_email.svg")); ?></span><a class="order__contact-email-link" href="mailto:+#">lastella.thitrang@gmail.com</a></p>
+         <p class="order__contact"><span class="order__contact-email"><?php echo file_get_contents(get_theme_file_uri('/images/icon_email.svg')); ?></span><a class="order__contact-email-link" href="mailto:+#">lastella.thitrang@gmail.com</a></p>
 
-         <p class="order__contact"><span class="order__contact-social"><?php echo file_get_contents(get_theme_file_uri("/images/icon_fb.svg")); ?></span><a href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook order__contact-social-link">Home made food (Pho bep Oi)</a></p>
+         <p class="order__contact"><span class="order__contact-social"><?php echo file_get_contents(get_theme_file_uri('/images/icon_fb.svg')); ?></span><a href="https://www.facebook.com/Home-made-food-383350752019254" class="facebook order__contact-social-link">Home made food (Pho bep Oi)</a></p>
       </div> <!-- end order desc -->
       <div class="order__img">
-         <img src="<?php echo get_theme_file_uri("/images/hanged_lights.jpg") ?>" alt="">
+         <img src="<?php echo get_theme_file_uri('/images/hanged_lights.jpg') ?>" alt="">
       </div>
    </section> <!-- end section order -->
 

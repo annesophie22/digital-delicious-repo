@@ -9,12 +9,12 @@
 ?>
 
 <?php
-$relatedCalendar = new DateTime(get_field("calendar_day"));
+$relatedCalendar = new DateTime(get_field('calendar_day'));
 
-$relatedTextDay = $relatedCalendar->format("l");
-$relatedNumDay = $relatedCalendar->format("j");
-$relatedMonth = $relatedCalendar->format("F");
-$relatedYear = $relatedCalendar->format("Y");
+$relatedTextDay = $relatedCalendar->format('l');
+$relatedNumDay = $relatedCalendar->format('j');
+$relatedMonth = $relatedCalendar->format('F');
+$relatedYear = $relatedCalendar->format('Y');
 ?>
 
 <p class="day-grid__title"><mark class="highlighted">
@@ -26,26 +26,26 @@ $relatedYear = $relatedCalendar->format("Y");
 
 <div class="day-grid">
    <?php
-   $relatedDish = get_field("dishes_today");
+   $relatedDish = get_field('dishes_today');
    if ($relatedDish) {
       foreach ($relatedDish as $dish) {
    ?>
          <div class="card-dish">
             <!-- card dish -->
             <div class="card-dish__img-container">
-               <?php echo get_the_post_thumbnail($dish->ID, "", array(
-                  "class" => "card-dish__img",
-                  "alt" => ""
+               <?php echo get_the_post_thumbnail($dish->ID, '', array(
+                  'class' => 'card-dish__img',
+                  'alt' => '',
                )); ?>
             </div>
             <h3 class="heading-secondary card-dish__name"><?php echo get_the_title($dish); ?></h3>
-            <p class="card-dish__price">CHF <?php echo get_field("dish_price", $dish->ID); ?></p>
-            <p class="card-dish__desc"><?php echo get_field("dish_desc", $dish->ID); ?></p>
+            <p class="card-dish__price">CHF <?php echo get_field('dish_price', $dish->ID); ?></p>
+            <p class="card-dish__desc"><?php echo get_field('dish_desc', $dish->ID); ?></p>
          </div> <!-- end card dish -->
    <?php
       }
    } else {
-      echo "<p>Exceptionally, no dish will be cooked today</p>";
+      echo '<p>Exceptionally, no dish will be cooked today</p>';
    }
 
    ?>

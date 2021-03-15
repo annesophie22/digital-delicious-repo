@@ -42,6 +42,12 @@
     font-size: 3rem;
     line-height: 1;
 
+    @media only screen and (max-width: 360px) {
+      &-email-link {
+        font-size: 2.8rem;
+      }
+    }
+
     &:not(:last-child) {
       margin-bottom: $spacing__m;
     }
@@ -53,6 +59,7 @@
     }
 
     &-phone,
+    &-email,
     &-social {
       display: block;
       margin: 0;
@@ -70,7 +77,8 @@
       }
     }
 
-    &-social {
+    &-social,
+    &-email {
       svg {
         height: 3.5rem;
         width: 3.5rem;

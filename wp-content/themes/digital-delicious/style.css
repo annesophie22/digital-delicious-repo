@@ -1099,7 +1099,7 @@ textarea {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.5rem 0 0.2rem;
+	padding: 0.5rem 0rem;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1459,7 +1459,7 @@ textarea {
 }
 
 .order-details__contact-link-tel, .order-details__contact-link-email, .order-details__contact-link-social {
-	font-weight: 300;
+	font-weight: 400;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -1770,6 +1770,12 @@ textarea {
 	line-height: 1;
 }
 
+@media only screen and (max-width: 360px) {
+	.order__contact-email-link {
+		font-size: 2.8rem;
+	}
+}
+
 .order__contact:not(:last-child) {
 	margin-bottom: 3.2rem;
 }
@@ -1780,12 +1786,12 @@ textarea {
 	transition: all 0.2s ease-in-out;
 }
 
-.order__contact-phone, .order__contact-social {
+.order__contact-phone, .order__contact-email, .order__contact-social {
 	display: block;
 	margin: 0;
 }
 
-.order__contact-phone svg path, .order__contact-social svg path {
+.order__contact-phone svg path, .order__contact-email svg path, .order__contact-social svg path {
 	fill: #424242;
 }
 
@@ -1794,7 +1800,7 @@ textarea {
 	width: 3rem;
 }
 
-.order__contact-social svg {
+.order__contact-social svg, .order__contact-email svg {
 	height: 3.5rem;
 	width: 3.5rem;
 }

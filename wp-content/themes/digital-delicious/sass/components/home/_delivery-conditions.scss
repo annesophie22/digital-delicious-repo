@@ -97,7 +97,7 @@
     padding-top: $spacing__l;
     //if clamp() not supported
     font-size: 3.2rem;
-    font-size: clamp(3.2rem, 8vw, 3.8rem);
+    font-size: clamp(3.2rem, 8vw, 3.5rem);
 
     li:not(:last-child) {
       margin-bottom: $spacing__s;

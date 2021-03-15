@@ -44,5 +44,8 @@
     @include respond(desktop) {
       margin-bottom: 5rem;
     }
+    @include respond(big-desk) {
+      margin-bottom: 7rem;
+    }
   }
 }

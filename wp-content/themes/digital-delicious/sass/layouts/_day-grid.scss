@@ -8,13 +8,11 @@
     font-size: 3.2rem;
     text-align: center;
     line-height: 1.1;
+    color: $color__text-main;
 
     @include respond(desktop) {
-      margin-bottom: $spacing__xl;
-    }
-
-    @include respond(big-desk) {
-      margin-bottom: $spacing__xxl;
+      font-size: 3rem;
+      margin-bottom: $spacing__m;
     }
   }
 

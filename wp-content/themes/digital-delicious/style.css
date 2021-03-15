@@ -736,17 +736,13 @@ textarea {
 	font-size: 3.2rem;
 	text-align: center;
 	line-height: 1.1;
+	color: #424242;
 }
 
 @media only screen and (min-width: 1200px) {
 	.day-grid__title {
-		margin-bottom: 6.4rem;
-	}
-}
-
-@media only screen and (min-width: 1600px) {
-	.day-grid__title {
-		margin-bottom: 9.6rem;
+		font-size: 3rem;
+		margin-bottom: 3.2rem;
 	}
 }
 
@@ -1254,6 +1250,12 @@ textarea {
 @media only screen and (min-width: 1200px) {
 	.section-alacarte .heading-block {
 		margin-bottom: 5rem;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.section-alacarte .heading-block {
+		margin-bottom: 7rem;
 	}
 }
 

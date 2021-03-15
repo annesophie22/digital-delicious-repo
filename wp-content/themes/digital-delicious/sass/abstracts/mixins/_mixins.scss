@@ -24,6 +24,10 @@
   box-shadow: 0 0.9rem 1.1rem -0.6rem rgba(0, 0, 0, 0.5);
 }
 
+@mixin boxShadow2 {
+  box-shadow: 0 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.25);
+}
+
 // DD Containers sizes
 @mixin containerDefault {
   width: 90%;

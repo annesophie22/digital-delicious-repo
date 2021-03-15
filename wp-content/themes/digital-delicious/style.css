@@ -742,7 +742,7 @@ textarea {
 @media only screen and (min-width: 1200px) {
 	.day-grid__title {
 		font-size: 3rem;
-		margin-bottom: 3.2rem;
+		margin-bottom: 4rem;
 	}
 }
 
@@ -751,14 +751,8 @@ textarea {
 		display: grid;
 		max-width: 100%;
 		grid-template-rows: min-content min-content;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		grid-column-gap: 2.4rem;
-	}
-}
-
-@media only screen and (min-width: 900px) {
-	.day-grid {
-		grid-column-gap: 4.8rem;
 	}
 }
 
@@ -1276,7 +1270,7 @@ textarea {
 	overflow: hidden;
 	border-radius: 5px;
 	transition: all 0.2s ease-in-out;
-	box-shadow: 0 0.9rem 1.1rem -0.6rem rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.25);
 }
 
 .card-dish__img-container:hover {
@@ -2173,7 +2167,7 @@ textarea {
 	.section-alacarte {
 		display: grid;
 		grid-template-rows: min-content;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr) 30%;
 		grid-template-areas: "heading-block heading-block heading-block" "week-menu week-menu del-conditions";
 	}
 	.section-alacarte > .heading-block {

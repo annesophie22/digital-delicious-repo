@@ -15,7 +15,7 @@
     overflow: hidden;
     border-radius: $border-radius__default;
     transition: all 0.2s ease-in-out;
-    @include boxShadow1;
+    @include boxShadow2;
 
     &:hover {
       box-shadow: none;

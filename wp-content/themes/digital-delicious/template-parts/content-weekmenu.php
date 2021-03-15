@@ -45,7 +45,7 @@ $relatedYear = $relatedCalendar->format("Y");
    <?php
       }
    } else {
-      echo "<p>Exceptionally, no dish will be cooked on that day this week</p>";
+      echo "<p>Exceptionally, no dish will be cooked today</p>";
    }
 
    ?>

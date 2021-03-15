@@ -41,7 +41,9 @@ get_header();
 
                get_template_part("template-parts/content", "weekmenu");
             } /* end while */
-         } /* end if */
+         } else {
+            echo "<p>The kitchen is closed for now !</p>";
+         }/* end if */
 
          wp_reset_postdata();
          ?>

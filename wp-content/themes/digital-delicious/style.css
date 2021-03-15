@@ -1165,7 +1165,7 @@ textarea {
 @media only screen and (min-width: 1200px) {
 	.hero-banner {
 		height: 85vh;
-		background-image: url(./images/hero_img-desktop@2x.jpg);
+		background-image: url(./images/hero_img-brown-desktop@2x.jpg);
 		margin: 0 auto 9.6rem;
 	}
 }

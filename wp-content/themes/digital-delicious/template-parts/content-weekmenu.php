@@ -7,7 +7,6 @@
  * @package Digital_Delicious
  */
 ?>
-
 <?php
 $relatedCalendar = new DateTime(get_field('calendar_day'));
 
@@ -15,6 +14,7 @@ $relatedTextDay = $relatedCalendar->format('l');
 $relatedNumDay = $relatedCalendar->format('j');
 $relatedMonth = $relatedCalendar->format('F');
 $relatedYear = $relatedCalendar->format('Y');
+
 ?>
 
 <p class="day-grid__title"><mark class="highlighted">
@@ -45,7 +45,7 @@ $relatedYear = $relatedCalendar->format('Y');
    <?php
       }
    } else {
-      echo esc_html_e('Exceptionally, no dish will be cooked today');
+      echo '<p class="heading-block__subtitle" style="margin: 1.6rem 0 0;">Sorry, no dish will be cooked today</p>';
    }
 
    ?>

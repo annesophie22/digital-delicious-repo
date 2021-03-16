@@ -44,7 +44,7 @@ get_header();
                get_template_part('template-parts/content', 'weekmenu');
             } /* end while */
          } else {
-            echo esc_html_e('The kitchen is closed for now !', 'digital-delicious');
+            echo '<p class="heading-block__subtitle">The kitchen is closed for now !</p>';
          }/* end ifelse */
 
          wp_reset_postdata();

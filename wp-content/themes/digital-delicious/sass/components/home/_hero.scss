@@ -1,29 +1,36 @@
 .hero-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   min-height: 500px;
   height: 70vh;
-  width: 95%;
+  max-width: 100%;
   margin: 0 auto $spacing__xl;
   background-image: url(./images/hero_img-tab@2x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
-  color: #ececec;
   border-bottom: 10px solid $color__dark__blue;
-  border-radius: 5px;
 
   @include respond(desktop) {
     height: 85vh;
     background-image: url(./images/hero_img-brown-desktop@2x.jpg);
-    margin: 0 auto $spacing__xxl;
+    margin-bottom: $spacing__xxl;
+  }
+
+  &__text-wrapper {
+    @include absCenter;
+    @include containerDefault;
+    background-color: #0000008a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ececec;
+    padding: 11rem 2rem;
   }
 
   &__title {
-    max-width: 80%;
+    max-width: 95%;
     margin-bottom: $spacing__s;
     font-size: 6rem;
     font-weight: $font__weight-regular;
@@ -36,7 +43,7 @@
   }
 
   &__subtitle {
-    max-width: 80%;
+    max-width: 90%;
     margin-bottom: 0;
     font-size: 2.2rem;
     text-transform: uppercase;

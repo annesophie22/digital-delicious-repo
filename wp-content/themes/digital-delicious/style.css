@@ -1144,34 +1144,57 @@ textarea {
 }
 
 .hero-banner {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	position: relative;
 	min-height: 500px;
 	height: 70vh;
-	width: 95%;
+	max-width: 100%;
 	margin: 0 auto 6.4rem;
 	background-image: url(./images/hero_img-tab@2x.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	text-align: center;
-	color: #ececec;
 	border-bottom: 10px solid #0e174b;
-	border-radius: 5px;
 }
 
 @media only screen and (min-width: 1200px) {
 	.hero-banner {
 		height: 85vh;
 		background-image: url(./images/hero_img-brown-desktop@2x.jpg);
-		margin: 0 auto 9.6rem;
+		margin-bottom: 9.6rem;
+	}
+}
+
+.hero-banner__text-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	margin: 0 auto;
+	background-color: #0000008a;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #ececec;
+	padding: 11rem 2rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	.hero-banner__text-wrapper {
+		max-width: 1140px;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.hero-banner__text-wrapper {
+		max-width: 80%;
 	}
 }
 
 .hero-banner__title {
-	max-width: 80%;
+	max-width: 95%;
 	margin-bottom: 2.4rem;
 	font-size: 6rem;
 	font-weight: 400;
@@ -1186,7 +1209,7 @@ textarea {
 }
 
 .hero-banner__subtitle {
-	max-width: 80%;
+	max-width: 90%;
 	margin-bottom: 0;
 	font-size: 2.2rem;
 	text-transform: uppercase;

@@ -11,8 +11,10 @@ get_header();
 
 <main id="primary" class="site-main">
    <div class="hero-banner">
-      <h1 class="hero-banner__title">Vietnamese Homemade Food</h1>
-      <p class="hero-banner__subtitle">Invite a tasty bit of Vietnam in your plate</p>
+      <div class="hero-banner__text-wrapper">
+         <h1 class="hero-banner__title">Vietnamese Homemade Food</h1>
+         <p class="hero-banner__subtitle">Invite a tasty bit of Vietnam in your plate</p>
+      </div>
    </div>
    <!-- SECTION A LA CARTE -->
    <section id="a-la-carte" class="section-alacarte">

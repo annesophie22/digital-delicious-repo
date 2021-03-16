@@ -996,7 +996,7 @@ textarea {
 	min-height: 5.6rem;
 	display: flex;
 	align-items: center;
-	background-color: #209a72;
+	background-color: #844f27;
 	/* left side of the header banner */
 	/* right side of the header banner */
 }
@@ -1022,7 +1022,7 @@ textarea {
 }
 
 .dd-header-banner__contact {
-	border: 0.5px solid #51ac8e;
+	border: 0.5px solid #341005;
 	border-radius: 1em;
 	padding: 0.5rem 1.7rem;
 	display: flex;
@@ -1129,7 +1129,7 @@ textarea {
 .dd-site-title__logo {
 	display: block;
 	width: 100%;
-	max-width: 6.5rem;
+	max-width: 5.5rem;
 	height: auto;
 }
 
@@ -1153,7 +1153,7 @@ textarea {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	border-bottom: 10px solid #743200;
+	border-bottom: 10px solid #341005;
 }
 
 @media only screen and (min-width: 600px) {

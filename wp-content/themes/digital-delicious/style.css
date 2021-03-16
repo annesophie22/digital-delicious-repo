@@ -1149,11 +1149,17 @@ textarea {
 	height: 70vh;
 	max-width: 100%;
 	margin: 0 auto 6.4rem;
-	background-image: url(./images/hero_img-tab@2x.jpg);
+	background-image: url(./images/hero_img-brown-mob@2x.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	border-bottom: 10px solid #0e174b;
+	border-bottom: 10px solid #743200;
+}
+
+@media only screen and (min-width: 600px) {
+	.hero-banner {
+		background-image: url(./images/hero_img-brown-tab@2x.jpg);
+	}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1169,8 +1175,7 @@ textarea {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 90%;
-	margin: 0 auto;
+	width: 100%;
 	background-color: #0000008a;
 	display: flex;
 	flex-direction: column;
@@ -1178,18 +1183,31 @@ textarea {
 	align-items: center;
 	text-align: center;
 	color: #ececec;
-	padding: 11rem 2rem;
+	padding: 4rem 1rem;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 600px) {
+	.hero-banner__text-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 600px) and (min-width: 1200px) {
 	.hero-banner__text-wrapper {
 		max-width: 1140px;
 	}
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 600px) and (min-width: 1600px) {
 	.hero-banner__text-wrapper {
 		max-width: 80%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.hero-banner__text-wrapper {
+		padding: 11rem 2rem;
 	}
 }
 
@@ -1205,6 +1223,13 @@ textarea {
 @media only screen and (min-width: 1200px) {
 	.hero-banner__title {
 		font-size: 7rem;
+		max-width: 70%;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.hero-banner__title {
+		max-width: 50%;
 	}
 }
 

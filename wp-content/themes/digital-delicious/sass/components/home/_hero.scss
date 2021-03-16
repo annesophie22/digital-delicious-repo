@@ -4,11 +4,15 @@
   height: 70vh;
   max-width: 100%;
   margin: 0 auto $spacing__xl;
-  background-image: url(./images/hero_img-tab@2x.jpg);
+  background-image: url(./images/hero_img-brown-mob@2x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-bottom: 10px solid $color__dark__blue;
+  border-bottom: 10px solid #743200;
+
+  @include respond(tab-port) {
+    background-image: url(./images/hero_img-brown-tab@2x.jpg);
+  }
 
   @include respond(desktop) {
     height: 85vh;
@@ -18,7 +22,7 @@
 
   &__text-wrapper {
     @include absCenter;
-    @include containerDefault;
+    width: 100%;
     background-color: #0000008a;
     display: flex;
     flex-direction: column;
@@ -26,7 +30,16 @@
     align-items: center;
     text-align: center;
     color: #ececec;
-    padding: 11rem 2rem;
+    padding: 4rem 1rem;
+
+    @include respond(tab-port) {
+      @include containerDefault;
+    }
+
+    @include respond(desktop) { 
+      padding: 11rem 2rem;
+    }
+    
   }
 
   &__title {
@@ -39,6 +52,11 @@
 
     @include respond(desktop) {
       font-size: 7rem;
+      max-width: 70%;
+    }
+
+    @include respond(big-desk) {
+      max-width: 50%;
     }
   }
 

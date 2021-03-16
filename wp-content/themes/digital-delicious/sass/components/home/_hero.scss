@@ -30,7 +30,7 @@
     align-items: center;
     text-align: center;
     color: #ececec;
-    padding: 4rem 1rem;
+    padding: 7rem 1rem;
 
     @include respond(tab-port) {
       @include containerDefault;

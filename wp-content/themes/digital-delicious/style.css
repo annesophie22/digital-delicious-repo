@@ -737,6 +737,12 @@ textarea {
 	color: #2e2d2d;
 }
 
+@media only screen and (min-width: 900px) {
+	.day-grid__title {
+		text-align: left;
+	}
+}
+
 @media only screen and (min-width: 1200px) {
 	.day-grid__title {
 		font-size: 3rem;
@@ -750,13 +756,21 @@ textarea {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: flex-start;
 	}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 	.day-grid__hr {
-		margin-bottom: 4.8rem;
+		margin: 4.8rem 0;
+		width: 65%;
+		max-width: none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.day-grid__hr {
+		margin: 6.4rem 0;
 	}
 }
 

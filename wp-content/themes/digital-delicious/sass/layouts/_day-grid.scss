@@ -8,6 +8,10 @@
     line-height: 1.1;
     color: $color__text-main;
 
+    @include respond(tab-land) {
+      text-align: left;
+    }
+
     @include respond(desktop) {
       font-size: 3rem;
       margin-bottom: 4rem;
@@ -19,12 +23,18 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   &__hr {
-    @include respond(tab-port) {
-      margin-bottom: $spacing__l;
+    @include respond(tab-land) {
+      margin:$spacing__l 0;
+      width: 65%;
+      max-width: none;
+    }
+    @include respond(desktop) {
+      
+      margin: $spacing__xl 0;
     }
   }
 }

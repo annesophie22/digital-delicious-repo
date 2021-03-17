@@ -4,7 +4,6 @@
 
 /* Home
 --------------------------------------------- */
-@import "home/header";
 @import "home/hero";
 @import "home/heading-block";
 @import "home/card-dish";
@@ -13,11 +12,12 @@
 @import "home/testimonials";
 @import "home/about";
 @import "home/order";
-@import "home/footer";
 
 /* Posts and pages
 --------------------------------------------- */
 @import "content/posts-and-pages";
+@import "content/header";
+@import "content/footer";
 
 /* Comments
 --------------------------------------------- */

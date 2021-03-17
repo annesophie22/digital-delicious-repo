@@ -1002,180 +1002,6 @@ textarea {
 
 /* Home
 --------------------------------------------- */
-.site-header {
-	position: relative;
-}
-
-@media only screen and (min-width: 900px) {
-	.site-header {
-		position: sticky;
-		top: 0;
-		z-index: 9999;
-	}
-}
-
-/**
- * #.# Header banner
- *
- * Contains only phone number and social media icons
- */
-.dd-header-banner {
-	width: 100%;
-	min-height: 5.6rem;
-	display: flex;
-	align-items: center;
-	background-color: #844f27;
-	/* left side of the header banner */
-	/* right side of the header banner */
-}
-
-.dd-header-banner__container {
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-@media only screen and (min-width: 1200px) {
-	.dd-header-banner__container {
-		max-width: 1140px;
-	}
-}
-
-@media only screen and (min-width: 1600px) {
-	.dd-header-banner__container {
-		max-width: 80%;
-	}
-}
-
-.dd-header-banner__contact {
-	border: 0.5px solid #341005;
-	border-radius: 1em;
-	padding: 0.5rem 1.7rem;
-	display: flex;
-	align-items: center;
-	line-height: 1;
-	cursor: pointer;
-	transition: all 0.375s ease-in;
-}
-
-.dd-header-banner__contact:hover {
-	background: rgba(0, 0, 0, 0.7);
-	border: 0.5px solid transparent;
-}
-
-.dd-header-banner__contact-phone {
-	display: block;
-	margin-right: calc(0.8rem);
-}
-
-.dd-header-banner__contact-phone svg {
-	height: 1.7rem;
-	width: 1.7rem;
-}
-
-.dd-header-banner__contact-phone svg path {
-	fill: #f7f3ed;
-}
-
-.dd-header-banner__contact-link {
-	display: inline-block;
-	font-size: 2.2rem;
-	font-weight: 600;
-}
-
-.dd-header-banner__contact-link, .dd-header-banner__contact-link:link {
-	color: #f7f3ed;
-}
-
-.dd-header-banner__contact-link:visited {
-	color: black;
-}
-
-.dd-header-banner__contact-link:focus, .dd-header-banner__contact-link:active {
-	color: #ddecdb;
-}
-
-.dd-header-banner__social {
-	display: inline-block;
-	line-height: 1;
-}
-
-.dd-header-banner__social svg {
-	height: 3.2rem;
-	width: 3.2rem;
-}
-
-.dd-header-banner__social svg path {
-	fill: rgba(247, 243, 237, 0.9);
-	transition: all 0.2s ease-in;
-}
-
-.dd-header-banner__social:hover svg path {
-	fill: rgba(0, 0, 0, 0.7);
-}
-
-/**
- * #.# Header navigation
- *
- * Contains the logo and the navigation
- */
-.dd-header-nav {
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0.5rem 0rem;
-}
-
-.dd-header-nav-wrapper {
-	background: #f7f3ed;
-	border-bottom: 0.5px solid #341005;
-}
-
-@media only screen and (min-width: 1200px) {
-	.dd-header-nav {
-		max-width: 1140px;
-	}
-}
-
-@media only screen and (min-width: 1600px) {
-	.dd-header-nav {
-		max-width: 80%;
-	}
-}
-
-.dd-header-nav__logo .site-title {
-	margin-bottom: 0;
-}
-
-.dd-header-nav__logo .site-title > a {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	line-height: 1.3;
-}
-
-.dd-site-title__logo {
-	display: block;
-	width: 100%;
-	max-width: 5.5rem;
-	height: auto;
-}
-
-.dd-site-title__name {
-	display: block;
-	font-family: "Newsreader", serif;
-	font-size: 2.3rem;
-	font-weight: 600;
-	color: #743200;
-	letter-spacing: -1.5px;
-	text-align: center;
-}
-
 .hero-banner {
 	position: relative;
 	min-height: 500px;
@@ -1886,10 +1712,247 @@ textarea {
 	width: 3.5rem;
 }
 
+/* Posts and pages
+--------------------------------------------- */
+.sticky {
+	display: block;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+@media only screen and (min-width: 600px) {
+	.entry-content {
+		max-width: 90%;
+	}
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+article.page, article.post {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 4.8rem;
+	margin-bottom: 3.2rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	article.page, article.post {
+		max-width: 1140px;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	article.page, article.post {
+		max-width: 80%;
+	}
+}
+
+.post-thumbnail {
+	margin-bottom: 3.2rem;
+}
+
+.cat-links,
+.edit-link {
+	display: block;
+}
+
+.site-header {
+	position: relative;
+}
+
+.site-header a {
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 900px) {
+	.site-header {
+		position: sticky;
+		top: 0;
+		z-index: 9999;
+	}
+}
+
+/**
+ * #.# Header banner
+ *
+ * Contains only phone number and social media icons
+ */
+.dd-header-banner {
+	width: 100%;
+	min-height: 5.6rem;
+	display: flex;
+	align-items: center;
+	background-color: #844f27;
+	/* left side of the header banner */
+	/* right side of the header banner */
+}
+
+.dd-header-banner__container {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media only screen and (min-width: 1200px) {
+	.dd-header-banner__container {
+		max-width: 1140px;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.dd-header-banner__container {
+		max-width: 80%;
+	}
+}
+
+.dd-header-banner__contact {
+	border: 0.5px solid #341005;
+	border-radius: 1em;
+	padding: 0.5rem 1.7rem;
+	display: flex;
+	align-items: center;
+	line-height: 1;
+	cursor: pointer;
+	transition: all 0.375s ease-in;
+}
+
+.dd-header-banner__contact:hover {
+	background: rgba(0, 0, 0, 0.7);
+	border: 0.5px solid transparent;
+}
+
+.dd-header-banner__contact-phone {
+	display: block;
+	margin-right: calc(0.8rem);
+}
+
+.dd-header-banner__contact-phone svg {
+	height: 1.7rem;
+	width: 1.7rem;
+}
+
+.dd-header-banner__contact-phone svg path {
+	fill: #f7f3ed;
+}
+
+.dd-header-banner__contact-link {
+	display: inline-block;
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+
+.dd-header-banner__contact-link, .dd-header-banner__contact-link:link {
+	color: #f7f3ed;
+}
+
+.dd-header-banner__contact-link:visited {
+	color: black;
+}
+
+.dd-header-banner__contact-link:focus, .dd-header-banner__contact-link:active {
+	color: #ddecdb;
+}
+
+.dd-header-banner__social {
+	display: inline-block;
+	line-height: 1;
+}
+
+.dd-header-banner__social svg {
+	height: 3.2rem;
+	width: 3.2rem;
+}
+
+.dd-header-banner__social svg path {
+	fill: rgba(247, 243, 237, 0.9);
+	transition: all 0.2s ease-in;
+}
+
+.dd-header-banner__social:hover svg path {
+	fill: rgba(0, 0, 0, 0.7);
+}
+
+/**
+ * #.# Header navigation
+ *
+ * Contains the logo and the navigation
+ */
+.dd-header-nav {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0rem;
+}
+
+.dd-header-nav-wrapper {
+	background: #f7f3ed;
+	border-bottom: 0.5px solid #341005;
+}
+
+@media only screen and (min-width: 1200px) {
+	.dd-header-nav {
+		max-width: 1140px;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.dd-header-nav {
+		max-width: 80%;
+	}
+}
+
+.dd-header-nav__logo .site-title {
+	margin-bottom: 0;
+}
+
+.dd-header-nav__logo .site-title > a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	line-height: 1.3;
+}
+
+.dd-site-title__logo {
+	display: block;
+	width: 100%;
+	max-width: 5.5rem;
+	height: auto;
+}
+
+.dd-site-title__name {
+	display: block;
+	font-family: "Newsreader", serif;
+	font-size: 2.3rem;
+	font-weight: 600;
+	color: #743200;
+	letter-spacing: -1.5px;
+	text-align: center;
+}
+
 .site-footer {
 	background-color: #2e2d2d;
 	color: #f7f3ed;
 	margin-top: auto;
+}
+
+.site-footer a {
+	text-decoration: none;
 }
 
 .dd-footer__container {
@@ -2012,61 +2075,6 @@ textarea {
 
 .site-info {
 	padding: 0 0.5rem 0.5rem;
-}
-
-/* Posts and pages
---------------------------------------------- */
-.sticky {
-	display: block;
-}
-
-.updated:not(.published) {
-	display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-
-@media only screen and (min-width: 600px) {
-	.entry-content {
-		max-width: 90%;
-	}
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
-article.page, article.post {
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 4.8rem;
-	margin-bottom: 3.2rem;
-}
-
-@media only screen and (min-width: 1200px) {
-	article.page, article.post {
-		max-width: 1140px;
-	}
-}
-
-@media only screen and (min-width: 1600px) {
-	article.page, article.post {
-		max-width: 80%;
-	}
-}
-
-.post-thumbnail {
-	margin-bottom: 3.2rem;
-}
-
-.cat-links,
-.edit-link {
-	display: block;
 }
 
 /* Comments
@@ -2266,30 +2274,6 @@ article.page, article.post {
 --------------------------------------------- */
 .u-center-text {
 	text-align: center;
-}
-
-.u-margin-bottom-xs {
-	margin-bottom: 1.6rem;
-}
-
-.u-margin-bottom-s {
-	margin-bottom: 2.4rem;
-}
-
-.u-margin-bottom-m {
-	margin-bottom: 3.2rem;
-}
-
-.u-margin-bottom-l {
-	margin-bottom: 4.8rem;
-}
-
-.u-margin-bottom-xl {
-	margin-bottom: 6.4rem;
-}
-
-.u-margin-bottom-xxl {
-	margin-bottom: 9.6rem;
 }
 
 .u-wrapper--white {

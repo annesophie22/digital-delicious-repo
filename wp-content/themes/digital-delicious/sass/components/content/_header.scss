@@ -1,6 +1,10 @@
 .site-header {
   position: relative;
 
+  a {
+    text-decoration: none;
+  }
+
   @include respond(tab-land) {
     position: sticky;
     top: 0;

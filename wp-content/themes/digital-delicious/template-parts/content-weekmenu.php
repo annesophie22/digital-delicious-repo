@@ -7,7 +7,9 @@
  * @package Digital_Delicious
  */
 ?>
+
 <?php
+// Retrieving the date and spliting it with "Name of the day", "Day number", "Month", "Year"
 $relatedCalendar = new DateTime(get_field('calendar_day'));
 
 $relatedTextDay = $relatedCalendar->format('l');
@@ -26,6 +28,7 @@ $relatedYear = $relatedCalendar->format('Y');
 
 <div class="day-grid">
    <?php
+   // Retrieving and displaying the dish(es) associated with the calendar day, through ACF
    $relatedDish = get_field('dishes_today');
    if ($relatedDish) {
       foreach ($relatedDish as $dish) {
@@ -49,6 +52,6 @@ $relatedYear = $relatedCalendar->format('Y');
    }
 
    ?>
-</div>
+</div> <!-- end day grid -->
 
 <hr class="day-grid__hr">

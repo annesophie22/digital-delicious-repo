@@ -2,6 +2,10 @@
   background-color: $color__text-main;
   color: $color__background-body-home;
   margin-top: auto;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .dd-footer {

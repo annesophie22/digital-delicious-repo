@@ -1009,6 +1009,14 @@ textarea {
 	position: relative;
 }
 
+@media only screen and (min-width: 900px) {
+	.site-header {
+		position: sticky;
+		top: 0;
+		z-index: 9999;
+	}
+}
+
 /**
  * #.# Header banner
  *
@@ -1126,6 +1134,7 @@ textarea {
 }
 
 .dd-header-nav-wrapper {
+	background: #f7f3ed;
 	border-bottom: 0.5px solid #341005;
 }
 

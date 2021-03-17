@@ -1,15 +1,14 @@
 a {
   color: inherit;
-  text-decoration: none;
 
   &:visited {
-    color: $color__link-visited-dark;
+    color: $color__orange;
   }
 
   &:hover,
   &:focus,
   &:active {
-    color: $color__link-hover-light;
+    color: $color__brown;
   }
 
   &:focus {

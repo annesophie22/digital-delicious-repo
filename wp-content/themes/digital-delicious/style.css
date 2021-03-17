@@ -48,8 +48,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-/* $color__background-body-home: #fdfbf4; */
-/* $color__background-hr: #ccc; */
 /*
 [0 - 600px] is where our normal styles apply
 600 - 900px:    Tablet portrait
@@ -630,15 +628,14 @@ table {
 --------------------------------------------- */
 a {
 	color: inherit;
-	text-decoration: none;
 }
 
 a:visited {
-	color: #126e4f;
+	color: #ee9300;
 }
 
 a:hover, a:focus, a:active {
-	color: #ee9300;
+	color: #844f27;
 }
 
 a:focus {
@@ -2304,6 +2301,10 @@ article.page, article.post {
 .home {
 	margin: 0;
 	background: #f7f3ed;
+}
+
+.home a {
+	text-decoration: none;
 }
 
 #myBtn {

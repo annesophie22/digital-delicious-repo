@@ -2,11 +2,25 @@
    @include containerDefault;
    margin-top: $spacing__m;
    margin-bottom: $spacing__m;
-   padding: $spacing__l 0;
+   padding: $spacing__xs 0 $spacing__s;
+
+   @include respond(desktop) {
+      padding: $spacing__l 0;
+   }
+   
 
    .page-content {
       p {
          font-weight: $font__weight-regular;
       }
+   }
+}
+
+.button-404 {
+   a,
+   &:hover,
+      &:active,
+      &:focus {
+      color: $color__text-button;
    }
 }

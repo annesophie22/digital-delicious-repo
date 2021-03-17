@@ -13,7 +13,7 @@
   min-height: 5.6rem;
   display: flex;
   align-items: center;
-  background-color: #844f27;
+  background-color: $color__brown;
 
   &__container {
     @include containerDefault;

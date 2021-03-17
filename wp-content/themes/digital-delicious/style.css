@@ -649,20 +649,23 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
+	border: 3px solid;
+	border-color: transparent;
 	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
+	background: #209a72;
+	color: #f1f1f1;
 	line-height: 1;
-	padding: 0.6em 1em 0.4em;
+	padding: 0.6em 1em;
+	cursor: pointer;
+	transition: all 0.375s ease-in-out;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
+	transform: translateY(-3px);
+	background: #844f27;
 }
 
 button:active, button:focus,
@@ -672,7 +675,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
+	background: #844f27;
 }
 
 input[type="text"],
@@ -2416,7 +2419,7 @@ article.page, article.post {
 	margin: 0 auto;
 	margin-top: 3.2rem;
 	margin-bottom: 3.2rem;
-	padding: 4.8rem 0;
+	padding: 1.6rem 0 2.4rem;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2431,8 +2434,18 @@ article.page, article.post {
 	}
 }
 
+@media only screen and (min-width: 1200px) {
+	.error-404 {
+		padding: 4.8rem 0;
+	}
+}
+
 .error-404 .page-content p {
 	font-weight: 400;
+}
+
+.button-404 a, .button-404:hover, .button-404:active, .button-404:focus {
+	color: #f1f1f1;
 }
 
 /*# sourceMappingURL=style.css.map */

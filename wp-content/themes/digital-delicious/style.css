@@ -551,6 +551,12 @@ html {
 	font-size: 62.5%;
 }
 
+.site {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
 hr {
 	width: 40%;
 	max-width: 350px;
@@ -1877,6 +1883,7 @@ textarea {
 .site-footer {
 	background-color: #2e2d2d;
 	color: #f7f3ed;
+	margin-top: auto;
 }
 
 .dd-footer__container {
@@ -2005,11 +2012,6 @@ textarea {
 --------------------------------------------- */
 .sticky {
 	display: block;
-}
-
-.post,
-.page {
-	margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {

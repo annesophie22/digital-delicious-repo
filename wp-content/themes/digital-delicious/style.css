@@ -2411,4 +2411,28 @@ article.page, article.post {
 	}
 }
 
+.error-404 {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 3.2rem;
+	margin-bottom: 3.2rem;
+	padding: 4.8rem 0;
+}
+
+@media only screen and (min-width: 1200px) {
+	.error-404 {
+		max-width: 1140px;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.error-404 {
+		max-width: 80%;
+	}
+}
+
+.error-404 .page-content p {
+	font-weight: 400;
+}
+
 /*# sourceMappingURL=style.css.map */

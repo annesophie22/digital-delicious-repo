@@ -1,0 +1,12 @@
+.error-404 {
+   @include containerDefault;
+   margin-top: $spacing__m;
+   margin-bottom: $spacing__m;
+   padding: $spacing__l 0;
+
+   .page-content {
+      p {
+         font-weight: $font__weight-regular;
+      }
+   }
+}

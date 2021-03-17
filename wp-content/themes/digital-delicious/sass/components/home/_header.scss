@@ -46,7 +46,7 @@
         height: 1.7rem;
         width: 1.7rem;
         path {
-          fill: $color__background-body;
+          fill: $color__background-body-home;
         }
       }
     }
@@ -58,7 +58,7 @@
 
       &,
       &:link {
-        color: $color__background-body;
+        color: $color__background-body-home;
       }
 
       &:visited {
@@ -81,7 +81,7 @@
       height: 3.2rem;
       width: 3.2rem;
       path {
-        fill: rgba($color__background-body, 0.9);
+        fill: rgba($color__background-body-home, 0.9);
         transition: all 0.2s ease-in;
       }
     }
@@ -103,6 +103,11 @@
  */
 
 .dd-header-nav {
+
+  &-wrapper {
+    border-bottom: 0.5px solid #341005;
+  }
+
   @include containerDefault;
   display: flex;
   justify-content: space-between;

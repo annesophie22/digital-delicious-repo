@@ -1,6 +1,6 @@
 .site-footer {
   background-color: $color__text-main;
-  color: $color__background-body;
+  color: $color__background-body-home;
 }
 
 .dd-footer {
@@ -24,7 +24,7 @@
       a {
         display: inline-block;
         &:link {
-          color: $color__background-body;
+          color: $color__background-body-home;
         }
         &:focus,
         &:hover,
@@ -51,7 +51,7 @@
         height: 2rem;
         width: 2rem;
         path {
-          fill: $color__background-body;
+          fill: $color__background-body-home;
         }
       }
       a {
@@ -59,7 +59,7 @@
         margin-left: calc(#{$spacing__xs} / 2);
         &,
         &:link {
-          color: $color__background-body;
+          color: $color__background-body-home;
         }
         &:focus,
         &:hover,
@@ -88,7 +88,7 @@
     font-weight: $font__weight-regular;
     &,
     &:link {
-      color: $color__background-body;
+      color: $color__background-body-home;
     }
     &:focus,
     &:hover,

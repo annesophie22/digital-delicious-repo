@@ -48,7 +48,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-/* $color__background-body: #fdfbf4; */
+/* $color__background-body-home: #fdfbf4; */
 /* $color__background-hr: #ccc; */
 /*
 [0 - 600px] is where our normal styles apply
@@ -544,7 +544,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #f7f3ed;
+	background: #f1f1f1;
 }
 
 html {
@@ -1114,6 +1114,10 @@ textarea {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.5rem 0rem;
+}
+
+.dd-header-nav-wrapper {
+	border-bottom: 0.5px solid #341005;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2015,9 +2019,32 @@ textarea {
 	margin: 1.5em 0 0;
 }
 
+.entry-content {
+	max-width: 90%;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+article.page {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 4.8rem;
+	margin-bottom: 3.2rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	article.page {
+		max-width: 1140px;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	article.page {
+		max-width: 80%;
+	}
 }
 
 /* Comments
@@ -2251,6 +2278,7 @@ textarea {
 --------------------------------------------- */
 .home {
 	margin: 0;
+	background: #f7f3ed;
 }
 
 #myBtn {

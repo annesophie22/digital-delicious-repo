@@ -49,68 +49,71 @@
 
 
 			<!-- LOGO + NAV -->
-			<div class="dd-header-nav">
+			<div class="dd-header-nav-wrapper">
+				<div class="dd-header-nav">
 
-				<!-- LOGO -->
-				<div class="site-branding dd-header-nav__logo">
-					<?php
-					the_custom_logo();
-					if (is_front_page() && is_home()) :
-					?>
-						<h1 class="site-title">
-							<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-								<span class="dd-site-title__logo"><?php echo file_get_contents(get_theme_file_uri('/images/logo.svg')); ?></span>
-								<span class="dd-site-title__name"><?php bloginfo('name'); ?></span>
-							</a>
-						</h1>
-					<?php
-					else :
-					?>
-						<p class="site-title">
-							<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-								<span class="dd-site-title__logo"><?php echo file_get_contents(get_theme_file_uri('/images/logo.svg')); ?></span>
-								<span class="dd-site-title__name"><?php bloginfo('name'); ?></span>
-							</a>
-						</p>
-					<?php
-					endif;
-					$digital_delicious_description = get_bloginfo('description', 'display');
-					if ($digital_delicious_description || is_customize_preview()) :
-					?>
-						<p class="site-description"><?php echo $digital_delicious_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-																?></p>
-					<?php endif; ?>
-				</div><!-- .site-branding -->
-
-				<!-- NAV -->
-				<?php if (has_nav_menu('primary')) : ?>
-
-					<nav id="site-navigation" class="main-navigation dd-header-nav__nav" role="navigation" aria-label="<?php esc_attr_e('Primary Menu', 'digital-delicious'); ?>">
-
-						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						<?php esc_html_e('Menu', 'digital-delicious'); ?>
-				</button> -->
-
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-							<span class="dd-icon-hamburger"><?php echo file_get_contents(get_theme_file_uri('/images/icon_hamburger.svg')); ?></span>
-						</button>
-
-
-
+					<!-- LOGO -->
+					<div class="site-branding dd-header-nav__logo">
 						<?php
-						wp_nav_menu(
-							array(
-								'theme_location' => 'primary',
-								'menu_id'        => 'primary-menu',
-								'menu_class'     => 'nav-menu',
-								'container_class' => 'primary-menu-container',
-							)
-						);
+						the_custom_logo();
+						if (is_front_page() && is_home()) :
 						?>
+							<h1 class="site-title">
+								<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+									<span class="dd-site-title__logo"><?php echo file_get_contents(get_theme_file_uri('/images/logo.svg')); ?></span>
+									<span class="dd-site-title__name"><?php bloginfo('name'); ?></span>
+								</a>
+							</h1>
+						<?php
+						else :
+						?>
+							<p class="site-title">
+								<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+									<span class="dd-site-title__logo"><?php echo file_get_contents(get_theme_file_uri('/images/logo.svg')); ?></span>
+									<span class="dd-site-title__name"><?php bloginfo('name'); ?></span>
+								</a>
+							</p>
+						<?php
+						endif;
+						$digital_delicious_description = get_bloginfo('description', 'display');
+						if ($digital_delicious_description || is_customize_preview()) :
+						?>
+							<p class="site-description"><?php echo $digital_delicious_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+																	?></p>
+						<?php endif; ?>
+					</div><!-- .site-branding -->
 
-					</nav><!-- #site-navigation -->
-				<?php endif; ?>
+					<!-- NAV -->
+					<?php if (has_nav_menu('primary')) : ?>
 
-			</div><!-- end dd-header-nav -->
+						<nav id="site-navigation" class="main-navigation dd-header-nav__nav" role="navigation" aria-label="<?php esc_attr_e('Primary Menu', 'digital-delicious'); ?>">
+
+							<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+		<?php esc_html_e('Menu', 'digital-delicious'); ?>
+</button> -->
+
+							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+								<span class="dd-icon-hamburger"><?php echo file_get_contents(get_theme_file_uri('/images/icon_hamburger.svg')); ?></span>
+							</button>
+
+
+
+							<?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'primary',
+									'menu_id'        => 'primary-menu',
+									'menu_class'     => 'nav-menu',
+									'container_class' => 'primary-menu-container',
+								)
+							);
+							?>
+
+						</nav><!-- #site-navigation -->
+					<?php endif; ?>
+
+				</div><!-- end dd-header-nav -->
+			</div>
+
 
 		</header><!-- #masthead -->

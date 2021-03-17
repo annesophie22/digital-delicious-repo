@@ -17,7 +17,21 @@
 	margin: 1.5em 0 0;
 }
 
+.entry-content {
+	max-width: 90%;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+//DD edit
+article {
+	&.page {
+		@include containerDefault;
+		margin-top: $spacing__l;
+		margin-bottom: $spacing__m;
+	}
+}
+

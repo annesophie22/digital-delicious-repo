@@ -70,7 +70,7 @@
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  color: $color__background-body;
+  color: $color__background-body-home;
 
   &__title {
     font-family: $font__heading;
@@ -117,7 +117,7 @@
       }
 
       &:visited {
-        color: $color__background-body;
+        color: $color__background-body-home;
       }
     }
 
@@ -144,7 +144,7 @@
         height: 3rem;
         width: 3rem;
         path {
-          fill: $color__background-body;
+          fill: $color__background-body-home;
         }
       }
     }

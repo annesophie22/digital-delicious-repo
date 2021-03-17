@@ -96,7 +96,7 @@
   padding: 0.7rem 0.6rem 0.5rem 0.7rem;
   border: none;
   background: $color__dark__green;
-  color: $color__background-body;
+  color: $color__background-body-home;
   text-transform: uppercase;
   font-weight: $font__weight-semibold;
 }
@@ -107,7 +107,7 @@
     height: auto;
     width: 3.2rem;
     path {
-      fill: $color__background-body;
+      fill: $color__background-body-home;
     }
   }
 }

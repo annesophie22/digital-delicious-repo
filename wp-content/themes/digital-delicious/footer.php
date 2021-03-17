@@ -50,7 +50,7 @@
 			printf(esc_html__('Made with love and care by %2$s', 'digital-delicious'), 'digital-delicious', '<a href="https://www.digitalseeds.net">Anne-Sophie - DigitalSeeds</a>');
 			?>
 		</p>
-		<p class="copyright"><?php printf(esc_html__('© Copyright 2021 - All rights reserved', 'digital-delicious')); ?></p>
+		<p class="copyright"><?php printf(esc_html__('© Copyright 2021 - All rights reserved', 'digital-delicious')); ?>- <a href="<?php get_privacy_policy_url(); ?>">Privacy Policy</a></p>
 		<!--
 				Modified by SAS on 22.02.21
 				/* translators: 1: Theme name, 2: Theme author.*/

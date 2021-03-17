@@ -190,7 +190,6 @@ get_header();
          <img src="<?php echo get_theme_file_uri('/images/hanged_lights.jpg') ?>" alt="">
       </div>
    </section> <!-- end section order -->
-
 </main><!-- #main -->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <?php

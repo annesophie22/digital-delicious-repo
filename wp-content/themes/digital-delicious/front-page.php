@@ -100,7 +100,7 @@ get_header();
       <section id="all-our-dishes" class="section-alldishes">
          <div class="heading-block u-center-text">
             <h2 class="heading-primary heading-block__title"><?php esc_html_e('Discover a wide range of Vietnamese savoury dishes', 'digital-delicious'); ?></h2>
-            <p class="heading-block__subtitle"><?php esc_html_e('Depending on fresh vegetables and meat arrivals, the Chef decides what to put', 'digital-delicious'); ?> <span>à la carte</span> <?php esc_html_e('every week', 'digital-delicious') ?></p>
+            <p class="heading-block__subtitle"><?php esc_html_e('Depending on fresh vegetables and meat arrivals, the Chef decides what to put', 'digital-delicious'); ?> <span><?php esc_html_e('à la carte') ?></span> <?php esc_html_e('every week', 'digital-delicious') ?></p>
             <span class="heading-block__separator"></span>
          </div>
 
@@ -142,21 +142,21 @@ get_header();
          <div class="testimonial-grid__item testimonial-grid__item--1">
             <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri('/images/quotation_mark.svg') ?>" alt="testimonial">
             <div class="testimonial-grid__text testimonial-grid__text--1">
-               <p>Portions généreuses et Phò délicieux! Et prix plus que correct! N’hésitez pas à commander.</p>
+               <p><?php echo esc_html('Portions généreuses et Phò délicieux! Et prix plus que correct! N’hésitez pas à commander.') ?></p>
             </div>
          </div> <!-- end individual test. item -->
          <!-- INDIVIDUAL TEST. ITEM -->
          <div class="testimonial-grid__item">
             <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri('/images/quotation_mark.svg') ?>" alt="testimonial">
             <div class="testimonial-grid__text testimonial-grid__text--2">
-               <p>Excellent qualité et trop bon. Je recommande Home made food les yeux fermés</p>
+               <p><?php echo esc_html('Excellent qualité et trop bon. Je recommande Home made food les yeux fermés'); ?></p>
             </div>
          </div> <!-- end individual test. item -->
          <!-- INDIVIDUAL TEST. ITEM -->
          <div class="testimonial-grid__item">
             <img class="testimonial-grid__icon" src="<?php echo get_theme_file_uri('/images/quotation_mark.svg') ?>" alt="testimonial">
             <div class="testimonial-grid__text testimonial-grid__text--3">
-               <p>such delicious and fresh home cooked food, I really recommend!</p>
+               <p><?php echo esc_html('such delicious and fresh home cooked food, I really recommend!'); ?></p>
             </div>
          </div> <!-- end individual test. item -->
       </div> <!-- end testimonial grid -->

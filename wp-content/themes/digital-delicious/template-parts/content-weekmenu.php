@@ -32,6 +32,9 @@ $relatedYear = $relatedCalendar->format('Y');
    $relatedDish = get_field('dishes_today');
    if ($relatedDish) {
       foreach ($relatedDish as $dish) {
+         $dishTitle = get_the_title($dish);
+         $dishPrice = get_field('dish_price', $dish->ID);
+         $dishDesc = get_field('dish_desc', $dish->ID);
    ?>
          <div class="card-dish">
             <!-- card dish -->
@@ -41,9 +44,9 @@ $relatedYear = $relatedCalendar->format('Y');
                   'alt' => '',
                )); ?>
             </div>
-            <h3 class="heading-secondary card-dish__name"><?php esc_html_e(get_the_title($dish), 'digital-delicious'); ?></h3>
-            <p class="card-dish__price">CHF <?php esc_html_e(get_field('dish_price', $dish->ID), 'digital-delicious'); ?></p>
-            <p class="card-dish__desc"><?php esc_html_e(get_field('dish_desc', $dish->ID), 'digital-delicious'); ?></p>
+            <h3 class="heading-secondary card-dish__name"><?php printf(esc_html__('%s', 'digital-delicious'), $dishTitle); ?></h3>
+            <p class="card-dish__price">CHF <?php printf(esc_html__('%s', 'digital-delicious'), $dishPrice); ?></p>
+            <p class="card-dish__desc"><?php printf(esc_html__('%s', 'digital-delicious'), $dishDesc); ?></p>
          </div> <!-- end card dish -->
    <?php
       }

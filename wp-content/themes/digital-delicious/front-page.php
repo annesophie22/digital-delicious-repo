@@ -13,15 +13,15 @@ get_header();
 <main id="primary" class="site-main">
    <div class="hero-banner">
       <div class="hero-banner__text-wrapper">
-         <h1 class="hero-banner__title"><?php _e('Vietnamese Homemade Food', 'digital-delicious'); ?></h1>
-         <p class="hero-banner__subtitle"><?php _e('Invite a tasty bit of Vietnam in your plate', 'digital-delicious'); ?></p>
+         <h1 class="hero-banner__title"><?php esc_html_e('Vietnamese Homemade Food', 'digital-delicious'); ?></h1>
+         <p class="hero-banner__subtitle"><?php esc_html_e('Invite a tasty bit of Vietnam in your plate', 'digital-delicious'); ?></p>
       </div>
    </div>
    <!-- SECTION A LA CARTE -->
    <section id="a-la-carte" class="section-alacarte">
       <div class="heading-block u-center-text">
-         <h2 class="heading-primary heading-block__title"><?php _e('A la carte this week', 'digital-delicious'); ?></h2>
-         <p class="heading-block__subtitle"><?php _e('Check out what dishes are specially cooked for you this week', 'digital-delicious'); ?></p>
+         <h2 class="heading-primary heading-block__title"><?php esc_html_e('A la carte this week', 'digital-delicious'); ?></h2>
+         <p class="heading-block__subtitle"><?php esc_html_e('Check out what dishes are specially cooked for you this week', 'digital-delicious'); ?></p>
          <span class="heading-block__separator"></span>
       </div>
 
@@ -56,17 +56,17 @@ get_header();
       <div class="delivery-conditions u-center-text">
          <!-- delivery-conditions__item -->
          <div class="delivery-conditions__item">
-            <h3 class="heading-secondary delivery-conditions__item-title"><?php _e('Delivery Service', 'digital-delicious'); ?></h3>
+            <h3 class="heading-secondary delivery-conditions__item-title"><?php esc_html_e('Delivery Service', 'digital-delicious'); ?></h3>
             <ul class="delivery-conditions__item-details">
-               <li><?php _e('Available in Geneva', 'digital-delicious'); ?></li>
-               <li><?php _e('CHF 10.00 per delivery', 'digital-delicious'); ?></li>
-               <li><?php _e('Free delivery for orders from CHF 150.00', 'digital-delicious'); ?></li>
-               <li><?php _e('Packed in paper bowl : + CHF 1.00', 'digital-delicious'); ?></li>
+               <li><?php esc_html_e('Available in Geneva', 'digital-delicious'); ?></li>
+               <li><?php esc_html_e('CHF 10.00 per delivery', 'digital-delicious'); ?></li>
+               <li><?php esc_html_e('Free delivery for orders from CHF 150.00', 'digital-delicious'); ?></li>
+               <li><?php esc_html_e('Packed in paper bowl : + CHF 1.00', 'digital-delicious'); ?></li>
             </ul>
          </div>
          <!-- delivery-conditions__item -->
          <div class="delivery-conditions__item">
-            <h3 class="heading-secondary delivery-conditions__item-title"><?php _e('Order Pick-Up', 'digital-delicious'); ?></h3>
+            <h3 class="heading-secondary delivery-conditions__item-title"><?php esc_html_e('Order Pick-Up', 'digital-delicious'); ?></h3>
             <ul class="delivery-conditions__item-details">
                <li>Avenue de Feuillasse 5</li>
                <li>1217 Meyrin</li>
@@ -74,16 +74,16 @@ get_header();
          </div>
          <!-- delivery-conditions__item -->
          <div class="delivery-conditions__item">
-            <h3 class="heading-secondary delivery-conditions__item-title"><?php _e('Pick Up & Delivery Time', 'digital-delicious'); ?></h3>
+            <h3 class="heading-secondary delivery-conditions__item-title"><?php esc_html_e('Pick Up & Delivery Time', 'digital-delicious'); ?></h3>
             <ul class="delivery-conditions__item-details">
                <li>12h-13h // 18h-19h30</li>
-               <li><?php _e('Tuesdays, Thursdays and Saturdays', 'digital-delicious'); ?></li>
+               <li><?php esc_html_e('Tuesdays, Thursdays and Saturdays', 'digital-delicious'); ?></li>
             </ul>
          </div>
-         <p class="delivery-conditions__notice"><?php _e('Please order at least 1 day in advance', 'digital-delicious'); ?></p>
+         <p class="delivery-conditions__notice"><?php esc_html_e('Please order at least 1 day in advance', 'digital-delicious'); ?></p>
          <!-- order-details -->
          <div class="order-details">
-            <h3 class="heading-secondary order-details__title"><?php _e('Order now', 'digital-delicious'); ?></h3>
+            <h3 class="heading-secondary order-details__title"><?php esc_html_e('Order now', 'digital-delicious'); ?></h3>
             <hr class="order-details__hr">
             <ul class="order-details__contact">
                <li><span class="order-details__contact-phone"><?php echo file_get_contents(get_theme_file_uri('/images/icon_phone.svg')); ?></span><a class="order-details__contact-link-tel" href="<?php echo esc_url('tel:#'); ?>">079 123 45 67</a></li>
@@ -99,8 +99,8 @@ get_header();
    <div class="u-wrapper--white">
       <section id="all-our-dishes" class="section-alldishes">
          <div class="heading-block u-center-text">
-            <h2 class="heading-primary heading-block__title"><?php _e('Discover a wide range of Vietnamese savoury dishes', 'digital-delicious'); ?></h2>
-            <p class="heading-block__subtitle"><?php _e('Depending on fresh vegetables and meat arrivals, the Chef decides what to put', 'digital-delicious'); ?> <span>à la carte</span> <?php _e('every week', 'digital-delicious') ?></p>
+            <h2 class="heading-primary heading-block__title"><?php esc_html_e('Discover a wide range of Vietnamese savoury dishes', 'digital-delicious'); ?></h2>
+            <p class="heading-block__subtitle"><?php esc_html_e('Depending on fresh vegetables and meat arrivals, the Chef decides what to put', 'digital-delicious'); ?> <span>à la carte</span> <?php esc_html_e('every week', 'digital-delicious') ?></p>
             <span class="heading-block__separator"></span>
          </div>
 
@@ -131,8 +131,8 @@ get_header();
    <!-- SECTION TESTIMONIALS -->
    <section class="section-testimonials">
       <div class="heading-block u-center-text">
-         <h2 class="heading-primary heading-block__title"><?php _e('What our customers say about Pho Bep Oi', 'digital-delicious'); ?></h2>
-         <p class="heading-block__subtitle"><?php _e('Have a look at some reviews left on our Facebook page', 'digital-delicious'); ?></p>
+         <h2 class="heading-primary heading-block__title"><?php esc_html_e('What our customers say about Pho Bep Oi', 'digital-delicious'); ?></h2>
+         <p class="heading-block__subtitle"><?php esc_html_e('Have a look at some reviews left on our Facebook page', 'digital-delicious'); ?></p>
          <span class="heading-block__separator"></span>
       </div>
 
@@ -167,8 +167,8 @@ get_header();
    <div class="u-wrapper--white">
       <section id="about" class="section-about u-center-text">
          <div class="about__desc">
-            <h2 class="heading-primary about__title"><?php _e('Hello, my name is Trang, I am the Chef at Pho Bep Oi', 'digital-delicious'); ?></h2>
-            <p class="about__text"><?php _e('Risus, nec id velit morbi amet. Id cursus volutpat sollicitudin cras elit. Dolor, ullamcorper nibh et a. Id nunc, dictum ornare sed et nullam arcu in malesuada. Placerat eget gravida mi scelerisque sed est rhoncus. Enim, arcu urna et bibendum sit. Aliquam morbi bibendum facilisis massa sollicitudin felis, ut ut. Luctus auctor orci nunc diam quam facilisi sit ut molestie.', 'digital-delicious'); ?></p>
+            <h2 class="heading-primary about__title"><?php esc_html_e('Hello, my name is Trang, I am the Chef at Pho Bep Oi', 'digital-delicious'); ?></h2>
+            <p class="about__text"><?php esc_html_e('Risus, nec id velit morbi amet. Id cursus volutpat sollicitudin cras elit. Dolor, ullamcorper nibh et a. Id nunc, dictum ornare sed et nullam arcu in malesuada. Placerat eget gravida mi scelerisque sed est rhoncus. Enim, arcu urna et bibendum sit. Aliquam morbi bibendum facilisis massa sollicitudin felis, ut ut. Luctus auctor orci nunc diam quam facilisi sit ut molestie.', 'digital-delicious'); ?></p>
          </div> <!-- end about desc -->
          <div class="about__img">
             <img src="<?php echo get_theme_file_uri('/images/about.jpg') ?>" alt="">
@@ -179,8 +179,8 @@ get_header();
    <!-- SECTION ORDER -->
    <section id="contact" class="section-order u-center-text">
       <div class="order__desc">
-         <h2 class="heading-primary order__title"><?php _e('Order now', 'digital-delicious'); ?></h2>
-         <p class="heading-block__subtitle order__subtitle"><?php _e('Tuesdays, Thursdays and Saturdays', 'digital-delicious'); ?> <span>12h-13h // 18h-19h30</span></p>
+         <h2 class="heading-primary order__title"><?php esc_html_e('Order now', 'digital-delicious'); ?></h2>
+         <p class="heading-block__subtitle order__subtitle"><?php esc_html_e('Tuesdays, Thursdays and Saturdays', 'digital-delicious'); ?> <span>12h-13h // 18h-19h30</span></p>
          <p class="order__contact"><span class="order__contact-phone"><?php echo file_get_contents(get_theme_file_uri('/images/icon_phone.svg')); ?></span><a class="order__contact-phone-link" href="<?php echo esc_url('tel:#'); ?>">079 123 45 67</a></p>
 
          <p class="order__contact"><span class="order__contact-email"><?php echo file_get_contents(get_theme_file_uri('/images/icon_email.svg')); ?></span><a class="order__contact-email-link" href="<?php echo esc_url('mailto:#'); ?>">lastella.thitrang@gmail.com</a></p>

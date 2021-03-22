@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Digital Delicious Theme Customizer
  *
@@ -10,12 +11,14 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function digital_delicious_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-	if ( isset( $wp_customize->selective_refresh ) ) {
+function digital_delicious_customize_register($wp_customize)
+{
+	$wp_customize->get_setting('blogname')->transport         = 'postMessage';
+	$wp_customize->get_setting('blogdescription')->transport  = 'postMessage';
+	$wp_customize->get_setting('header_textcolor')->transport = 'postMessage';
+
+	if (isset($wp_customize->selective_refresh)) {
 		$wp_customize->selective_refresh->add_partial(
 			'blogname',
 			array(
@@ -32,15 +35,26 @@ function digital_delicious_customize_register( $wp_customize ) {
 		);
 	}
 }
-add_action( 'customize_register', 'digital_delicious_customize_register' );
+add_action('customize_register', 'digital_delicious_customize_register');
+
+/* Custom function added to the _s theme */
+function digital_delicious_customize_remove_section($wp_customize)
+{
+	$wp_customize->remove_section('colors');
+	$wp_customize->remove_section('header_image');
+	$wp_customize->remove_section('background_image');
+	$wp_customize->remove_section('title_tagline');
+}
+add_action('customize_register', 'digital_delicious_customize_remove_section');
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function digital_delicious_customize_partial_blogname() {
-	bloginfo( 'name' );
+function digital_delicious_customize_partial_blogname()
+{
+	bloginfo('name');
 }
 
 /**
@@ -48,14 +62,16 @@ function digital_delicious_customize_partial_blogname() {
  *
  * @return void
  */
-function digital_delicious_customize_partial_blogdescription() {
-	bloginfo( 'description' );
+function digital_delicious_customize_partial_blogdescription()
+{
+	bloginfo('description');
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function digital_delicious_customize_preview_js() {
-	wp_enqueue_script( 'digital-delicious-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), DIGITAL_DELICIOUS_VERSION, true );
+function digital_delicious_customize_preview_js()
+{
+	wp_enqueue_script('digital-delicious-customizer', get_template_directory_uri() . '/js/customizer.js', array('customize-preview'), DIGITAL_DELICIOUS_VERSION, true);
 }
-add_action( 'customize_preview_init', 'digital_delicious_customize_preview_js' );
+add_action('customize_preview_init', 'digital_delicious_customize_preview_js');

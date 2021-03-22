@@ -47,6 +47,12 @@ $relatedYear = $relatedCalendar->format('Y');
             <h3 class="heading-secondary card-dish__name"><?php printf(esc_html__('%s', 'digital-delicious'), $dishTitle); ?></h3>
             <p class="card-dish__price">CHF <?php printf(esc_html__('%s', 'digital-delicious'), $dishPrice); ?></p>
             <p class="card-dish__desc"><?php printf(esc_html__('%s', 'digital-delicious'), $dishDesc); ?></p>
+            <!-- <p>
+               <?php echo apply_filters('ajout_text', 'hello') ?>
+            </p> -->
+            <p>
+               <?php echo apply_filters('acf/format_value/type=textarea', $dishDesc, $dish->ID, 'dish_desc') ?>
+            </p>
          </div> <!-- end card dish -->
    <?php
       }

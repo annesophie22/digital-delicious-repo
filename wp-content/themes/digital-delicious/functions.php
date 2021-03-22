@@ -188,3 +188,21 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Escape ACF content field 
+ */
+
+function my_acf_format_value($value, $post_id, $field)
+{
+	return esc_attr__($value);
+}
+
+add_filter('acf/format_value/type=textarea', 'my_acf_format_value', 10, 3);
+
+function test_function($text)
+{
+	return $text . 'cest un putain de test';
+}
+
+add_filter('ajout_text', 'test_function', 10, 1);

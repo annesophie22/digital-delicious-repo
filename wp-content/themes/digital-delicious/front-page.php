@@ -45,7 +45,9 @@ get_header();
                get_template_part('template-parts/content', 'weekmenu');
             } /* end while */
          } else {
-            echo '<p class="heading-block__subtitle">The kitchen is closed for now !</p>';
+         ?>
+            <p class="heading-block__subtitle"><?php esc_html_e('The kitchen is closed for now !', 'digital-delicious'); ?></p>;
+         <?php
          }/* end ifelse */
 
          wp_reset_postdata();
@@ -100,7 +102,7 @@ get_header();
       <section id="all-our-dishes" class="section-alldishes">
          <div class="heading-block u-center-text">
             <h2 class="heading-primary heading-block__title"><?php esc_html_e('Discover a wide range of Vietnamese savoury dishes', 'digital-delicious'); ?></h2>
-            <p class="heading-block__subtitle"><?php esc_html_e('Depending on fresh vegetables and meat arrivals, the Chef decides what to put', 'digital-delicious'); ?> <span><?php esc_html_e('à la carte') ?></span> <?php esc_html_e('every week', 'digital-delicious') ?></p>
+            <p class="heading-block__subtitle"><?php esc_html_e('Depending on fresh vegetables and meat arrivals, the Chef decides what to put', 'digital-delicious'); ?> <span><?php esc_html_e('à la carte', 'digital-delicious') ?></span> <?php esc_html_e('every week', 'digital-delicious') ?></p>
             <span class="heading-block__separator"></span>
          </div>
 
@@ -118,7 +120,9 @@ get_header();
                   get_template_part('template-parts/content', 'dish');
                }
             } else {
-               echo '<p class="heading-block__subtitle">Something might got wrong, there is no dish to display. Drop us a message to know what we have on the menu this week</p>';
+            ?>
+               <p class="heading-block__subtitle"><?php esc_html_e('Something might got wrong, there is no dish to display. Drop us a message to know what we have on the menu this week', 'digital-delicious'); ?></p>;
+            <?php
             }
             wp_reset_postdata();
             ?>

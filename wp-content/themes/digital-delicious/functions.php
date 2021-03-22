@@ -199,10 +199,3 @@ function my_acf_format_value($value, $post_id, $field)
 }
 
 add_filter('acf/format_value/type=textarea', 'my_acf_format_value', 10, 3);
-
-function test_function($text)
-{
-	return $text . 'cest un putain de test';
-}
-
-add_filter('ajout_text', 'test_function', 10, 1);

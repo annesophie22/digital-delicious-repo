@@ -20,10 +20,10 @@ $relatedYear = $relatedCalendar->format('Y');
 ?>
 
 <p class="day-grid__title"><mark class="highlighted">
-      <span><?php esc_html($relatedTextDay); ?></span>
-      <span><?php esc_html($relatedNumDay); ?></span>
-      <span><?php esc_html($relatedMonth); ?></span>
-      <span><?php esc_html($relatedYear); ?></span>
+      <span><?php echo esc_html($relatedTextDay); ?></span>
+      <span><?php echo esc_html($relatedNumDay); ?></span>
+      <span><?php echo esc_html($relatedMonth); ?></span>
+      <span><?php echo esc_html($relatedYear); ?></span>
    </mark></p>
 
 <div class="day-grid">
@@ -45,7 +45,7 @@ $relatedYear = $relatedCalendar->format('Y');
                )); ?>
             </div>
             <h3 class="heading-secondary card-dish__name"><?php printf(esc_html__('%s', 'digital-delicious'), $dishTitle); ?></h3>
-            <p class="card-dish__price"><?php echo esc_html('CHF') ?><?php printf(esc_html__('%s', 'digital-delicious'), $dishPrice); ?></p>
+            <p class="card-dish__price"><?php echo esc_html('CHF ') ?><?php printf(esc_html__('%s', 'digital-delicious'), $dishPrice); ?></p>
             <p class="card-dish__desc"><?php printf(esc_html__('%s', 'digital-delicious'), $dishDesc); ?></p>
          </div> <!-- end card dish -->
       <?php

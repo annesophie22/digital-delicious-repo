@@ -768,6 +768,9 @@ textarea {
   color: #f7f3ed;
   text-transform: uppercase;
   font-weight: 600; }
+  .menu-toggle:hover {
+    transform: none;
+    background: #209a72; }
 
 .dd-icon-hamburger {
   display: block; }

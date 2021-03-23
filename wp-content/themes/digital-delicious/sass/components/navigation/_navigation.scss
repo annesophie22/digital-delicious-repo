@@ -99,6 +99,10 @@
   color: $color__background-body-home;
   text-transform: uppercase;
   font-weight: $font__weight-semibold;
+  &:hover {
+    transform: none;
+    background: $color__dark__green;
+  }
 }
 
 .dd-icon-hamburger {

@@ -195,7 +195,7 @@ if (defined('JETPACK__VERSION')) {
 
 function my_acf_format_value($value, $post_id, $field)
 {
-	return esc_attr__($value);
+	return esc_attr__($value, 'digital-delicious');
 }
 
 add_filter('acf/format_value/type=textarea', 'my_acf_format_value', 10, 3);

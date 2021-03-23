@@ -36,13 +36,12 @@
 
 					<!-- CONTACT -->
 					<div class="dd-header-banner__contact">
-						<span class="dd-header-banner__contact-phone"><?php echo file_get_contents(get_theme_file_uri('/images/icon_phone.svg')); ?></span>
-						<a class="dd-header-banner__contact-link" href="<?php echo esc_url('tel:#'); ?>">079 123 45 67</a>
+						<span class="dd-header-banner__contact-phone"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_phone.svg')); ?></span>
+						<a class="dd-header-banner__contact-link" href="<?php echo esc_url('tel:#'); ?>"><?php echo esc_html('079 123 45 67'); ?></a>
 					</div>
 
 					<!-- SOCIAL MEDIA -->
-					<a class="dd-header-banner__social" href="<?php echo esc_url('https://www.facebook.com/Home-made-food-383350752019254'); ?>" class="facebook"><?php echo file_get_contents(get_theme_file_uri('/images/icon_fb.svg')); ?></a>
-
+					<a class="dd-header-banner__social" href="<?php echo esc_url('https://www.facebook.com/Home-made-food-383350752019254'); ?>" class="facebook"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_fb.svg')); ?></a>
 
 				</div> <!-- end dd-header-banner__container -->
 			</div> <!-- end dd-header-banner -->
@@ -59,8 +58,8 @@
 						if (is_front_page() && is_home()) :
 						?>
 							<h1 class="site-title">
-								<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-									<span class="dd-site-title__logo"><?php echo file_get_contents(get_theme_file_uri('/images/logo.svg')); ?></span>
+								<a href="<?php echo esc_url(home_url('/')); ?>" rel="<?php esc_attr('home'); ?>">
+									<span class="dd-site-title__logo"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/logo.svg')); ?></span>
 									<span class="dd-site-title__name"><?php bloginfo('name'); ?></span>
 								</a>
 							</h1>
@@ -68,8 +67,8 @@
 						else :
 						?>
 							<p class="site-title">
-								<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-									<span class="dd-site-title__logo"><?php echo file_get_contents(get_theme_file_uri('/images/logo.svg')); ?></span>
+								<a href="<?php echo esc_url(home_url('/')); ?>" rel="<?php esc_attr('home'); ?>">
+									<span class="dd-site-title__logo"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/logo.svg')); ?></span>
 									<span class="dd-site-title__name"><?php bloginfo('name'); ?></span>
 								</a>
 							</p>
@@ -89,7 +88,7 @@
 						<nav id="site-navigation" class="main-navigation dd-header-nav__nav" role="navigation" aria-label="<?php esc_attr_e('Primary Menu', 'digital-delicious'); ?>">
 
 							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-								<span class="dd-icon-hamburger"><?php echo file_get_contents(get_theme_file_uri('/images/icon_hamburger.svg')); ?></span>
+								<span class="dd-icon-hamburger"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_hamburger.svg')); ?></span>
 							</button>
 
 							<?php

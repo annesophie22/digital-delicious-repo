@@ -20,10 +20,10 @@ $relatedYear = $relatedCalendar->format('Y');
 ?>
 
 <p class="day-grid__title"><mark class="highlighted">
-      <span><?php esc_html_e($relatedTextDay, 'digital-delicious'); ?></span>
-      <span><?php esc_html_e($relatedNumDay, 'digital-delicious'); ?></span>
-      <span><?php esc_html_e($relatedMonth, 'digital-delicious'); ?></span>
-      <span><?php esc_html_e($relatedYear, 'digital-delicious'); ?></span>
+      <span><?php esc_html($relatedTextDay); ?></span>
+      <span><?php esc_html($relatedNumDay); ?></span>
+      <span><?php esc_html($relatedMonth); ?></span>
+      <span><?php esc_html($relatedYear); ?></span>
    </mark></p>
 
 <div class="day-grid">

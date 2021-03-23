@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template part for displaying dishes that are planned to be cooked for the current week
  *
@@ -11,10 +12,10 @@
 <!-- INDIVIDUAL DISH ITEM -->
 <div class="alldishes-grid__item u-center-text">
    <div class="alldishes-grid__img-container">
-      <img class="alldishes-grid__img" src="<?php the_post_thumbnail(); ?>" alt="">
+      <img class="alldishes-grid__img" src=<?php the_post_thumbnail(); ?> alt=<?php esc_attr_e('Dish served by Pho Bep Oi'); ?>>
    </div>
    <div class="alldishes-grid__label">
       <h3 class="heading-secondary alldishes-grid__label-title"><?php the_title(); ?></h3>
-      <p class="alldishes-grid__label-desc"><?php echo get_field("dish_desc"); ?></p>
+      <p class="alldishes-grid__label-desc"><?php echo get_field('dish_desc'); ?></p>
    </div>
 </div> <!-- end individual dish item -->

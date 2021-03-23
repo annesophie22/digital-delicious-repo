@@ -88,9 +88,9 @@ get_header();
             <h3 class="heading-secondary order-details__title"><?php esc_html_e('Order now', 'digital-delicious'); ?></h3>
             <hr class="order-details__hr">
             <ul class="order-details__contact">
-               <li><span class="order-details__contact-phone"><?php echo file_get_contents(get_stylesheet_directory_uri() . '/images/icon_phone.svg'); ?></span><a class="order-details__contact-link-tel" href="<?php echo esc_url('tel:#'); ?>"><?php echo esc_html('079 123 45 67'); ?></a></li>
-               <li><span class="order-details__contact-email"><?php echo file_get_contents(get_stylesheet_directory_uri() . '/images/icon_email.svg'); ?></span><a class="order-details__contact-link-email" href="<?php echo esc_url('mailto:#'); ?>"><?php echo esc_html('lastella.thitrang@gmail.com'); ?></a></li>
-               <li><span class="order-details__contact-social"><?php echo file_get_contents(get_stylesheet_directory_uri() . '/images/icon_fb.svg'); ?></span><a class="order-details__contact-link-social" href="<?php echo esc_url('https://www.facebook.com/Home-made-food-383350752019254'); ?>" class="facebook"><?php echo esc_html('Home made food'); ?><br><?php echo esc_html('Pho Bep Oi'); ?></a></li>
+               <li><span class="order-details__contact-phone"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_phone.svg')); ?></span><a class="order-details__contact-link-tel" href="<?php echo esc_url('tel:#'); ?>"><?php echo esc_html('079 123 45 67'); ?></a></li>
+               <li><span class="order-details__contact-email"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_email.svg')); ?></span><a class="order-details__contact-link-email" href="<?php echo esc_url('mailto:#'); ?>"><?php echo esc_html('lastella.thitrang@gmail.com'); ?></a></li>
+               <li><span class="order-details__contact-social"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_fb.svg')); ?></span><a class="order-details__contact-link-social" href="<?php echo esc_url('https://www.facebook.com/Home-made-food-383350752019254'); ?>" class="facebook"><?php echo esc_html('Home made food'); ?><br><?php echo esc_html('Pho Bep Oi'); ?></a></li>
             </ul>
          </div>
       </div>
@@ -144,21 +144,21 @@ get_header();
       <div class="testimonial-grid">
          <!-- INDIVIDUAL TEST. ITEM -->
          <div class="testimonial-grid__item testimonial-grid__item--1">
-            <div class="testimonial-grid__icon"><?php echo file_get_contents(get_stylesheet_directory_uri() . '/images/quotation_mark.svg'); ?></div>
+            <div class="testimonial-grid__icon"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/quotation_mark.svg')); ?></div>
             <div class="testimonial-grid__text testimonial-grid__text--1">
                <p><?php echo esc_html('Portions généreuses et Phò délicieux! Et prix plus que correct! N’hésitez pas à commander.') ?></p>
             </div>
          </div> <!-- end individual test. item -->
          <!-- INDIVIDUAL TEST. ITEM -->
          <div class="testimonial-grid__item">
-            <div class="testimonial-grid__icon"><?php echo file_get_contents(get_stylesheet_directory_uri() . '/images/quotation_mark.svg'); ?></div>
+            <div class="testimonial-grid__icon"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/quotation_mark.svg')); ?></div>
             <div class="testimonial-grid__text testimonial-grid__text--2">
                <p><?php echo esc_html('Excellent qualité et trop bon. Je recommande Home made food les yeux fermés'); ?></p>
             </div>
          </div> <!-- end individual test. item -->
          <!-- INDIVIDUAL TEST. ITEM -->
          <div class="testimonial-grid__item">
-            <div class="testimonial-grid__icon"><?php echo file_get_contents(get_stylesheet_directory_uri() . '/images/quotation_mark.svg'); ?></div>
+            <div class="testimonial-grid__icon"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/quotation_mark.svg')); ?></div>
             <div class="testimonial-grid__text testimonial-grid__text--3">
                <p><?php echo esc_html('such delicious and fresh home cooked food, I really recommend!'); ?></p>
             </div>
@@ -185,11 +185,11 @@ get_header();
       <div class="order__desc">
          <h2 class="heading-primary order__title"><?php esc_html_e('Order now', 'digital-delicious'); ?></h2>
          <p class="heading-block__subtitle order__subtitle"><?php esc_html_e('Tuesdays, Thursdays and Saturdays', 'digital-delicious'); ?> <span><?php echo esc_html('12h-13h // 18h-19h30'); ?></span></p>
-         <p class="order__contact"><span class="order__contact-phone"><?php echo file_get_contents(get_stylesheet_directory_uri() . '/images/icon_phone.svg'); ?></span><a class="order__contact-phone-link" href="<?php echo esc_url('tel:#'); ?>"><?php echo esc_html('079 123 45 67'); ?></a></p>
+         <p class="order__contact"><span class="order__contact-phone"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_phone.svg')); ?></span><a class="order__contact-phone-link" href="<?php echo esc_url('tel:#'); ?>"><?php echo esc_html('079 123 45 67'); ?></a></p>
 
-         <p class="order__contact"><span class="order__contact-email"><?php echo file_get_contents(get_stylesheet_directory_uri() . '/images/icon_email.svg'); ?></span><a class="order__contact-email-link" href="<?php echo esc_url('mailto:#'); ?>"><?php echo esc_html('lastella.thitrang@gmail.com'); ?></a></p>
+         <p class="order__contact"><span class="order__contact-email"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_email.svg')); ?></span><a class="order__contact-email-link" href="<?php echo esc_url('mailto:#'); ?>"><?php echo esc_html('lastella.thitrang@gmail.com'); ?></a></p>
 
-         <p class="order__contact"><span class="order__contact-social"><?php echo file_get_contents(get_stylesheet_directory_uri() . '/images/icon_fb.svg'); ?></span><a href="<?php echo esc_url('https://www.facebook.com/Home-made-food-383350752019254'); ?>" class="facebook order__contact-social-link"><?php echo esc_html('Home made food (Pho Bep Oi)'); ?></a></p>
+         <p class="order__contact"><span class="order__contact-social"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_fb.svg')); ?></span><a href="<?php echo esc_url('https://www.facebook.com/Home-made-food-383350752019254'); ?>" class="facebook order__contact-social-link"><?php echo esc_html('Home made food (Pho Bep Oi)'); ?></a></p>
       </div> <!-- end order desc -->
       <div class="order__img">
          <img src="<?php echo esc_url(get_theme_file_uri('/images/hanged_lights.jpg')); ?>" alt="">

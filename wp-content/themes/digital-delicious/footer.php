@@ -30,31 +30,27 @@
 		<?php endif; ?>
 		<div class="dd-footer__contact">
 			<ul class="dd-footer__list">
-				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri('/images/icon_phone.svg')); ?><a href="<?php echo esc_url('tel:#'); ?>">079 123 45 67</a></li>
-				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri('/images/icon_email.svg')); ?><a href="<?php echo esc_url('mailto:#'); ?>">lastella.thitrang@gmail.com</a></li>
-				<li class="dd-footer__list-item"><?php echo file_get_contents(get_theme_file_uri('/images/icon_fb.svg')); ?><a href="<?php echo esc_url('https://www.facebook.com/Home-made-food-383350752019254'); ?>" class="facebook">Home made food (Pho bep Oi)</a></li>
+				<li class="dd-footer__list-item"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_phone.svg')); ?><a href="<?php echo esc_url('tel:#'); ?>"><?php echo esc_html('079 123 45 67'); ?></a></li>
+				<li class="dd-footer__list-item"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_email.svg')); ?><a href="<?php echo esc_url('mailto:#'); ?>"><?php echo esc_html('lastella.thitrang@gmail.com'); ?></a></li>
+				<li class="dd-footer__list-item"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_fb.svg')); ?><a href="<?php echo esc_url('https://www.facebook.com/Home-made-food-383350752019254'); ?>" class="facebook"><?php echo esc_html('Home made food (Pho Bep Oi)'); ?></a></li>
 			</ul>
 			<ul class="dd-footer__list">
-				<li class="dd-footer__list-item">12h-13h // 18h-19h30</li>
-				<li class="dd-footer__list-item">Tuesdays, Thursdays and Saturdays</li>
+				<li class="dd-footer__list-item"><?php echo esc_html('12h-13h // 18h-19h30'); ?></li>
+				<li class="dd-footer__list-item"><?php esc_html_e('Tuesdays, Thursdays and Saturdays', 'digital-delicious'); ?></li>
 			</ul>
 		</div>
 	</div> <!-- end dd-footer__container -->
 	<div class="dd-footer__attribution u-center-text">
-		<p>Icons by <a href="<?php echo esc_url('https://fontawesome.com/license'); ?>">Font Awesome</a>. Only colors may have been changed by us.</p>
+		<p><?php esc_html_e('Icons by', 'digital-delicious'); ?> <a href="<?php esc_url('https://fontawesome.com/license'); ?>"><?php echo esc_html('Font Awesome. '); ?></a><?php esc_html_e('Only colors may have been changed by us.', 'digital-delicious') ?></p>
 	</div>
 	<div class="site-info u-center-text">
 		<p>
 			<?php
 			/* translators: 1: Theme name, 2: Theme author. */
-			printf(esc_html__('Made with love and care by %2$s', 'digital-delicious'), 'digital-delicious', '<a href="https://www.digitalseeds.net">Anne-Sophie - DigitalSeeds</a>');
+			printf(esc_html__('Made with love and care by %2$s', 'digital-delicious'), 'digital-delicious', '<a href=' . esc_url('https://www.digitalseeds.net') . '>' . esc_html('Anne-Sophie - DigitalSeeds') . '</a>');
 			?>
 		</p>
-		<p class="copyright"><?php printf(esc_html__('© Copyright 2021 - All rights reserved', 'digital-delicious')); ?>- <a href="<?php get_privacy_policy_url(); ?>">Privacy Policy</a></p>
-		<!--
-				Modified by SAS on 22.02.21
-				/* translators: 1: Theme name, 2: Theme author.*/
-				/* printf( esc_html__( 'Theme: %1$s by %2$s.', 'digital-delicious' ), 'digital-delicious', '<a href="https://www.digitalseeds.net">Anne-Sophie Sassard</a>' ); -->
+		<p class="copyright"><?php printf(esc_html__('© Copyright 2021 - All rights reserved - ', 'digital-delicious')); ?><a href="<?php get_privacy_policy_url(); ?>"><?php esc_html_e('Privacy Policy'); ?></a></p>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->

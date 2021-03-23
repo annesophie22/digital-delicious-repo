@@ -50,7 +50,7 @@
 			printf(esc_html__('Made with love and care by %2$s', 'digital-delicious'), 'digital-delicious', '<a href=' . esc_url('https://www.digitalseeds.net') . '>' . esc_html('Anne-Sophie - DigitalSeeds') . '</a>');
 			?>
 		</p>
-		<p class="copyright"><?php printf(esc_html__('© Copyright 2021 - All rights reserved - ', 'digital-delicious')); ?><a href="<?php get_privacy_policy_url(); ?>"><?php esc_html_e('Privacy Policy'); ?></a></p>
+		<p class="copyright"><?php printf(esc_html__('© Copyright 2021 - All rights reserved - ', 'digital-delicious')); ?><a href="<?php get_privacy_policy_url(); ?>"><?php esc_html_e('Privacy Policy', 'digital-delicious'); ?></a></p>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->

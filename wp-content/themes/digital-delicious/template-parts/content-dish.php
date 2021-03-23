@@ -12,7 +12,7 @@
 <!-- INDIVIDUAL DISH ITEM -->
 <div class="alldishes-grid__item u-center-text">
    <div class="alldishes-grid__img-container">
-      <img class="alldishes-grid__img" src=<?php the_post_thumbnail(); ?> alt=<?php esc_attr_e('Dish served by Pho Bep Oi'); ?>>
+      <img class="alldishes-grid__img" src=<?php the_post_thumbnail(); ?> alt=<?php esc_attr_e('Dish served by Pho Bep Oi', 'digital-delicious'); ?>>
    </div>
    <div class="alldishes-grid__label">
       <h3 class="heading-secondary alldishes-grid__label-title"><?php the_title(); ?></h3>

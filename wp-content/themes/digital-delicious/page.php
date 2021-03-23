@@ -33,7 +33,7 @@ get_header();
 	?>
 
 </main><!-- #main -->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><?php echo esc_html('Top'); ?></button>
 <?php
 get_sidebar();
 get_footer();

@@ -20,7 +20,7 @@ get_header();
 
 		<div class="page-content">
 			<p><?php esc_html_e('It looks like nothing was found at this location.', 'digital-delicious'); ?></p>
-			<button class="button-404"><a href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html_e('Back to Home'); ?></a></button>
+			<button class="button-404"><a href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html_e('Back to Home', 'digital-delicious'); ?></a></button>
 
 		</div><!-- .page-content -->
 	</section><!-- .error-404 -->

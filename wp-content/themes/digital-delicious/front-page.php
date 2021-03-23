@@ -175,7 +175,7 @@ get_header();
             <p class="about__text"><?php esc_html_e('Risus, nec id velit morbi amet. Id cursus volutpat sollicitudin cras elit. Dolor, ullamcorper nibh et a. Id nunc, dictum ornare sed et nullam arcu in malesuada. Placerat eget gravida mi scelerisque sed est rhoncus. Enim, arcu urna et bibendum sit. Aliquam morbi bibendum facilisis massa sollicitudin felis, ut ut. Luctus auctor orci nunc diam quam facilisi sit ut molestie.', 'digital-delicious'); ?></p>
          </div> <!-- end about desc -->
          <div class="about__img">
-            <img src="<?php echo esc_url(get_theme_file_uri('/images/about.jpg')); ?>" alt="chef at Pho Bep Oi">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/about.jpg')); ?>" alt=<?php esc_html_e('chef at Pho Bep Oi') ?>>
          </div>
       </section> <!-- end section about -->
    </div>
@@ -192,7 +192,7 @@ get_header();
          <p class="order__contact"><span class="order__contact-social"><?php echo file_get_contents(esc_url(get_stylesheet_directory_uri() . '/images/icon_fb.svg')); ?></span><a href="<?php echo esc_url('https://www.facebook.com/Home-made-food-383350752019254'); ?>" class="facebook order__contact-social-link"><?php echo esc_html('Home made food (Pho Bep Oi)'); ?></a></p>
       </div> <!-- end order desc -->
       <div class="order__img">
-         <img src="<?php echo esc_url(get_theme_file_uri('/images/hanged_lights.jpg')); ?>" alt="">
+         <img src="<?php echo esc_url(get_theme_file_uri('/images/hanged_lights.jpg')); ?>" alt=<?php esc_html('') ?>>
       </div>
    </section> <!-- end section order -->
 </main><!-- #main -->

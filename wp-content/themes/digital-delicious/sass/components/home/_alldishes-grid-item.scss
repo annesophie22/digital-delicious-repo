@@ -14,17 +14,24 @@
     position: relative;
     @include bottomGradient;
 
+    img {
+      max-width: 100%;
+      border: 1px solid $color__grayish__green;
+      border-radius: 50px 5px;
+      @include boxShadow1;
+    }
+
     &::after {
       border-radius: 50px 5px;
     }
   }
 
-  &__img {
+  /* &__img {
     max-width: 100%;
     border: 1px solid $color__grayish__green;
     border-radius: 50px 5px;
     @include boxShadow1;
-  }
+  } */
 
   &__label {
     position: absolute;

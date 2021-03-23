@@ -10,6 +10,11 @@ html {
 // Sticky footer
 .site {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+}
+
+@supports (display: flex) {
+  .site {
+    display: flex;
+    flex-direction: column;
+  }
 }

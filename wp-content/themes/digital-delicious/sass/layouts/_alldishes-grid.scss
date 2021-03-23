@@ -1,19 +1,28 @@
 .alldishes-grid {
   width: 100%;
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
-  grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
-  grid-column-gap: $spacing__m;
-  grid-row-gap: $spacing__l;
+  max-width: 400px;
+  margin: 0 auto;
+}
 
-  @include respond(desktop) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: $spacing__xl;
-    grid-row-gap: $spacing__xl;
-  }
+@supports (display: grid) {
+  .alldishes-grid {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
+    grid-column-gap: $spacing__m;
+    grid-row-gap: $spacing__l;
 
-  @include respond(big-desk) {
-    width: 90%;
-    margin: 0 auto;
+    @include respond(desktop) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: $spacing__xl;
+      grid-row-gap: $spacing__xl;
+    }
+
+    @include respond(big-desk) {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 }

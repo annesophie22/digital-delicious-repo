@@ -492,9 +492,12 @@ html {
   font-size: 62.5%; }
 
 .site {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column; }
+  min-height: 100vh; }
+
+@supports (display: flex) {
+  .site {
+    display: flex;
+    flex-direction: column; } }
 
 hr {
   width: 40%;
@@ -675,20 +678,27 @@ textarea {
 
 .alldishes-grid {
   width: 100%;
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
-  grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
-  grid-column-gap: 3.2rem;
-  grid-row-gap: 4.8rem; }
-  @media only screen and (min-width: 1200px) {
-    .alldishes-grid {
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 6.4rem;
-      grid-row-gap: 6.4rem; } }
-  @media only screen and (min-width: 1600px) {
-    .alldishes-grid {
-      width: 90%;
-      margin: 0 auto; } }
+  max-width: 400px;
+  margin: 0 auto; }
+
+@supports (display: grid) {
+  .alldishes-grid {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(auto, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
+    grid-column-gap: 3.2rem;
+    grid-row-gap: 4.8rem; }
+    @media only screen and (min-width: 1200px) {
+      .alldishes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 6.4rem;
+        grid-row-gap: 6.4rem; } }
+    @media only screen and (min-width: 1600px) {
+      .alldishes-grid {
+        width: 90%;
+        margin: 0 auto; } } }
 
 /*--------------------------------------------------------------
 # Components
@@ -1111,53 +1121,48 @@ textarea {
         .order-details__contact-phone svg path, .order-details__contact-email svg path, .order-details__contact-social svg path {
           fill: #f7f3ed; }
 
-.alldishes-grid {
-  /* &__img {
-    max-width: 100%;
-    border: 1px solid $color__grayish__green;
-    border-radius: 50px 5px;
-    @include boxShadow1;
-  } */ }
-  .alldishes-grid__item {
-    position: relative;
-    z-index: 1;
-    transition: all 0.2s ease-out; }
-    .alldishes-grid__item:hover {
-      transform: scale(1.02) translateY(-3px);
-      overflow: hidden; }
-  .alldishes-grid__img-container {
-    position: relative; }
-    .alldishes-grid__img-container::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background: transparent;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 40%); }
-    .alldishes-grid__img-container img {
-      max-width: 100%;
-      border: 1px solid #5d8a67;
-      border-radius: 50px 5px;
-      box-shadow: 0 0.9rem 1.1rem -0.6rem rgba(0, 0, 0, 0.5); }
-    .alldishes-grid__img-container::after {
-      border-radius: 50px 5px; }
-  .alldishes-grid__label {
+.alldishes-grid__item {
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s ease-out; }
+  .alldishes-grid__item:hover {
+    transform: scale(1.02) translateY(-3px);
+    overflow: hidden; }
+
+.alldishes-grid__img-container {
+  position: relative; }
+  .alldishes-grid__img-container::after {
+    content: "";
     position: absolute;
-    width: 90%;
-    z-index: 999;
+    top: 0;
+    left: 0;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    padding: 1.6rem 2.4rem;
-    border: 1px solid #fff;
+    right: 0;
+    background: transparent;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 40%); }
+  .alldishes-grid__img-container img {
+    max-width: 100%;
+    border: 1px solid #5d8a67;
     border-radius: 50px 5px;
-    background-color: #209a72;
-    color: #fff; }
-    .alldishes-grid__label-desc {
-      margin-bottom: 0;
-      line-height: 1.1; }
+    box-shadow: 0 0.9rem 1.1rem -0.6rem rgba(0, 0, 0, 0.5); }
+  .alldishes-grid__img-container::after {
+    border-radius: 50px 5px; }
+
+.alldishes-grid__label {
+  position: absolute;
+  width: 90%;
+  z-index: 999;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  padding: 1.6rem 2.4rem;
+  border: 1px solid #fff;
+  border-radius: 50px 5px;
+  background-color: #209a72;
+  color: #fff; }
+  .alldishes-grid__label-desc {
+    margin-bottom: 0;
+    line-height: 1.1; }
 
 @media only screen and (min-width: 1200px) {
   .testimonial-grid {
@@ -1479,6 +1484,8 @@ article.page, article.post {
   width: 100%;
   max-width: 5.5rem;
   height: auto; }
+  .dd-site-title__logo svg {
+    max-height: 6rem; }
 
 .dd-site-title__name {
   display: block;
